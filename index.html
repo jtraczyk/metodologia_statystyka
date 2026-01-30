@@ -153,7 +153,6 @@ window.Quarto = {
   <li><a href="#interaktywna-symulacja-rozkład-normalny" id="toc-interaktywna-symulacja-rozkład-normalny" class="nav-link" data-scroll-target="#interaktywna-symulacja-rozkład-normalny">Interaktywna symulacja: rozkład normalny</a></li>
   <li><a href="#techniki-wizualizacji-danych" id="toc-techniki-wizualizacji-danych" class="nav-link" data-scroll-target="#techniki-wizualizacji-danych">Techniki wizualizacji danych</a></li>
   <li><a href="#interaktywna-symulacja-kształt-rozkładu" id="toc-interaktywna-symulacja-kształt-rozkładu" class="nav-link" data-scroll-target="#interaktywna-symulacja-kształt-rozkładu">Interaktywna symulacja: Kształt rozkładu</a></li>
-  <li><a href="#wykres-skrzynkowy-boxplot" id="toc-wykres-skrzynkowy-boxplot" class="nav-link" data-scroll-target="#wykres-skrzynkowy-boxplot">2. Wykres skrzynkowy (Boxplot)</a></li>
   </ul></li>
   <li><a href="#dwa-nurty-psychologii-naukowej-model-eksperymentalny-a-korelacyjny" id="toc-dwa-nurty-psychologii-naukowej-model-eksperymentalny-a-korelacyjny" class="nav-link" data-scroll-target="#dwa-nurty-psychologii-naukowej-model-eksperymentalny-a-korelacyjny">Dwa nurty psychologii naukowej: model eksperymentalny a korelacyjny</a>
   <ul class="collapse">
@@ -167,6 +166,7 @@ window.Quarto = {
   <li><a href="#współczynnik-korelacji-r-pearsona" id="toc-współczynnik-korelacji-r-pearsona" class="nav-link" data-scroll-target="#współczynnik-korelacji-r-pearsona">Współczynnik korelacji r-Pearsona</a></li>
   <li><a href="#interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona" id="toc-interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona" class="nav-link" data-scroll-target="#interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona">Interaktywna symulacja: Siła związku i współczynnik r-Pearsona</a></li>
   </ul></li>
+  <li><a href="#analiza-regresji-liniowej" id="toc-analiza-regresji-liniowej" class="nav-link" data-scroll-target="#analiza-regresji-liniowej">Analiza regresji liniowej</a></li>
   <li><a href="#jakość-planu-badawczego-trafność-i-procedury-kontrolne" id="toc-jakość-planu-badawczego-trafność-i-procedury-kontrolne" class="nav-link" data-scroll-target="#jakość-planu-badawczego-trafność-i-procedury-kontrolne">Jakość planu badawczego: trafność i procedury kontrolne</a>
   <ul class="collapse">
   <li><a href="#randomizacja-mechanizm-kontroli-zmiennych-zakłócających" id="toc-randomizacja-mechanizm-kontroli-zmiennych-zakłócających" class="nav-link" data-scroll-target="#randomizacja-mechanizm-kontroli-zmiennych-zakłócających">Randomizacja: mechanizm kontroli zmiennych zakłócających</a></li>
@@ -648,30 +648,32 @@ window.Quarto = {
 <li><p>Jak <strong>skośność</strong> zaburza symetrię na <strong>histogramie</strong>.</p></li>
 <li><p>Jak ta sama skośność powoduje pojawienie się kropek (wartości odstających) na <strong>wykresie skrzynkowym</strong>.</p></li>
 </ol>
-<div class="cell card bg-light p-2 g-col-24 g-col-lg-7">
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="380" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 379;"><span id="cb4-380"><a href="#cb4-380" aria-hidden="true" tabindex="-1"></a>viewof skew_sep <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Skośność (Asymetria)"</span>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="379" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 378;"><span id="cb4-379"><a href="#cb4-379" aria-hidden="true" tabindex="-1"></a>viewof skew_sep <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Skośność (Asymetria)"</span>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
+<div class="panel-fill g-col-24 g-col-lg-17 pt-3 pt-lg-0">
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">1. Histogram</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Histogram</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Wykres skrzynkowy (Boxplot)</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Histogram pokazuje kształt rozkładu i częstość występowania wyników. ::: {.content-visible when-format=“html”}</p>
+<p>Histogram pokazuje kształt rozkładu i częstość występowania wyników.</p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="391" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 390;"><span id="cb5-391"><a href="#cb5-391" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb5-392"><a href="#cb5-392" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">350</span><span class="op">,</span></span>
-<span id="cb5-393"><a href="#cb5-393" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb5-394"><a href="#cb5-394" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Wartość zmiennej"</span> }<span class="op">,</span></span>
-<span id="cb5-395"><a href="#cb5-395" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Liczebność"</span> }<span class="op">,</span></span>
-<span id="cb5-396"><a href="#cb5-396" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb5-397"><a href="#cb5-397" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">rectY</span>(sepData<span class="op">,</span> Plot<span class="op">.</span><span class="fu">binX</span>({<span class="dt">y</span><span class="op">:</span> <span class="st">"count"</span>}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#4C78A8"</span>}))<span class="op">,</span></span>
-<span id="cb5-398"><a href="#cb5-398" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>])</span>
-<span id="cb5-399"><a href="#cb5-399" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb5-400"><a href="#cb5-400" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="390" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 389;"><span id="cb5-390"><a href="#cb5-390" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb5-391"><a href="#cb5-391" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">350</span><span class="op">,</span></span>
+<span id="cb5-392"><a href="#cb5-392" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb5-393"><a href="#cb5-393" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Wartość zmiennej"</span> }<span class="op">,</span></span>
+<span id="cb5-394"><a href="#cb5-394" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Liczebność"</span> }<span class="op">,</span></span>
+<span id="cb5-395"><a href="#cb5-395" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb5-396"><a href="#cb5-396" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">rectY</span>(sepData<span class="op">,</span> Plot<span class="op">.</span><span class="fu">binX</span>({<span class="dt">y</span><span class="op">:</span> <span class="st">"count"</span>}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#4C78A8"</span>}))<span class="op">,</span></span>
+<span id="cb5-397"><a href="#cb5-397" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>])</span>
+<span id="cb5-398"><a href="#cb5-398" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb5-399"><a href="#cb5-399" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-5" data-nodetype="expression">
 
@@ -679,31 +681,29 @@ window.Quarto = {
 </div>
 </div>
 </div>
-</div>
-</div>
-</section>
-<section id="wykres-skrzynkowy-boxplot" class="level2">
-<h2 class="anchored" data-anchor-id="wykres-skrzynkowy-boxplot">2. Wykres skrzynkowy (Boxplot)</h2>
-<p>Wykres skrzynkowy pokazuje medianę, kwartyle oraz wartości odstające (outliers). ::: {.content-visible when-format=“html”}</p>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Wykres skrzynkowy pokazuje medianę, kwartyle oraz wartości odstające (outliers).</p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="410" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 409;"><span id="cb6-410"><a href="#cb6-410" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb6-411"><a href="#cb6-411" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">200</span><span class="op">,</span></span>
-<span id="cb6-412"><a href="#cb6-412" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb6-413"><a href="#cb6-413" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Wartość zmiennej"</span> }<span class="op">,</span></span>
-<span id="cb6-414"><a href="#cb6-414" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">axis</span><span class="op">:</span> <span class="kw">null</span> }<span class="op">,</span> </span>
-<span id="cb6-415"><a href="#cb6-415" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb6-416"><a href="#cb6-416" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">boxX</span>(sepData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#E45756"</span>})<span class="op">,</span></span>
-<span id="cb6-417"><a href="#cb6-417" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(sepData<span class="op">,</span> Plot<span class="op">.</span><span class="fu">selectMinX</span>({<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Min"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">20</span>}))<span class="op">,</span></span>
-<span id="cb6-418"><a href="#cb6-418" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(sepData<span class="op">,</span> Plot<span class="op">.</span><span class="fu">selectMaxX</span>({<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Max"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">20</span>}))</span>
-<span id="cb6-419"><a href="#cb6-419" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb6-420"><a href="#cb6-420" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="409" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 408;"><span id="cb6-409"><a href="#cb6-409" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb6-410"><a href="#cb6-410" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">200</span><span class="op">,</span></span>
+<span id="cb6-411"><a href="#cb6-411" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb6-412"><a href="#cb6-412" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Wartość zmiennej"</span> }<span class="op">,</span></span>
+<span id="cb6-413"><a href="#cb6-413" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">axis</span><span class="op">:</span> <span class="kw">null</span> }<span class="op">,</span> </span>
+<span id="cb6-414"><a href="#cb6-414" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb6-415"><a href="#cb6-415" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">boxX</span>(sepData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#E45756"</span>})<span class="op">,</span></span>
+<span id="cb6-416"><a href="#cb6-416" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(sepData<span class="op">,</span> Plot<span class="op">.</span><span class="fu">selectMinX</span>({<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Min"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">20</span>}))<span class="op">,</span></span>
+<span id="cb6-417"><a href="#cb6-417" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(sepData<span class="op">,</span> Plot<span class="op">.</span><span class="fu">selectMaxX</span>({<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Max"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">20</span>}))</span>
+<span id="cb6-418"><a href="#cb6-418" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb6-419"><a href="#cb6-419" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-6" data-nodetype="expression">
 
 </div>
 </div>
 </div>
-<p>::: ::: {.content-visible when-format=“html”}</p>
+</div>
+</div>
+</div>
 <div class="cell hidden">
 <div class="sourceCode cell-code hidden" id="cb7" data-startfrom="428" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 427;"><span id="cb7-428"><a href="#cb7-428" aria-hidden="true" tabindex="-1"></a><span class="co">// Logika generowania danych</span></span>
 <span id="cb7-429"><a href="#cb7-429" aria-hidden="true" tabindex="-1"></a>sepData <span class="op">=</span> {</span>
@@ -732,7 +732,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>:::</p>
+</div>
+</div>
 </section>
 </section>
 <section id="dwa-nurty-psychologii-naukowej-model-eksperymentalny-a-korelacyjny" class="level1">
@@ -833,20 +834,20 @@ window.Quarto = {
 </section>
 <section id="interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona" class="level2">
 <h2 class="anchored" data-anchor-id="interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona">Interaktywna symulacja: Siła związku i współczynnik r-Pearsona</h2>
-<p>Zmień <strong>liczbę obserwacji (N)</strong>, aby wylosować nową grupę badanych. Zmieniaj <strong>korelację (r)</strong>, aby zobaczyć, jak te same osoby “układają się” bliżej lub dalej linii regresji. ::: {.content-visible when-format=“html”}</p>
+<p>Zmień <strong>liczbę obserwacji (N)</strong>, aby wylosować nową grupę badanych. Zmieniaj <strong>korelację (r)</strong>, aby zobaczyć, jak te same osoby “układają się” bliżej lub dalej linii regresji.</p>
 <div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
 <div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
-<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="522" data-source-offset="-2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 521;"><span id="cb8-522"><a href="#cb8-522" aria-hidden="true" tabindex="-1"></a>viewof n_anim <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">50</span><span class="op">,</span> <span class="dv">500</span>]<span class="op">,</span> {</span>
-<span id="cb8-523"><a href="#cb8-523" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span> </span>
-<span id="cb8-524"><a href="#cb8-524" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> </span>
-<span id="cb8-525"><a href="#cb8-525" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Liczba obserwacji (N)"</span></span>
-<span id="cb8-526"><a href="#cb8-526" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb8-527"><a href="#cb8-527" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-528"><a href="#cb8-528" aria-hidden="true" tabindex="-1"></a>viewof r_anim <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {</span>
-<span id="cb8-529"><a href="#cb8-529" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> </span>
-<span id="cb8-530"><a href="#cb8-530" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="fl">0.00</span><span class="op">,</span> </span>
-<span id="cb8-531"><a href="#cb8-531" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Korelacja (r)"</span></span>
-<span id="cb8-532"><a href="#cb8-532" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="523" data-source-offset="-2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 522;"><span id="cb8-523"><a href="#cb8-523" aria-hidden="true" tabindex="-1"></a>viewof n_anim <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">50</span><span class="op">,</span> <span class="dv">500</span>]<span class="op">,</span> {</span>
+<span id="cb8-524"><a href="#cb8-524" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span> </span>
+<span id="cb8-525"><a href="#cb8-525" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> </span>
+<span id="cb8-526"><a href="#cb8-526" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Liczba obserwacji (N)"</span></span>
+<span id="cb8-527"><a href="#cb8-527" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb8-528"><a href="#cb8-528" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-529"><a href="#cb8-529" aria-hidden="true" tabindex="-1"></a>viewof r_anim <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {</span>
+<span id="cb8-530"><a href="#cb8-530" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> </span>
+<span id="cb8-531"><a href="#cb8-531" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="fl">0.00</span><span class="op">,</span> </span>
+<span id="cb8-532"><a href="#cb8-532" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Korelacja (r)"</span></span>
+<span id="cb8-533"><a href="#cb8-533" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-8-1" data-nodetype="declaration">
@@ -862,34 +863,32 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div class="panel-fill g-col-24 g-col-lg-17 pt-3 pt-lg-0">
-<p>::: ::: {.content-visible when-format=“html”}</p>
-<div class="panel-fill panel-grid">
+<div class="panel-fill panel-grid g-col-24 g-col-lg-17 pt-3 pt-lg-0">
 <div class="g-col-24">
 <div class="cell panel-fill">
-<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="539" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 538;"><span id="cb9-539"><a href="#cb9-539" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb9-540"><a href="#cb9-540" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span><span class="op">:</span> <span class="vs">`r = </span><span class="sc">${</span>r_anim<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">  |  p = </span><span class="sc">${</span>pValueText<span class="sc">}</span><span class="vs">`</span><span class="op">,</span></span>
-<span id="cb9-541"><a href="#cb9-541" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb9-542"><a href="#cb9-542" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">domain</span><span class="op">:</span> [<span class="op">-</span><span class="dv">4</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Zmienna X"</span> }<span class="op">,</span></span>
-<span id="cb9-543"><a href="#cb9-543" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">domain</span><span class="op">:</span> [<span class="op">-</span><span class="dv">4</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Zmienna Y"</span> }<span class="op">,</span></span>
-<span id="cb9-544"><a href="#cb9-544" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb9-545"><a href="#cb9-545" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">strokeOpacity</span><span class="op">:</span> <span class="fl">0.2</span>})<span class="op">,</span></span>
-<span id="cb9-546"><a href="#cb9-546" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">strokeOpacity</span><span class="op">:</span> <span class="fl">0.2</span>})<span class="op">,</span></span>
-<span id="cb9-547"><a href="#cb9-547" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb9-548"><a href="#cb9-548" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Kropki są przekazywane bezpośrednio, bez warunków</span></span>
-<span id="cb9-549"><a href="#cb9-549" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(plotData<span class="op">,</span> {</span>
-<span id="cb9-550"><a href="#cb9-550" aria-hidden="true" tabindex="-1"></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> </span>
-<span id="cb9-551"><a href="#cb9-551" aria-hidden="true" tabindex="-1"></a>        <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> </span>
-<span id="cb9-552"><a href="#cb9-552" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"steelblue"</span><span class="op">,</span> </span>
-<span id="cb9-553"><a href="#cb9-553" aria-hidden="true" tabindex="-1"></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">4</span><span class="op">,</span> </span>
-<span id="cb9-554"><a href="#cb9-554" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.7</span><span class="op">,</span></span>
-<span id="cb9-555"><a href="#cb9-555" aria-hidden="true" tabindex="-1"></a>        <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb9-556"><a href="#cb9-556" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
-<span id="cb9-557"><a href="#cb9-557" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb9-558"><a href="#cb9-558" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Linia regresji również widoczna od razu</span></span>
-<span id="cb9-559"><a href="#cb9-559" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">linearRegressionY</span>(plotData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})</span>
-<span id="cb9-560"><a href="#cb9-560" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb9-561"><a href="#cb9-561" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="540" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 539;"><span id="cb9-540"><a href="#cb9-540" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb9-541"><a href="#cb9-541" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span><span class="op">:</span> <span class="vs">`r = </span><span class="sc">${</span>r_anim<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">  |  p = </span><span class="sc">${</span>pValueText<span class="sc">}</span><span class="vs">`</span><span class="op">,</span></span>
+<span id="cb9-542"><a href="#cb9-542" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb9-543"><a href="#cb9-543" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">domain</span><span class="op">:</span> [<span class="op">-</span><span class="dv">4</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Zmienna X"</span> }<span class="op">,</span></span>
+<span id="cb9-544"><a href="#cb9-544" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">domain</span><span class="op">:</span> [<span class="op">-</span><span class="dv">4</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Zmienna Y"</span> }<span class="op">,</span></span>
+<span id="cb9-545"><a href="#cb9-545" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb9-546"><a href="#cb9-546" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">strokeOpacity</span><span class="op">:</span> <span class="fl">0.2</span>})<span class="op">,</span></span>
+<span id="cb9-547"><a href="#cb9-547" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">strokeOpacity</span><span class="op">:</span> <span class="fl">0.2</span>})<span class="op">,</span></span>
+<span id="cb9-548"><a href="#cb9-548" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-549"><a href="#cb9-549" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Kropki są przekazywane bezpośrednio, bez warunków</span></span>
+<span id="cb9-550"><a href="#cb9-550" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(plotData<span class="op">,</span> {</span>
+<span id="cb9-551"><a href="#cb9-551" aria-hidden="true" tabindex="-1"></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> </span>
+<span id="cb9-552"><a href="#cb9-552" aria-hidden="true" tabindex="-1"></a>        <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> </span>
+<span id="cb9-553"><a href="#cb9-553" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"steelblue"</span><span class="op">,</span> </span>
+<span id="cb9-554"><a href="#cb9-554" aria-hidden="true" tabindex="-1"></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">4</span><span class="op">,</span> </span>
+<span id="cb9-555"><a href="#cb9-555" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.7</span><span class="op">,</span></span>
+<span id="cb9-556"><a href="#cb9-556" aria-hidden="true" tabindex="-1"></a>        <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb9-557"><a href="#cb9-557" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb9-558"><a href="#cb9-558" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-559"><a href="#cb9-559" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Linia regresji również widoczna od razu</span></span>
+<span id="cb9-560"><a href="#cb9-560" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">linearRegressionY</span>(plotData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})</span>
+<span id="cb9-561"><a href="#cb9-561" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb9-562"><a href="#cb9-562" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-9" data-nodetype="expression">
 
@@ -898,67 +897,67 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>::: ::: {.content-visible when-format=“html”}</p>
+</div>
 <div class="cell hidden">
-<div class="sourceCode cell-code hidden" id="cb10" data-startfrom="573" data-source-offset="-65"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 572;"><span id="cb10-573"><a href="#cb10-573" aria-hidden="true" tabindex="-1"></a>pValueText <span class="op">=</span> {</span>
-<span id="cb10-574"><a href="#cb10-574" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> r <span class="op">=</span> r_anim<span class="op">;</span></span>
-<span id="cb10-575"><a href="#cb10-575" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> n <span class="op">=</span> n_anim<span class="op">;</span></span>
-<span id="cb10-576"><a href="#cb10-576" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb10-577"><a href="#cb10-577" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Zabezpieczenie dla korelacji idealnej (dzielenie przez zero)</span></span>
-<span id="cb10-578"><a href="#cb10-578" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(r) <span class="op">&gt;=</span> <span class="fl">0.99</span>) <span class="cf">return</span> <span class="st">"&lt; 0.001"</span><span class="op">;</span> </span>
-<span id="cb10-579"><a href="#cb10-579" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-580"><a href="#cb10-580" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Obliczenie statystyki t</span></span>
-<span id="cb10-581"><a href="#cb10-581" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Wzór: t = r * sqrt((N-2) / (1-r^2))</span></span>
-<span id="cb10-582"><a href="#cb10-582" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> tStat <span class="op">=</span> r <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>((n <span class="op">-</span> <span class="dv">2</span>) <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> r <span class="op">*</span> r))<span class="op">;</span></span>
-<span id="cb10-583"><a href="#cb10-583" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb10-584"><a href="#cb10-584" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Obliczenie p-value przy użyciu aproksymacji rozkładu normalnego (dla N &gt;= 50 jest to poprawne)</span></span>
-<span id="cb10-585"><a href="#cb10-585" aria-hidden="true" tabindex="-1"></a>  <span class="co">// p = 2 * (1 - CDF(|t|))</span></span>
-<span id="cb10-586"><a href="#cb10-586" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> p <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> <span class="fu">normalCDF</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(tStat)))<span class="op">;</span></span>
-<span id="cb10-587"><a href="#cb10-587" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb10-588"><a href="#cb10-588" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (p <span class="op">&lt;</span> <span class="fl">0.001</span>) <span class="cf">return</span> <span class="st">"&lt; 0.001"</span><span class="op">;</span></span>
-<span id="cb10-589"><a href="#cb10-589" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> p<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">3</span>)<span class="op">;</span></span>
-<span id="cb10-590"><a href="#cb10-590" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb10-591"><a href="#cb10-591" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-592"><a href="#cb10-592" aria-hidden="true" tabindex="-1"></a><span class="co">// Funkcja pomocnicza: Dystrybuanta rozkładu normalnego (nie wymaga zewnętrznych bibliotek)</span></span>
-<span id="cb10-593"><a href="#cb10-593" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">normalCDF</span>(x) {</span>
-<span id="cb10-594"><a href="#cb10-594" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> t <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> <span class="fl">0.2316419</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(x))<span class="op">;</span></span>
-<span id="cb10-595"><a href="#cb10-595" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> d <span class="op">=</span> <span class="fl">0.3989422804014337</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(<span class="op">-</span>x <span class="op">*</span> x <span class="op">/</span> <span class="dv">2</span>)<span class="op">;</span></span>
-<span id="cb10-596"><a href="#cb10-596" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> prob <span class="op">=</span> d <span class="op">*</span> t <span class="op">*</span> (<span class="fl">0.319381530</span> <span class="op">+</span> t <span class="op">*</span> (<span class="op">-</span><span class="fl">0.356563782</span> <span class="op">+</span> t <span class="op">*</span> (<span class="fl">1.781477937</span> <span class="op">+</span> t <span class="op">*</span> (<span class="op">-</span><span class="fl">1.821255978</span> <span class="op">+</span> t <span class="op">*</span> <span class="fl">1.330274429</span>))))<span class="op">;</span></span>
-<span id="cb10-597"><a href="#cb10-597" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">&gt;</span> <span class="dv">0</span> <span class="op">?</span> <span class="dv">1</span> <span class="op">-</span> prob <span class="op">:</span> prob<span class="op">;</span></span>
-<span id="cb10-598"><a href="#cb10-598" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb10-599"><a href="#cb10-599" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-600"><a href="#cb10-600" aria-hidden="true" tabindex="-1"></a><span class="co">// 2. Generowanie losowych "osób" (Zmienne ukryte Z1 i Z2)</span></span>
-<span id="cb10-601"><a href="#cb10-601" aria-hidden="true" tabindex="-1"></a><span class="co">// Reaguje TYLKO na zmianę N (n_anim).</span></span>
-<span id="cb10-602"><a href="#cb10-602" aria-hidden="true" tabindex="-1"></a>baseRandomness <span class="op">=</span> {</span>
-<span id="cb10-603"><a href="#cb10-603" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> seeds <span class="op">=</span> []<span class="op">;</span></span>
-<span id="cb10-604"><a href="#cb10-604" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n_anim<span class="op">;</span> i<span class="op">++</span>) {</span>
-<span id="cb10-605"><a href="#cb10-605" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Algorytm Boxa-Mullera</span></span>
-<span id="cb10-606"><a href="#cb10-606" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> u1 <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> u2 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb10-607"><a href="#cb10-607" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u1 <span class="op">===</span> <span class="dv">0</span>) u1 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
-<span id="cb10-608"><a href="#cb10-608" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u2 <span class="op">===</span> <span class="dv">0</span>) u2 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
-<span id="cb10-609"><a href="#cb10-609" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> z1 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="op">-</span><span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(u1)) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">cos</span>(<span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span> <span class="op">*</span> u2)<span class="op">;</span></span>
-<span id="cb10-610"><a href="#cb10-610" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb10-611"><a href="#cb10-611" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> u3 <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> u4 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb10-612"><a href="#cb10-612" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u3 <span class="op">===</span> <span class="dv">0</span>) u3 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
-<span id="cb10-613"><a href="#cb10-613" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u4 <span class="op">===</span> <span class="dv">0</span>) u4 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
-<span id="cb10-614"><a href="#cb10-614" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> z2 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="op">-</span><span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(u3)) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">cos</span>(<span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span> <span class="op">*</span> u4)<span class="op">;</span></span>
-<span id="cb10-615"><a href="#cb10-615" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb10-616"><a href="#cb10-616" aria-hidden="true" tabindex="-1"></a>    seeds<span class="op">.</span><span class="fu">push</span>({z1<span class="op">,</span> z2})<span class="op">;</span></span>
-<span id="cb10-617"><a href="#cb10-617" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb10-618"><a href="#cb10-618" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> seeds<span class="op">;</span></span>
-<span id="cb10-619"><a href="#cb10-619" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb10-620"><a href="#cb10-620" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-621"><a href="#cb10-621" aria-hidden="true" tabindex="-1"></a><span class="co">// 3. Transformacja danych (Nakładanie korelacji)</span></span>
-<span id="cb10-622"><a href="#cb10-622" aria-hidden="true" tabindex="-1"></a><span class="co">// Bierze bazową losowość i przekształca ją w zależności od suwaka 'r'</span></span>
-<span id="cb10-623"><a href="#cb10-623" aria-hidden="true" tabindex="-1"></a>plotData <span class="op">=</span> {</span>
-<span id="cb10-624"><a href="#cb10-624" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> r <span class="op">=</span> r_anim<span class="op">;</span></span>
-<span id="cb10-625"><a href="#cb10-625" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> baseRandomness<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> {</span>
-<span id="cb10-626"><a href="#cb10-626" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> x <span class="op">=</span> d<span class="op">.</span><span class="at">z1</span><span class="op">;</span></span>
-<span id="cb10-627"><a href="#cb10-627" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Wzór na skorelowaną zmienną Y</span></span>
-<span id="cb10-628"><a href="#cb10-628" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> y <span class="op">=</span> (r <span class="op">*</span> d<span class="op">.</span><span class="at">z1</span>) <span class="op">+</span> (<span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="dv">1</span> <span class="op">-</span> r <span class="op">*</span> r) <span class="op">*</span> d<span class="op">.</span><span class="at">z2</span>)<span class="op">;</span></span>
-<span id="cb10-629"><a href="#cb10-629" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {x<span class="op">,</span> y}<span class="op">;</span></span>
-<span id="cb10-630"><a href="#cb10-630" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
-<span id="cb10-631"><a href="#cb10-631" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb10" data-startfrom="574" data-source-offset="-65"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 573;"><span id="cb10-574"><a href="#cb10-574" aria-hidden="true" tabindex="-1"></a>pValueText <span class="op">=</span> {</span>
+<span id="cb10-575"><a href="#cb10-575" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> r <span class="op">=</span> r_anim<span class="op">;</span></span>
+<span id="cb10-576"><a href="#cb10-576" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> n <span class="op">=</span> n_anim<span class="op">;</span></span>
+<span id="cb10-577"><a href="#cb10-577" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-578"><a href="#cb10-578" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Zabezpieczenie dla korelacji idealnej (dzielenie przez zero)</span></span>
+<span id="cb10-579"><a href="#cb10-579" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(r) <span class="op">&gt;=</span> <span class="fl">0.99</span>) <span class="cf">return</span> <span class="st">"&lt; 0.001"</span><span class="op">;</span> </span>
+<span id="cb10-580"><a href="#cb10-580" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-581"><a href="#cb10-581" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Obliczenie statystyki t</span></span>
+<span id="cb10-582"><a href="#cb10-582" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Wzór: t = r * sqrt((N-2) / (1-r^2))</span></span>
+<span id="cb10-583"><a href="#cb10-583" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> tStat <span class="op">=</span> r <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>((n <span class="op">-</span> <span class="dv">2</span>) <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> r <span class="op">*</span> r))<span class="op">;</span></span>
+<span id="cb10-584"><a href="#cb10-584" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-585"><a href="#cb10-585" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Obliczenie p-value przy użyciu aproksymacji rozkładu normalnego (dla N &gt;= 50 jest to poprawne)</span></span>
+<span id="cb10-586"><a href="#cb10-586" aria-hidden="true" tabindex="-1"></a>  <span class="co">// p = 2 * (1 - CDF(|t|))</span></span>
+<span id="cb10-587"><a href="#cb10-587" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> p <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> <span class="fu">normalCDF</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(tStat)))<span class="op">;</span></span>
+<span id="cb10-588"><a href="#cb10-588" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-589"><a href="#cb10-589" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (p <span class="op">&lt;</span> <span class="fl">0.001</span>) <span class="cf">return</span> <span class="st">"&lt; 0.001"</span><span class="op">;</span></span>
+<span id="cb10-590"><a href="#cb10-590" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> p<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">3</span>)<span class="op">;</span></span>
+<span id="cb10-591"><a href="#cb10-591" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-592"><a href="#cb10-592" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-593"><a href="#cb10-593" aria-hidden="true" tabindex="-1"></a><span class="co">// Funkcja pomocnicza: Dystrybuanta rozkładu normalnego (nie wymaga zewnętrznych bibliotek)</span></span>
+<span id="cb10-594"><a href="#cb10-594" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">normalCDF</span>(x) {</span>
+<span id="cb10-595"><a href="#cb10-595" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> t <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> <span class="fl">0.2316419</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(x))<span class="op">;</span></span>
+<span id="cb10-596"><a href="#cb10-596" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> d <span class="op">=</span> <span class="fl">0.3989422804014337</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(<span class="op">-</span>x <span class="op">*</span> x <span class="op">/</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb10-597"><a href="#cb10-597" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> prob <span class="op">=</span> d <span class="op">*</span> t <span class="op">*</span> (<span class="fl">0.319381530</span> <span class="op">+</span> t <span class="op">*</span> (<span class="op">-</span><span class="fl">0.356563782</span> <span class="op">+</span> t <span class="op">*</span> (<span class="fl">1.781477937</span> <span class="op">+</span> t <span class="op">*</span> (<span class="op">-</span><span class="fl">1.821255978</span> <span class="op">+</span> t <span class="op">*</span> <span class="fl">1.330274429</span>))))<span class="op">;</span></span>
+<span id="cb10-598"><a href="#cb10-598" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">&gt;</span> <span class="dv">0</span> <span class="op">?</span> <span class="dv">1</span> <span class="op">-</span> prob <span class="op">:</span> prob<span class="op">;</span></span>
+<span id="cb10-599"><a href="#cb10-599" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-600"><a href="#cb10-600" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-601"><a href="#cb10-601" aria-hidden="true" tabindex="-1"></a><span class="co">// 2. Generowanie losowych "osób" (Zmienne ukryte Z1 i Z2)</span></span>
+<span id="cb10-602"><a href="#cb10-602" aria-hidden="true" tabindex="-1"></a><span class="co">// Reaguje TYLKO na zmianę N (n_anim).</span></span>
+<span id="cb10-603"><a href="#cb10-603" aria-hidden="true" tabindex="-1"></a>baseRandomness <span class="op">=</span> {</span>
+<span id="cb10-604"><a href="#cb10-604" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> seeds <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb10-605"><a href="#cb10-605" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n_anim<span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb10-606"><a href="#cb10-606" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Algorytm Boxa-Mullera</span></span>
+<span id="cb10-607"><a href="#cb10-607" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> u1 <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> u2 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb10-608"><a href="#cb10-608" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u1 <span class="op">===</span> <span class="dv">0</span>) u1 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb10-609"><a href="#cb10-609" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u2 <span class="op">===</span> <span class="dv">0</span>) u2 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb10-610"><a href="#cb10-610" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> z1 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="op">-</span><span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(u1)) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">cos</span>(<span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span> <span class="op">*</span> u2)<span class="op">;</span></span>
+<span id="cb10-611"><a href="#cb10-611" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-612"><a href="#cb10-612" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> u3 <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> u4 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb10-613"><a href="#cb10-613" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u3 <span class="op">===</span> <span class="dv">0</span>) u3 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb10-614"><a href="#cb10-614" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u4 <span class="op">===</span> <span class="dv">0</span>) u4 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb10-615"><a href="#cb10-615" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> z2 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="op">-</span><span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(u3)) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">cos</span>(<span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span> <span class="op">*</span> u4)<span class="op">;</span></span>
+<span id="cb10-616"><a href="#cb10-616" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-617"><a href="#cb10-617" aria-hidden="true" tabindex="-1"></a>    seeds<span class="op">.</span><span class="fu">push</span>({z1<span class="op">,</span> z2})<span class="op">;</span></span>
+<span id="cb10-618"><a href="#cb10-618" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb10-619"><a href="#cb10-619" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> seeds<span class="op">;</span></span>
+<span id="cb10-620"><a href="#cb10-620" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-621"><a href="#cb10-621" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-622"><a href="#cb10-622" aria-hidden="true" tabindex="-1"></a><span class="co">// 3. Transformacja danych (Nakładanie korelacji)</span></span>
+<span id="cb10-623"><a href="#cb10-623" aria-hidden="true" tabindex="-1"></a><span class="co">// Bierze bazową losowość i przekształca ją w zależności od suwaka 'r'</span></span>
+<span id="cb10-624"><a href="#cb10-624" aria-hidden="true" tabindex="-1"></a>plotData <span class="op">=</span> {</span>
+<span id="cb10-625"><a href="#cb10-625" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> r <span class="op">=</span> r_anim<span class="op">;</span></span>
+<span id="cb10-626"><a href="#cb10-626" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> baseRandomness<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> {</span>
+<span id="cb10-627"><a href="#cb10-627" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> x <span class="op">=</span> d<span class="op">.</span><span class="at">z1</span><span class="op">;</span></span>
+<span id="cb10-628"><a href="#cb10-628" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Wzór na skorelowaną zmienną Y</span></span>
+<span id="cb10-629"><a href="#cb10-629" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> y <span class="op">=</span> (r <span class="op">*</span> d<span class="op">.</span><span class="at">z1</span>) <span class="op">+</span> (<span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="dv">1</span> <span class="op">-</span> r <span class="op">*</span> r) <span class="op">*</span> d<span class="op">.</span><span class="at">z2</span>)<span class="op">;</span></span>
+<span id="cb10-630"><a href="#cb10-630" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {x<span class="op">,</span> y}<span class="op">;</span></span>
+<span id="cb10-631"><a href="#cb10-631" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb10-632"><a href="#cb10-632" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-10-1" data-nodetype="declaration">
@@ -988,7 +987,10 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>::: ## Analiza regresji liniowej</p>
+</section>
+</section>
+<section id="analiza-regresji-liniowej" class="level1">
+<h1>Analiza regresji liniowej</h1>
 <p>O ile korelacja opisuje siłę związku, o tyle analiza regresji pozwala na <strong>predykcję</strong>, czyli przewidywanie wartości zmiennej zależnej (<span class="math inline">\(Y\)</span>) na podstawie znajomości wartości predyktora (<span class="math inline">\(X\)</span>). Regresja opiera się na modelu matematycznym, który minimalizuje błędy oszacowania.</p>
 <ul>
 <li><strong>Równanie regresji prostej:</strong> <span class="math display">\[Y = b_0 + b_1X + e\]</span>
@@ -1000,9 +1002,6 @@ window.Quarto = {
 <li><strong>Regresja wielokrotna (Multiple Regression):</strong> Regresja wielokrotna pozwala na wprowadzenie do modelu wielu predyktorów jednocześnie (np. przewidywanie satysfakcji z życia na podstawie dochodów, zdrowia i relacji społecznych). Umożliwia to ocenę <strong>unikalnego wkładu</strong> każdego predyktora, po statystycznym wyeliminowaniu (skontrolowaniu) wpływu pozostałych zmiennych.</li>
 </ul>
 <hr>
-</div>
-</div>
-</section>
 </section>
 <section id="jakość-planu-badawczego-trafność-i-procedury-kontrolne" class="level1">
 <h1>Jakość planu badawczego: trafność i procedury kontrolne</h1>
