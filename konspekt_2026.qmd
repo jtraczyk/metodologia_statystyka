@@ -1,0 +1,829 @@
+---
+title: "Metodologia badań psychologicznych i statystyka"
+subtitle: "Opracowanie z wykorzystaniem modelu AI Gemini na podstawie wykładów prowadzonych przez Jakuba Traczyka"
+author:
+  - name: "Jakub Traczyk"  # <--- WAŻNE: Wstaw tu spację w cudzysłowie. To "oszukuje" Quarto, że autor istnieje.
+    affiliations:
+      - name: "Uniwersytet SWPS, Centrum Badań nad Wspieraniem Podejmowania Decyzji ([www.cridm.edu.pl](http://www.cridm.edu.pl))"
+lang: pl
+format: 
+  html:
+    toc: true
+    toc-location: left
+    navbar:
+      right:
+        - icon: file-pdf
+          text: "Pobierz PDF"
+          href: twoj_plik.pdf
+    toc-title: "Spis treści"
+    theme: cosmo
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+# Epistemologiczne podstawy psychologii: nauka a wiedza potoczna
+
+Psychologia, jako dyscyplina akademicka, konstytuuje się jako nauka empiryczna, której przedmiotem badań jest zachowanie jednostki oraz leżące u jego podłoża procesy psychiczne i fizjologiczne. W odróżnieniu od podejść intuicyjnych, psychologia naukowa opiera się na **rygorze metodologicznym**, dążąc do obiektywnego opisu (deskrypcji), wyjaśniania (eksplanacji), oraz przewidywania (predykcji).
+
+## Paradygmat naukowy vs wiedza potoczna
+
+Fundamentalnym zagadnieniem jest rozróżnienie między wiedzą naukową a wiedzą potoczną (tzw. "psychologią zdroworozsądkową"). Choć obie dążą do zrozumienia świata, różnią się w sposób zasadniczy pod względem genezy, struktury i metod weryfikacji.
+
+-   **Wiedza potoczna (Common Sense):** Charakteryzuje się subiektywizmem i oparciem na incydentalnych obserwacjach lub autorytetach. Jest zbiorem przekonań, które często są:
+    -   **Niespójne i sprzeczne:** Przysłowia i mądrości ludowe często postulują wykluczające się tezy (np. "co dwie głowy, to nie jedna" vs "gdzie kucharek sześć, tam nie ma co jeść"), co uniemożliwia budowę spójnego modelu teoretycznego.
+    -   **Oparte na anegdotach:** Generalizacja następuje na podstawie pojedynczych, często niereprezentatywnych przypadków ("dowód anegdotyczny").
+    -   **Podatne na błędy poznawcze:** Ludzki aparat poznawczy naturalnie dąży do potwierdzania własnych przekonań, a nie ich weryfikacji.
+-   **Wiedza naukowa:** Jest systemem twierdzeń opartych na **systematycznej obserwacji** i badaniach empirycznych. Jej cechami konstytutywnymi są:
+    -   **Empiryzm:** Źródłem wiedzy są dane zebrane w kontrolowanych warunkach, a nie intuicja badacza.
+    -   **Intersubiektywna komunikowalność:** Procedury badawcze muszą być opisane tak precyzyjnie, aby każdy inny kompetentny badacz mógł je powtórzyć (replikacja) i zweryfikować wyniki.
+    -   **Sceptycyzm i krytycyzm:** Nauka nie uznaje dogmatów; każde twierdzenie jest tymczasowe i obowiązuje tylko do momentu jego ewentualnego obalenia przez nowe dowody.
+
+## Mechanizmy zniekształcające poznanie
+
+Konieczność stosowania metody naukowej wynika z ograniczeń związanych z przetwarzaniem informacji przez ludzi. Dwa kluczowe błędy poznawcze to:
+
+-   **Efekt pewności wstecznej (Hindsight Bias):** Tendencja do postrzegania zdarzeń przeszłych jako przewidywalnych i oczywistych ("Wiedziałem, że tak będzie"). Po zapoznaniu się z wynikiem eksperymentu oceniamy go jako logiczny i zgodny z intuicją, nawet jeśli przed badaniem wynik ten był nieoczywisty. Zjawisko to fałszywie utwierdza nas w przekonaniu o trafności naszej "psychologii potocznej".
+
+-   **Efekt potwierdzenia (Confirmation Bias):** Selektywne poszukiwanie, interpretowanie i zapamiętywanie informacji w taki sposób, aby potwierdzały one nasze wcześniejsze hipotezy lub przekonania, przy jednoczesnym ignorowaniu dowodów sprzecznych. Metodologia naukowa (np. ślepe próby, randomizacja) stanowi system zabezpieczeń przed tym błędem.
+
+## Rola teorii w nauce
+
+Teoria jest jak mapa, która upraszcza złożoną rzeczywistość, eksponując kluczowe relacje korelacyjne i przyczynowo-skutkowe.
+
+-   **Kryterium demarkacji (falsyfikacja):** Zgodnie z postulatem Karla Poppera, aby teoria mogła zostać uznana za naukową, musi być **falsyfikowalna**. Oznacza to, że musi istnieć teoretyczna możliwość przeprowadzenia takiego eksperymentu, którego wynik mógłby wykazać błąd teorii.
+    -   Teorie niefalsyfikowalne (np. stwierdzenia typu "wszystko dzieje się z jakiegoś powodu") leżą poza obszarem nauki, ponieważ nie poddają się empirycznemu testowaniu.
+
+## Weryfikacja empiryczna: fakty kontra mity
+
+Badania psychologiczne wielokrotnie wykazały, że powszechne przekonania są często nietrafne. Analiza tych przypadków ilustruje przewagę metody naukowej nad intuicją.
+
+### Atrakcyjność interpersonalna: podobieństwo czy komplementarność?
+
+-   *Przekonanie potoczne:* "Przeciwieństwa się przyciągają" (hipoteza komplementarności).
+-   *Weryfikacja naukowa:* Badania, m.in. **Donna Byrne’a (1971)**, wskazują na istnienie **efektu podobieństwa**. Zgodnie z paradygmatem *reinforcement-affect model*, podobieństwo postaw, wartości i cech demograficznych działa nagradzająco, redukując dysonans poznawczy i zwiększając atrakcyjność partnera. Hipoteza o przyciąganiu się przeciwieństw nie znajduje potwierdzenia w danych empirycznych.
+
+### Regulacja emocji: hipoteza *katharsis*
+
+-   *Przekonanie potoczne:* Wyładowanie agresji (np. krzyk, uderzanie w poduszkę) prowadzi do redukcji napięcia i zmniejszenia późniejszej agresji (hydrauliczny model emocji).
+-   *Weryfikacja naukowa:* Eksperymenty **Brada Bushmana (2002)** wykazały, że osoby, które po prowokacji angażowały się w agresywne zachowania zastępcze (np. uderzanie w worek treningowy), wykazywały następnie **wyższy** poziom agresji niż grupa kontrolna. Wyładowanie złości utrwala wzorce agresywne i podtrzymuje pobudzenie fizjologiczne, zamiast je gasić.
+
+### Funkcjonowanie poznawcze: "Efekt Mozarta"
+
+-   *Przekonanie potoczne:* Bierne słuchanie muzyki klasycznej trwale podnosi iloraz inteligencji.
+-   *Weryfikacja naukowa:* Oryginalne badania **Rauscher (1993)** oraz późniejsze metaanalizy (**Pietschnig, 2010**) wykazały, że efekt ten jest krótkotrwały (ok. 10-15 minut), ograniczony wyłącznie do zadań wzrokowo-przestrzennych i wynika ze wzrostu poziomu pobudzenia (*arousal*) oraz poprawy nastroju, a nie ze specyficznych właściwości muzyki Mozarta.
+
+### Efektywność grupowa: burza mózgów (Brainstorming)
+
+-   *Przekonanie potoczne:* Praca grupowa generuje więcej i lepszych pomysłów niż praca indywidualna ("efekt synergii").
+-   *Weryfikacja naukowa:* Badania (m.in. **Diehl & Stroebe, 1987**) zidentyfikowały zjawisko **próżniactwa społecznego** (*social loafing*) oraz lęku przed oceną (*evaluation apprehension*). W zadaniach wymagających kreatywności, jednostki pracujące samodzielnie generują łącznie więcej pomysłów wyższej jakości niż ta sama liczba osób pracujących w grupie interakcyjnej.
+
+# Architektura procesu badawczego: Od teorii do empirycznej weryfikacji
+
+Proces naukowy w psychologii nie stanowi statycznego zbioru faktów, lecz dynamiczny cykl, w którym abstrakcyjne modele teoretyczne są nieustannie konfrontowane z danymi empirycznymi. Rozumienie tego procesu wymaga biegłości w poruszaniu się między poziomem konceptualnym (teoria) a poziomem operacyjnym (badanie).
+
+## Logika odkrycia naukowego: indukcja i dedukcja
+
+Metodologia naukowa opiera się na ciągłej interakcji dwóch komplementarnych strategii wnioskowania, tworzących tzw. "koło nauki" (*wheel of science*).
+
+-   **Wnioskowanie indukcyjne (Empiria** $\rightarrow$ Teoria): Proces generalizacji, w którym na podstawie szczegółowych obserwacji (danych) formułowane są ogólne prawa lub teorie.
+    -   *Mechanizm:* Badacz dostrzega powtarzalne wzorce w zebranych danych i na tej podstawie buduje model wyjaśniający.
+    -   *Ograniczenie:* Tzw. "problem indukcji" – skończona liczba obserwacji (np. 1000 białych łabędzi) nigdy nie gwarantuje logicznej pewności, co do prawdziwości twierdzenia ogólnego (że wszystkie łabędzie są białe).
+-   **Wnioskowanie dedukcyjne (Teoria** $\rightarrow$ Hipoteza): Proces logicznego wyprowadzania szczegółowych wniosków (predykcji) z ogólnych przesłanek teoretycznych.
+    -   *Mechanizm:* Posiadając teorię, badacz przewiduje, jaki wynik powinien zostać uzyskany w konkretnym eksperymencie, o ile teoria jest prawdziwa. Jest to podstawa testowania hipotez.
+
+## Struktura wiedzy: teoria, model i konstrukt
+
+Precyzyjne rozróżnienie tych pojęć jest kluczowe dla poprawności metodologicznej.
+
+-   **Teoria naukowa:** Spójny system twierdzeń i definicji, którego celem jest wyjaśnienie (eksplanacja) oraz przewidywanie (predykcja) zjawisk.
+
+    -   **Kryterium falsyfikowalności (K. Popper):** Aby teoria była uznana za naukową, musi być sformułowana w sposób umożliwiający jej empiryczne obalenie. Teoria, która wyjaśnia wszystko i nie wyklucza żadnego możliwego stanu rzeczy (np. klasyczna psychoanaliza w ujęciu Poppera), jest niefalsyfikowalna, a zatem nienaukowa.
+
+-   **Model teoretyczny:** Uproszczona, często graficzna lub matematyczna reprezentacja fragmentu rzeczywistości, ukazująca mechanizmy i relacje między zmiennymi. Model odpowiada na pytanie "jak" przebiega proces (np. model przetwarzania informacji), abstrahując od zbędnych szczegółów.
+
+-   **Konstrukt teoretyczny:** Hipotetyczna zmienna, która nie jest bezpośrednio obserwowalna, lecz której istnienie postuluje teoria w celu wyjaśnienia zachowania.
+
+    -   *Przykłady:* Inteligencja, lęk, pamięć robocza, osobowość, postawa. Badacz nie ma bezpośredniego dostępu do konstruktu – może go wnioskować jedynie na podstawie obserwowalnych wskaźników.
+
+## Operacjonalizacja zmiennych
+
+Jest to procedura przekładania teoretycznych konstruktów i pojęć na język konkretnych operacji pomiarowych i wskaźników empirycznych. Operacjonalizacja stanowi "most" łączący sferę teorii ze sferą empirii.
+
+-   *Przykład:* Konstrukt "agresja" może zostać zoperacjonalizowany jako:
+    -   Liczba uderzeń w lalkę (wskaźnik behawioralny).
+    -   Wynik w Kwestionariuszu Agresji Bussa-Perry’ego (wskaźnik samoopisowy).
+    -   Poziom kortyzolu we krwi (wskaźnik fizjologiczny).
+
+## Formułowanie hipotez badawczych
+
+Hipoteza to propozycja twierdzenia naukowego, będąca tymczasową odpowiedzią na pytanie badawcze, podlegającą weryfikacji empirycznej. W nurcie testowania hipotezy zerowej (NHST) operujemy dwiema opozycyjnymi hipotezami:
+
+-   **Hipoteza zerowa (**$H_0$): Postuluje brak efektu, brak różnic między grupami lub brak związku między zmiennymi w populacji. Jest to stan domyślny ("niewinność"), który badacz próbuje odrzucić.
+
+-   **Hipoteza alternatywna (**$H_1$): Postuluje istnienie efektu, różnicy lub związku. Jest to hipoteza badawcza, którą przyjmujemy tylko w przypadku odrzucenia $H_0$.
+
+    -   **Hipoteza kierunkowa:** Określa kierunek zależności (np. "Deprywacja snu *obniża* sprawność poznawczą"). Stosowana, gdy teoria lub wcześniejsze badania silnie sugerują określony wynik.
+    -   **Hipoteza bezkierunkowa:** Postuluje istnienie różnicy, bez precyzowania jej znaku (np. "Lek wpływa na nastrój" – może poprawiać lub pogarszać).
+
+## Studium przypadku: model rozproszenia odpowiedzialności
+
+Zastosowanie cyklu badawczego w praktyce na przykładzie klasycznych badań **Latané i Darleya (1968)** nad efektem widza (*bystander effect*).
+
+**Obserwacja (empiria):** Analiza przypadku morderstwa Kitty Genovese, w którym mimo obecności 38 świadków, nikt nie udzielił pomocy. **Indukcja** $\rightarrow$ Teoria: Sformułowanie teorii **rozproszenia odpowiedzialności** (*diffusion of responsibility*). W obecności innych osób, subiektywne poczucie odpowiedzialności jednostki ulega redukcji ("Ktoś inny na pewno zareaguje"). **Dedukcja** $\rightarrow$ Hipoteza ($H_1$): Wzrost liczby świadków zdarzenia kryzysowego (IV) spowoduje wydłużenie czasu reakcji jednostki lub zmniejszenie prawdopodobieństwa udzielenia pomocy (DV). **Eksperyment i operacjonalizacja:** - *Manipulacja:* Osoba badana wierzy, że rozmawia przez interkom: a) tylko z ofiarą ataku padaczki, b) z ofiarą i 1 inną osobą, c) z ofiarą i 4 innymi osobami. - *Pomiar:* Czas (w sekundach) od początku ataku do momentu wyjścia z pokoju w celu wezwania pomocy. **Weryfikacja:** Wyniki potwierdziły hipotezę kierunkową – im większa grupa, tym mniejszy odsetek osób reagujących. $H_0$ została odrzucona. Teoria zyskała wsparcie empiryczne.
+
+# Operacjonalizacja zmiennych i teoria pomiaru
+
+W metodologii badań psychologicznych precyzyjne zdefiniowanie statusu zmiennych oraz poziomu ich pomiaru nie jest jedynie kwestią techniczną, lecz fundamentalnym warunkiem trafności analizy statystycznej. Błędna identyfikacja skali pomiarowej prowadzi do zastosowania nieadekwatnych narzędzi matematycznych, co w konsekwencji skutkuje fałszywymi wnioskami (tzw. błędy artefaktowe).
+
+## Status metodologiczny zmiennych: relacje i funkcje
+
+W strukturze planu badawczego każda zmienna pełni określoną funkcję w relacji do pozostałych. Rozróżnienie to jest kluczowe dla ustalenia kierunku wnioskowania.
+
+-   **Zmienna niezależna (IV – Independent Variable):** Jest to zmienna, która w modelu badawczym pełni rolę przyczyny.
+    -   **W planach eksperymentalnych:** Jest to czynnik aktywnie manipulowany przez osoby prowadzące badanie. Jej wariancja jest systematycznie kontrolowana (np. dawka leku: 0 mg vs 50 mg).
+    -   **W planach korelacyjnych:** Nazywana jest **predyktorem**. Jest to cecha podmiotowa lub sytuacyjna, której badacz nie modyfikuje, lecz dokonuje jej pomiaru w celu przewidywania zmienności innej cechy (np. poziom inteligencji jako predyktor sukcesu zawodowego).
+-   **Zmienna zależna (DV – Dependent Variable):** Jest to zmienna, która stanowi przedmiot pomiaru i pełni rolę skutku (eksplanandum). Jej wartości mają – zgodnie z hipotezą badawczą – ulegać zmianom pod wpływem działania zmiennej niezależnej.
+    -   *Przykład:* W badaniu nad skutecznością psychoterapii zmienną zależną może być nasilenie objawów depresyjnych mierzone Skalą Depresji Becka.
+-   **Zmienne zakłócające (Confounding Variables):** Są to zmienne uboczne, które są skorelowane ze zmienną niezależną i jednocześnie wpływają na zmienną zależną, stanowiąc alternatywne wyjaśnienie obserwowanych efektów.
+    -   *Zagrożenie dla trafności wewnętrznej:* Jeśli w badaniu nad metodami nauczania grupa eksperymentalna składa się z osób o wyższym statusie socjoekonomicznym (SES) niż grupa kontrolna, to SES staje się zmienną zakłócającą. Nie wiemy wówczas, czy lepsze wyniki są efektem metody, czy lepszych warunków domowych. Celem randomizacji jest neutralizacja tych zmiennych.
+
+------------------------------------------------------------------------
+
+## Taksonomia skal pomiarowych S.S. Stevensa
+
+### Skala nominalna
+
+Jest to najniższy poziom pomiaru, służący wyłącznie do **klasyfikacji i kategoryzacji**. Liczby pełnią tu funkcję etykiet i nie posiadają wartości ilościowej.
+
+-   **Właściwości matematyczne:** Relacja równoważności ($A = B$ lub $A \neq B$). Brak relacji porządkującej (nie można stwierdzić, że kategoria A jest "większa" od B).
+-   **Dozwolone operacje statystyczne:** Zliczanie częstości ($N$), wyznaczanie mody (dominanty), testy nieparametryczne (np. $\chi^2$). Nie wolno obliczać średniej arytmetycznej.
+-   **Przykład psychologiczny:** płeć biologiczna, kategoria diagnostyczna (np. ICD-11: zaburzenia lękowe vs zaburzenia nastroju). Kodowanie: 0 = Kobieta, 1 = Mężczyzna nie implikuje wartościowania.
+
+### Skala porządkowa
+
+Pozwala na uszeregowanie obiektów ze względu na nasilenie badanej cechy (rangowanie).
+
+-   **Właściwości matematyczne:** Relacja większości ($A > B$). Posiadamy informację o kolejności, ale **nie znamy odległości** między obiektami. Różnica między rangą 1 a 2 nie musi być równa różnicy między rangą 2 a 3.
+
+-   **Dozwolone operacje statystyczne:** Mediana, centyle, korelacja rangowa Spearmana, testy oparte na rangach (np. U Manna-Whitneya).
+
+-   **Przykład psychologiczny:** Wykształcenie (podstawowe \< średnie \< wyższe), stopień nasilenia objawów klinicznych (łagodny \< umiarkowany \< znaczny).
+
+    -   *Uwaga metodologiczna:* Skale typu Likerta (np. "Zdecydowanie się nie zgadzam" do "Zdecydowanie się zgadzam") są formalnie porządkowe, choć w psychometrii często traktuje się je jako *quasi-interwałowe* przy spełnieniu określonych założeń.
+
+### Skala interwałowa
+
+Cechuje się występowaniem stałej jednostki miary, co oznacza, że różnice między punktami skali są równe.
+
+-   **Kluczowa cecha:** **brak zera bezwzględnego**. Punkt zero jest ustalony umownie i nie oznacza całkowitego braku mierzonej właściwości.
+
+-   **Konsekwencje:** Możemy dodawać i odejmować wyniki, ale nie możemy ich dzielić (tworzyć ilorazów). Stwierdzenie, że "osoba A jest dwa razy bardziej inteligentna od osoby B" jest matematycznie niepoprawne na tej skali.
+
+-   **Dozwolone operacje statystyczne:** Średnia arytmetyczna, odchylenie standardowe, testy parametryczne (t-Studenta, ANOVA), korelacja Pearsona.
+
+-   **Przykład psychologiczny:** Wyniki standaryzowanych testów inteligencji (np. WAIS-R). IQ = 100 i IQ = 115 dzieli ta sama różnica co IQ = 115 i IQ = 130, ale IQ = 0 nie oznacza braku procesów poznawczych. Podobnie temperatura w stopniach Celsjusza.
+
+### Skala ilorazowa
+
+Najwyższy poziom pomiaru, posiadający wszystkie cechy poprzednich skal oraz **zero absolutne (bezwzględne)**.
+
+-   **Właściwości matematyczne:** Zero oznacza fizyczny brak mierzonej cechy. Umożliwia to stosowanie wszystkich operacji arytmetycznych, w tym dzielenia. Prawomocne są twierdzenia typu "czas reakcji A jest dwukrotnie dłuższy niż czas reakcji B".
+
+-   **Dozwolone operacje statystyczne:** Pełen zakres, włącznie ze średnią geometryczną i współczynnikiem zmienności.
+
+-   **Przykład psychologiczny:** Czas reakcji (RT) mierzony w milisekundach, liczba popełnionych błędów w zadaniu pamięciowym, wskaźniki fizjologiczne (np. poziom kortyzolu, tętno), dochód.
+
+------------------------------------------------------------------------
+
+## Implikacje dla analizy danych
+
+Wybór testu statystycznego jest ściśle determinowany przez skalę pomiarową zmiennej zależnej (DV):
+
+Jeśli zmienna jest **nominalna** $\rightarrow$ stosujemy statystyki częstości (testy $\chi^2$). Jeśli zmienna jest **porządkowa** $\rightarrow$ stosujemy statystyki nieparametryczne oparte na rangach (np. korelacja Spearmana, test Manna-Whitneya). Jeśli zmienna jest **ilościowa (interwałowa/ilorazowa)** ORAZ spełnia założenie o normalności rozkładu $\rightarrow$ stosujemy statystyki parametryczne (np. korelacja Pearsona, test t-Studenta, ANOVA). Jest to preferowany poziom w badaniach ze względu na największą moc testów.
+
+------------------------------------------------------------------------
+
+## Praktyczny algorytm decyzyjny:
+
+Widzisz zmienną w pytaniu? Zadaj sobie te pytania po kolei:
+
+**Czy można to uporządkować (kto ma więcej/mniej)?** - NIE $\rightarrow$ **Nominalna** (np. kolor oczu). - TAK $\rightarrow$ Idź dalej. **Czy odległości między punktami są równe (czy różnica między 1 a 2 to tyle samo co między 4 a 5)?** - NIE/NIE WIADOMO $\rightarrow$ **Porządkowa** (np. miejsce w zawodach). - TAK $\rightarrow$ Idź dalej. **Czy istnieje „prawdziwe zero” (czy 0 oznacza brak cechy)?** - NIE $\rightarrow$ **Interwałowa** (np. temperatura w Celsjuszach, IQ). - TAK $\rightarrow$ **Ilorazowa** (np. czas, waga, liczba poprawnych odpowiedzi).
+
+# Statystyka opisowa: redukcja danych i charakterystyka rozkładu
+
+Statystyka opisowa stanowi pierwszy etap analizy ilościowej. Jej celem jest **opis informacji** zawartej w surowym zbiorze danych (*raw data*) do postaci syntetycznych wskaźników liczbowych, które charakteryzują badaną próbę. W odróżnieniu od wnioskowania, statystyka opisowa nie służy do generalizacji wyników na populację, lecz do precyzyjnego opisania struktury zgromadzonych danych.
+
+## Miary tendencji centralnej
+
+Celem miar tendencji centralnej jest wyznaczenie jednej wartości, która w najbardziej reprezentatywny sposób opisuje "typowe" nasilenie cechy w badanej grupie. Wybór odpowiedniego wskaźnika jest ściśle determinowany przez skalę pomiarową oraz kształt rozkładu.
+
+-   **Średnia arytmetyczna (**$M, \bar{x}$): Suma wartości wszystkich obserwacji podzielona przez ich liczbę ($N$).
+    -   *Zastosowanie:* Skale interwałowe i ilorazowe przy założeniu symetrii rozkładu.
+    -   *Ograniczenie:* Średnia charakteryzuje się **niską odpornością na wartości skrajne** (outliers). Pojedynczy wynik drastycznie odbiegający od reszty może przesunąć średnią ("zafałszować" wynik), czyniąc ją nieadekwatną miarą tendencji centralnej.
+    -   *Przykład:* W badaniu czasu reakcji (RT), wynik osoby, która zasnęła podczas zadania (np. 5000 ms przy średniej grupy 400 ms), nieproporcjonalnie zawyży średnią arytmetyczną.
+-   **Mediana (**$Me, Mdn$): Wartość środkowa, dzieląca uporządkowany zbiór danych na dwie równoliczne części (50. centyl).
+    -   *Właściwości:* Jest to miara pozycyjna, **odporna na wartości skrajne** (robust). Wartość skrajna nie zmienia pozycji środkowego wyniku.
+    -   *Zastosowanie:* Preferowana w przypadku rozkładów skośnych (asymetrycznych) oraz dla zmiennych porządkowych.
+    -   *Przykład:* Analiza dochodów lub cen nieruchomości, gdzie nieliczne, bardzo wysokie wartości zawyżają średnią, ale nie wpływają na medianę.
+-   **Dominanta / Moda (**$Mo$): Wartość występująca w zbiorze danych z największą częstością.
+    -   *Zastosowanie:* Jest to jedyna miara tendencji centralnej, którą można wyznaczyć dla zmiennych na **skali nominalnej**.
+    -   *Polimodalność:* Rozkłady mogą posiadać więcej niż jedną dominantę (np. rozkład bimodalny), co często sugeruje istnienie dwóch odrębnych podgrup w badanej próbie.
+
+## Miary dyspersji
+
+Miary te informują o stopniu zróżnicowania wyników wokół tendencji centralnej. Dwie grupy mogą posiadać identyczną średnią, lecz diametralnie różną strukturę (jednorodną vs niejednorodną).
+
+-   **Odchylenie standardowe (**$SD, s$): Miarę tę interpretuje się jako przeciętną odległość wyników od średniej arytmetycznej. Jest to najczęściej stosowany wskaźnik zmienności w psychologii.
+    -   *Interpretacja:* Niska wartość $SD$ wskazuje na homogeniczność grupy (wyniki skupione wokół średniej). Wysoka wartość $SD$ świadczy o dużej heterogeniczności (znacznym zróżnicowaniu indywidualnym).
+    -   *Kontekst:* W testach inteligencji (skala Wechslera) $SD$ wynosi 15. Wynik odległy o $1 SD$ od średniej jest typowy, natomiast wynik odległy o $3 SD$ jest statystyczną rzadkością.
+-   **Wariancja (**$s^2$): Jest to średnia arytmetyczna kwadratów odchyleń od średniej (odchylenie standardowe podniesione do kwadratu).
+    -   *Znaczenie:* Choć trudna w bezpośredniej interpretacji (wyrażona w jednostkach kwadratowych), stanowi matematyczny fundament zaawansowanych metod statystycznych, takich jak analiza wariancji (ANOVA) czy analiza regresji.
+-   **Współczynnik Zmienności (**$CV$): Wskaźnik względny, wyrażony wzorem $CV = (SD / M) \times 100\%$.
+    -   *Zastosowanie:* Umożliwia porównanie stopnia zróżnicowania cech mierzonych w różnych jednostkach lub o różnych rzędach wielkości (np. porównanie zmienności czasu reakcji w milisekundach ze zmiennością wagi ciała w kilogramach).
+-   **Rozstęp Międzykwartylowy (**$IQR$): Różnica między trzecim ($Q3$, 75. centyl) a pierwszym kwartylem ($Q1$, 25. centyl). Obejmuje środkowe 50% obserwacji.
+    -   *Zastosowanie:* Stosowany łącznie z medianą w przypadku rozkładów skośnych, jako miara dyspersji odporna na outliery.
+
+## Charakterystyka kształtu rozkładu
+
+Większość parametrycznych testów statystycznych (np. test t-Studenta, korelacja Pearsona) wymaga spełnienia założenia o normalności rozkładu zmiennej w populacji.
+
+-   **Rozkład normalny (krzywa Gaussa):** Teoretyczny rozkład prawdopodobieństwa o kształcie dzwonu, który jest symetryczny i unimodalny.
+    -   **Kluczowa cecha:** Średnia, mediana i dominanta pokrywają się w jednym punkcie ($M = Me = Mo$).
+    -   **Reguła trzech sigm:** W przedziale $M \pm 1 SD$ mieści się ok. 68% obserwacji; w przedziale $M \pm 2 SD$ ok. 95%; w przedziale $M \pm 3 SD$ ok. 99,7%.
+-   **Skośność (asymetria):** Miara asymetrii rozkładu wokół średniej.
+    -   **Skośność dodatnia (prawostronna):** "Ogon" rozkładu wydłużony w stronę wartości wysokich. Większość wyników jest niska. W takim rozkładzie: $M > Me > Mo$. (Przykład: czas reakcji, liczba błędów w trudnym zadaniu).
+    -   **Skośność ujemna (lewostronna):** "Ogon" rozkładu wydłużony w stronę wartości niskich. Większość wyników jest wysoka. W takim rozkładzie: $M < Me < Mo$. (Przykład: wyniki bardzo łatwego testu).
+-   **Kurtoza (spłaszczenie):** Miara koncentracji wyników wokół średniej oraz "grubości ogonów" rozkładu (prawdopodobieństwa wystąpienia wartości skrajnych).
+    -   **Rozkład leptokurtyczny (wysmukły):** Wysoka koncentracja wyników wokół średniej, małe odchylenie standardowe, ale "ciężkie ogony" (większe ryzyko ekstremalnych outlierów).
+    -   **Rozkład platykurtyczny (spłaszczony):** Niska koncentracja wokół średniej, duże rozproszenie danych.
+
+
+## Interaktywna symulacja: rozkład normalny
+
+Sprawdź, jak parametry wpływają na kształt Krzywej Gaussa:
+
+1.  Zmieniaj **Średnią ($M$)**, aby przesuwać wykres w lewo lub w prawo.
+
+2.  Zmieniaj **Odchylenie ($SD$)**, aby zobaczyć, jak wykres staje się bardziej "spiczasty" (małe $SD$) lub "płaski" (duże $SD$).
+
+```{ojs}
+//| echo: false
+//| panel: sidebar
+viewof mu_norm = Inputs.range([-10, 10], {step: 0.5, value: 0, label: "Średnia (M)"})
+viewof sigma_norm = Inputs.range([0.5, 5], {step: 0.1, value: 1, label: "Odchylenie (SD)"})
+```
+
+```{ojs}
+//| echo: false
+//| panel: fill
+Plot.plot({
+  title: `Rozkład Normalny (M=${mu_norm}, SD=${sigma_norm})`,
+  height: 400,
+  grid: true,
+  // Zablokowanie osi jest kluczowe, aby widzieć przesunięcia!
+  x: { domain: [-20, 20], label: "Wartość" },
+  y: { domain: [0, 0.5], label: "Gęstość prawdopodobieństwa" },
+  marks: [
+    // Obszar pod krzywą
+    Plot.areaY(normalData, {x: "x", y: "y", fill: "green", fillOpacity: 0.2}),
+    // Linia krzywej
+    Plot.lineY(normalData, {x: "x", y: "y", stroke: "green", strokeWidth: 3}),
+    // Linia wskazująca średnią
+    Plot.ruleX([mu_norm], {stroke: "black", strokeDasharray: "4,4", strokeOpacity: 0.5}),
+    // Podpis średniej
+    Plot.text([mu_norm], {y: 0.02, x: mu_norm, text: [`M = ${mu_norm}`], dy: -10, fontWeight: "bold"})
+  ]
+})
+```
+
+```{ojs}
+//| echo: false
+//| output: false
+
+// Generowanie danych matematycznych dla krzywej Gaussa
+normalData = {
+  const data = [];
+  const mu = mu_norm;
+  const sigma = sigma_norm;
+  
+  // Generujemy punkty od -20 do 20, aby wykres był płynny
+  // Wzór na gęstość prawdopodobieństwa rozkładu normalnego (PDF)
+  for (let x = -20; x <= 20; x += 0.1) {
+    const y = (1 / (sigma * Math.sqrt(2 * Math.PI))) * 
+              Math.exp(-0.5 * Math.pow((x - mu) / sigma, 2));
+    data.push({x, y});
+  }
+  return data;
+}
+```
+
+## Techniki wizualizacji danych
+
+Graficzna reprezentacja danych służy wstępnej eksploracji i diagnozie rozkładu.
+
+-   **Histogram:** Wykres słupkowy prezentujący rozkład częstości zmiennej ilościowej. Pozwala na wizualną ocenę normalności rozkładu.
+-   **Wykres skrzynkowy (Boxplot):** Wykres oparty na medianie i kwartylach.
+    -   "Pudełko" wyznacza rozstęp międzykwartylowy ($IQR$).
+    -   Linia wewnątrz pudełka to mediana.
+    -   Punkty poza "wąsami" identyfikują **wartości odstające (outliers)**. Jest to kluczowe narzędzie diagnostyczne przed przystąpieniem do analizy wnioskującej.
+
+
+## Interaktywna symulacja: Kształt rozkładu
+
+Poniżej znajdują się dwa oddzielne wykresy przedstawiające te same dane. Zmieniaj wartość parametru, aby zobaczyć:
+
+1.  Jak **skośność** zaburza symetrię na **histogramie**.
+
+2.  Jak ta sama skośność powoduje pojawienie się kropek (wartości odstających) na **wykresie skrzynkowym**.
+
+
+```{ojs}
+//| echo: false
+//| panel: sidebar
+viewof skew_sep = Inputs.range([-1, 1], {step: 0.1, value: 0, label: "Skośność (Asymetria)"})
+```
+
+::: panel-tabset
+## 1. Histogram
+
+Histogram pokazuje kształt rozkładu i częstość występowania wyników.
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  height: 350,
+  grid: true,
+  x: { label: "Wartość zmiennej" },
+  y: { label: "Liczebność" },
+  marks: [
+    Plot.rectY(sepData, Plot.binX({y: "count"}, {x: "value", fill: "#4C78A8"})),
+    Plot.ruleY([0])
+  ]
+})
+```
+
+## 2. Wykres skrzynkowy (Boxplot)
+
+Wykres skrzynkowy pokazuje medianę, kwartyle oraz wartości odstające (outliers).
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  height: 200,
+  grid: true,
+  x: { label: "Wartość zmiennej" },
+  y: { axis: null }, 
+  marks: [
+    Plot.boxX(sepData, {x: "value", fill: "#E45756"}),
+    Plot.text(sepData, Plot.selectMinX({x: "value", text: d => "Min", dy: -20})),
+    Plot.text(sepData, Plot.selectMaxX({x: "value", text: d => "Max", dy: -20}))
+  ]
+})
+```
+:::
+
+```{ojs}
+//| echo: false
+//| output: false
+
+// Logika generowania danych
+sepData = {
+  const points = [];
+  const skew = skew_sep; 
+  const n = 300; // Ustawiona stała liczba obserwacji
+  
+  for (let i = 0; i < n; i++) {
+    let u1 = 0, u2 = 0;
+    while (u1 === 0) u1 = Math.random();
+    while (u2 === 0) u2 = Math.random();
+    const z = Math.sqrt(-2.0 * Math.log(u1)) * Math.cos(2.0 * Math.PI * u2);
+    
+    let value = z;
+    if (skew !== 0) {
+       value = z * Math.exp(skew * z * 0.4); 
+    }
+
+    points.push({value: value});
+  }
+  return points;
+}
+```
+
+
+# Dwa nurty psychologii naukowej: model eksperymentalny a korelacyjny
+
+Współczesna metodologia badań psychologicznych opiera się na dwóch komplementarnych strategiach gromadzenia i analizy danych: modelu eksperymentalnym oraz modelu korelacyjnym (obserwacyjnym). Wybór między nimi nie jest arbitralny, lecz determinuje rodzaj pytań, na które badacz może uzyskać odpowiedź, oraz siłę wnioskowania, jaką może zastosować.
+
+## Model korelacyjny
+
+Nurt korelacyjny koncentruje się na badaniu współwystępowania zjawisk w ich naturalnym przebiegu. Badacz przyjmuje postawę biernego obserwatora, który nie ingeruje w rzeczywistość, lecz dokonuje pomiaru zastanego stanu rzeczy.
+
+-   **Charakterystyka:**
+    -   **Brak manipulacji:** Badacz nie wpływa na poziom zmiennych (np. nie wywołuje stresu, lecz mierzy jego naturalny poziom).
+    -   **Analiza różnic indywidualnych:** Zróżnicowanie wyników między ludźmi (wariancja) jest traktowane jako cenne źródło informacji, a nie jako błąd.
+    -   **Status zmiennych:** Mówimy o **predyktorach** (zmienne wyjaśniające) i **zmiennych kryterialnych** (zmienne wyjaśniane), a nie o przyczynach i skutkach.
+-   **Ograniczenia wnioskowania (korelacja** $\neq$ przyczynowość): Zastosowanie modelu korelacyjnego wyklucza możliwość orzekania o relacjach przyczynowo-skutkowych z dwóch powodów: **Problem kierunkowości:** Nie wiemy, czy $X$ wpływa na $Y$, czy $Y$ wpływa na $X$ (np. czy niska samoocena powoduje depresję, czy depresja obniża samoocenę). **Problem trzeciej zmiennej (korelacja pozorna):** Związek między $X$ i $Y$ może wynikać z działania niekontrolowanej zmiennej $Z$. - *Przykład:* Korelacja między liczbą utonięć a sprzedażą lodów jest wysoka, ale pozorna – obie zmienne są funkcją temperatury otoczenia.
+
+## Model eksperymentalny
+
+Nurt eksperymentalny dąży do wyjaśnienia mechanizmów zachowania poprzez aktywne modyfikowanie warunków badania. Jest to jedyna metoda pozwalająca na uprawomocnione wnioskowanie kauzalne (przyczynowe).
+
+-   **Triada eksperymentalna:**
+
+    **Manipulacja:** Badacz celowo zmienia wartości zmiennej niezależnej (IV), tworząc co najmniej dwa odmienne warunki (np. grupa eksperymentalna vs kontrolna). **Randomizacja:** Losowy przydział osób do warunków, który teoretycznie zrównuje grupy pod względem wszystkich cech przed rozpoczęciem badania. **Kontrola:** Utrzymywanie wszystkich pozostałych zmiennych na stałym poziomie (tzw. *ceteris paribus* – przy innych warunkach niezmienionych).
+
+-   **Kanon jednej różnicy (J.S. Mill):** Jeżeli dwie sytuacje są identyczne pod każdym względem z wyjątkiem jednego czynnika (zmiennej niezależnej), i w sytuacjach tych wystąpi odmienny rezultat (zmienna zależna), to ów czynnik jest przyczyną różnicy.
+
+-   **Traktowanie wariancji:** W eksperymencie różnice indywidualne między badanymi (np. w inteligencji czy osobowości) są traktowane jako **wariancja błędu** (szum), który należy zminimalizować poprzez ścisłą kontrolę i randomizację, aby wyodrębnić czysty efekt manipulacji.
+
+## Analiza porównawcza i dylematy wyboru
+
+Wybór modelu badawczego wiąże się z koniecznością przyjęcia kompromisu między różnymi rodzajami trafności oraz możliwościami etycznymi.
+
+| Cecha | Model Eksperymentalny | Model Korelacyjny |
+|:-----------------------|:-----------------------|:-----------------------|
+| **Cel poznawczy** | Wyjaśnianie (Dlaczego? Co jest przyczyną?) | Przewidywanie i Opis (Co się z czym wiąże?) |
+| **Ingerencja badacza** | Aktywna (Manipulacja, Kontrola) | Bierna (Pomiar zmiennych zastanych) |
+| **Trafność** | Wysoka **trafność wewnętrzna** (pewność co do przyczyn). | Często wyższa **trafność ekologiczna** (naturalne warunki). |
+| **Zmienne** | Ograniczona liczba zmiennych (redukcjonizm). | Możliwość badania wielu zmiennych jednocześnie. |
+| **Etyka i wykonalność** | Ograniczone możliwości manipulacji (nie można wywołać traumy, przypisać płci). | Umożliwia badanie zmiennych, których nie da się manipulować. |
+
+## Konwergencja metodologiczna
+
+Współczesna psychologia dąży do integracji obu podejść. Często proces badawczy przebiega dwuetapowo: Badania korelacyjne służą do identyfikacji potencjalnych związków w środowisku naturalnym. Następnie projektowane są eksperymenty laboratoryjne w celu weryfikacji przyczynowego charakteru tych związków.
+
+*Przykład:* Badacz zauważa korelację między graniem w brutalne gry a agresją (badanie korelacyjne). Następnie zaprasza badanych do laboratorium, losowo przydziela ich do grania w grę brutalną lub łagodną i mierzy poziom agresji (badanie eksperymentalne), aby potwierdzić kierunek wpływu.
+
+# Analiza współzmienności i predykcja: korelacja i regresja
+
+W badaniach psychologicznych rzadko ograniczamy się do opisu pojedynczych zmiennych. Zazwyczaj celem jest zrozumienie, w jaki sposób jedna cecha (np. inteligencja) wiąże się z drugą (np. osiągnięciami akademickimi). Do tego celu służą analizy korelacyjne i regresyjne.
+
+## Współczynnik korelacji r-Pearsona
+
+Współczynnik korelacji Pearsona ($r$) jest najczęściej stosowaną miarą parametryczną, służącą do kwantyfikacji siły oraz kierunku związku liniowego pomiędzy dwiema zmiennymi mierzonymi na skalach interwałowych lub ilorazowych.
+
+-   **Charakterystyka matematyczna:** Wartość współczynnika mieści się w przedziale domkniętym $[-1, +1]$.
+    -   **Znak współczynnika:** Determinuje kierunek relacji. Dodatnia korelacja oznacza, że wzrostowi wartości jednej zmiennej towarzyszy wzrost wartości drugiej (proporcjonalność prosta). Ujemna korelacja wskazuje na relację odwrotną – wzrost jednej zmiennej wiąże się ze spadkiem drugiej.
+    -   **Wartość bezwzględna:** Określa siłę związku. Im wartość jest bliższa jedności (niezależnie od znaku), tym silniejsza jest zależność liniowa. Wartość bliska zeru sugeruje brak korelacji liniowej.
+-   **Interpretacja współczynnika determinacji (**$R^2$): Sama wartość $r$ bywa myląca. Bardziej rzetelną miarą jest współczynnik determinacji, obliczany jako kwadrat korelacji ($r^2$). Wskaźnik ten informuje, jaki procent wariancji (zmienności) jednej zmiennej może zostać wyjaśniony poprzez wariancję drugiej zmiennej.
+    -   *Przykład:* Jeśli korelacja między poziomem sumienności a średnią ocen wynosi $r = 0,40$, to współczynnik determinacji wynosi $R^2 = 0,16$. Oznacza to, że cecha osobowości, jaką jest sumienność, wyjaśnia jedynie 16% zmienności w wynikach w nauce. Pozostałe 84% zależy od innych czynników (np. inteligencji, motywacji, sytuacji życiowej).
+-   **Ograniczenia interpretacyjne:** **Nieliniowość:** Korelacja Pearsona jest wrażliwa wyłącznie na związki liniowe. Zjawiska psychologiczne często przyjmują postać krzywoliniową. Klasycznym przykładem jest **prawo Yerkesa-Dodsona**, opisujące relację między pobudzeniem (stresem) a wykonaniem zadania. Wykonanie jest najlepsze przy średnim poziomie pobudzenia, a gorsze przy bardzo niskim lub bardzo wysokim. W takiej sytuacji korelacja Pearsona może wynieść $r \approx 0$, mimo istnienia silnego, systematycznego związku. **Brak implikacji przyczynowej:** Wykazanie korelacji nie upoważnia do wnioskowania o przyczynowości. Korelacja może być wynikiem działania trzeciej, niekontrolowanej zmiennej (zmiennej zakłócającej).
+
+## Interaktywna symulacja: Siła związku i współczynnik r-Pearsona
+Zmień **liczbę obserwacji (N)**, aby wylosować nową grupę badanych. Zmieniaj **korelację (r)**, aby zobaczyć, jak te same osoby "układają się" bliżej lub dalej linii regresji.
+
+```{ojs}
+//| echo: false
+//| panel: sidebar
+
+viewof n_anim = Inputs.range([50, 500], {
+  step: 10, 
+  value: 100, 
+  label: "Liczba obserwacji (N)"
+})
+
+viewof r_anim = Inputs.range([-1, 1], {
+  step: 0.01, 
+  value: 0.00, 
+  label: "Korelacja (r)"
+})
+```
+
+```{ojs}
+//| echo: false
+//| panel: fill
+
+Plot.plot({
+  title: `r = ${r_anim.toFixed(2)}  |  p = ${pValueText}`,
+  grid: true,
+  x: { domain: [-4, 4], label: "Zmienna X" },
+  y: { domain: [-4, 4], label: "Zmienna Y" },
+  marks: [
+    Plot.ruleY([0], {strokeOpacity: 0.2}),
+    Plot.ruleX([0], {strokeOpacity: 0.2}),
+    
+    // Kropki są przekazywane bezpośrednio, bez warunków
+    Plot.dot(plotData, {
+        x: "x", 
+        y: "y", 
+        fill: "steelblue", 
+        r: 4, 
+        fillOpacity: 0.7,
+        tip: true
+    }),
+    
+    // Linia regresji również widoczna od razu
+    Plot.linearRegressionY(plotData, {x: "x", y: "y", stroke: "red", strokeWidth: 3})
+  ]
+})
+```
+
+```{ojs}
+//| echo: false
+//| output: false
+
+// 1. Obliczanie p-value (Test istotności korelacji Pearsona)
+pValueText = {
+  const r = r_anim;
+  const n = n_anim;
+  
+  // Zabezpieczenie dla korelacji idealnej (dzielenie przez zero)
+  if (Math.abs(r) >= 0.99) return "< 0.001"; 
+
+  // Obliczenie statystyki t
+  // Wzór: t = r * sqrt((N-2) / (1-r^2))
+  const tStat = r * Math.sqrt((n - 2) / (1 - r * r));
+  
+  // Obliczenie p-value przy użyciu aproksymacji rozkładu normalnego (dla N >= 50 jest to poprawne)
+  // p = 2 * (1 - CDF(|t|))
+  const p = 2 * (1 - normalCDF(Math.abs(tStat)));
+  
+  if (p < 0.001) return "< 0.001";
+  return p.toFixed(3);
+}
+
+// Funkcja pomocnicza: Dystrybuanta rozkładu normalnego (nie wymaga zewnętrznych bibliotek)
+function normalCDF(x) {
+    const t = 1 / (1 + 0.2316419 * Math.abs(x));
+    const d = 0.3989422804014337 * Math.exp(-x * x / 2);
+    const prob = d * t * (0.319381530 + t * (-0.356563782 + t * (1.781477937 + t * (-1.821255978 + t * 1.330274429))));
+    return x > 0 ? 1 - prob : prob;
+}
+
+// 2. Generowanie losowych "osób" (Zmienne ukryte Z1 i Z2)
+// Reaguje TYLKO na zmianę N (n_anim).
+baseRandomness = {
+  const seeds = [];
+  for (let i = 0; i < n_anim; i++) {
+    // Algorytm Boxa-Mullera
+    let u1 = 0, u2 = 0;
+    while (u1 === 0) u1 = Math.random();
+    while (u2 === 0) u2 = Math.random();
+    const z1 = Math.sqrt(-2.0 * Math.log(u1)) * Math.cos(2.0 * Math.PI * u2);
+    
+    let u3 = 0, u4 = 0;
+    while (u3 === 0) u3 = Math.random();
+    while (u4 === 0) u4 = Math.random();
+    const z2 = Math.sqrt(-2.0 * Math.log(u3)) * Math.cos(2.0 * Math.PI * u4);
+    
+    seeds.push({z1, z2});
+  }
+  return seeds;
+}
+
+// 3. Transformacja danych (Nakładanie korelacji)
+// Bierze bazową losowość i przekształca ją w zależności od suwaka 'r'
+plotData = {
+  const r = r_anim;
+  return baseRandomness.map(d => {
+    const x = d.z1;
+    // Wzór na skorelowaną zmienną Y
+    const y = (r * d.z1) + (Math.sqrt(1 - r * r) * d.z2);
+    return {x, y};
+  });
+}
+```
+
+## Analiza regresji liniowej
+
+O ile korelacja opisuje siłę związku, o tyle analiza regresji pozwala na **predykcję**, czyli przewidywanie wartości zmiennej zależnej ($Y$) na podstawie znajomości wartości predyktora ($X$). Regresja opiera się na modelu matematycznym, który minimalizuje błędy oszacowania.
+
+-   **Równanie regresji prostej:** $$Y = b_0 + b_1X + e$$
+    -   $b_0$ (Stała/Intercept): Punkt przecięcia linii regresji z osią Y. Oznacza przewidywaną wartość $Y$, gdy $X = 0$.
+    -   $b_1$ (Współczynnik kierunkowy/Slope): Kluczowy parametr interpretacyjny. Informuje, o ile jednostek zmieni się wartość zmiennej zależnej $Y$, jeśli predyktor $X$ wzrośnie o jedną jednostkę.
+    -   $e$ (Błąd resztowy): Różnica między wartością przewidywaną przez model a wartością rzeczywistą.
+-   **Regresja wielokrotna (Multiple Regression):** Regresja wielokrotna pozwala na wprowadzenie do modelu wielu predyktorów jednocześnie (np. przewidywanie satysfakcji z życia na podstawie dochodów, zdrowia i relacji społecznych). Umożliwia to ocenę **unikalnego wkładu** każdego predyktora, po statystycznym wyeliminowaniu (skontrolowaniu) wpływu pozostałych zmiennych.
+
+------------------------------------------------------------------------
+
+# Jakość planu badawczego: trafność i procedury kontrolne
+
+Wartość naukowa badania eksperymentalnego zależy nie tylko od poprawności analiz statystycznych, ale przede wszystkim od rygoru metodologicznego zastosowanego na etapie planowania. Kluczowymi pojęciami są tu trafność (walidacja wniosków) oraz procedury kontrolne, ze szczególnym uwzględnieniem randomizacji, które mają na celu eliminację alternatywnych wyjaśnień obserwowanych efektów.
+
+## Randomizacja: mechanizm kontroli zmiennych zakłócających
+
+Randomizacja (losowy przydział do grup) stanowi "złoty standard" w badaniach eksperymentalnych. Jej fundamentalnym celem jest zapewnienie **ekwiwalentności grup** przed wprowadzeniem manipulacji eksperymentalnej. Dzięki losowości, wszelkie różnice indywidualne (np. wiek, inteligencja, poziom motywacji) rozkładają się równomiernie pomiędzy grupę eksperymentalną a kontrolną, przekształcając błąd systematyczny w błąd losowy.
+
+Wyróżniamy następujące procedury randomizacji:
+
+-   **Randomizacja prosta (Simple Randomization):** Każda jednostka ma jednakowe prawdopodobieństwo trafienia do dowolnej grupy (np. rzut monetą, generator liczb losowych).
+    -   *Ograniczenie:* W małych próbach może prowadzić do nierównolicznych grup (np. 70% badanych trafi do grupy A).
+-   **Randomizacja blokowa (Block Randomization):** Losowanie odbywa się w obrębie małych bloków (np. 4-osobowych), co gwarantuje, że w każdym bloku (i w całym badaniu) liczebności grup będą równe.
+-   **Dobór wiązany (Matched-Pair Design):** Procedura stosowana w małych próbach, gdy znana jest kluczowa zmienna zakłócająca (np. wiek w badaniach czasu reakcji). Badacz najpierw łączy uczestników w pary o zbliżonym nasileniu tej cechy (np. dwóch 20-latków, dwóch 45-latków), a następnie losowo przydziela jedną osobę z pary do grupy eksperymentalnej, a drugą do kontrolnej.
+-   **Randomizacja adaptacyjna (Adaptive Randomization):** Prawdopodobieństwo przydziału do grupy zmienia się w trakcie badania w zależności od aktualnego rozkładu zmiennych współtowarzyszących, co pozwala na dynamiczne balansowanie grup.
+
+## Trafność wewnętrzna (Internal Validity)
+
+Trafność wewnętrzna odnosi się do stopnia pewności, z jaką możemy stwierdzić, że zaobserwowana zmiana w zmiennej zależnej (DV) jest **wyłącznym skutkiem** manipulacji zmienną niezależną (IV), a nie rezultatem działania czynników ubocznych.
+
+-   **Zagrożenia dla trafności wewnętrznej:**
+    -   **Zmienne zakłócające (Confounders):** Niekontrolowane czynniki, które systematycznie różnicują grupy (np. badanie nowej metody nauczania, gdzie grupa eksperymentalna uczy się rano, a kontrolna po południu – pora dnia jest konfoundem).
+    -   **Selekcja (Selection Bias):** Nielosowy dobór osób do grup (np. ochotnicy vs osoby z łapanki), co powoduje, że grupy różnią się już na starcie.
+    -   **Historia:** Zdarzenia zewnętrzne zachodzące w czasie trwania badania, które mogą wpłynąć na wyniki (np. nagła zmiana pogody wpływająca na nastrój badanych).
+    -   **Utrata osób badanych:** Nierównomierne wykruszanie się uczestników z badania (np. z grupy eksperymentalnej rezygnują osoby słabsze, co sztucznie zawyża średni wynik końcowy).
+    -   **Regresja do średniej:** Zjawisko statystyczne, polegające na tym, że osoby uzyskujące w pierwszym pomiarze wyniki skrajne (bardzo niskie lub bardzo wysokie), w kolejnym pomiarze naturalnie uzyskują wyniki bliższe średniej, niezależnie od interwencji.
+
+## Trafność zewnętrzna (External Validity)
+
+Trafność zewnętrzna dotyczy możliwości **generalizacji** (uogólniania) wyników badania poza specyficzne warunki, w których zostało ono przeprowadzone. Obejmuje generalizację na inne osoby (populacje), inne warunki (sytuacje) oraz inny czas.
+
+-   **Trafność ekologiczna:** Stopień, w jakim warunki badania odpowiadają naturalnemu środowisku życia badanego. Badania laboratoryjne często mają wysoką trafność wewnętrzną (duża kontrola), ale niską trafność ekologiczną (sztuczność sytuacji).
+-   **Zagrożenia dla trafności zewnętrznej:**
+    -   **Niereprezentatywność próby:** Opieranie wiedzy psychologicznej głównie na studentach z krajów zachodnich (tzw. problem prób **WEIRD**: *Western, Educated, Industrialized, Rich, Democratic*), co ogranicza uniwersalność wniosków.
+    -   **Efekt badacza i oczekiwania:** Świadomość udziału w badaniu może zmieniać zachowanie uczestników (efekt Hawthorne), sprawiając, że wyniki nie przystają do zachowań naturalnych.
+
+## Techniki zwiększania trafności eksperymentu
+
+Aby zminimalizować błędy i zwiększyć wiarygodność wnioskowania, stosuje się szereg procedur kontrolnych:
+
+-   **Zaślepienie (Blinding):**
+    -   *Pojedynczo ślepa próba:* Osoba badana nie wie, czy jest w grupie eksperymentalnej czy kontrolnej (np. czy otrzymuje lek czy placebo).
+    -   *Podwójnie ślepa próba:* Ani osoba badana, ani badacz przeprowadzający pomiar nie wiedzą, do której grupy należy uczestnik. Eliminuje to wpływ oczekiwań badacza na wyniki.
+-   **Placebo i aktywne grupy kontrolne:** Stosowanie grupy kontrolnej, która otrzymuje neutralną interwencję (placebo) lub inną formę aktywności (aktywna kontrola), pozwala wyizolować specyficzny efekt badanej metody od niespecyficznych efektów bycia badanym (np. uwagi poświęconej przez badacza).
+-   **Standaryzacja:** Ujednolicenie procedury, instrukcji i warunków badania dla wszystkich uczestników, co redukuje wariancję błędu.
+
+# Jakość pomiaru psychologicznego: rzetelność
+
+W metodologii badań nauk behawioralnych jakość zgromadzonych danych zależy bezpośrednio od właściwości psychometrycznych zastosowanych narzędzi. O ile trafność (*validity*) odpowiada na pytanie, *czy* badamy to, co zamierzaliśmy, o tyle rzetelność (*reliability*) określa, *jak precyzyjnie* i *powtarzalnie* dokonujemy tego pomiaru. Rzetelność jest warunkiem koniecznym (choć niewystarczającym) dla trafności – pomiar obarczony dużym błędem losowym nie może być uznany za trafny.
+
+## Definicja i istota rzetelności
+
+Rzetelność rozumiana jest jako stopień, w jakim wynik uzyskany w badaniu odzwierciedla rzeczywistą wartość mierzonej cechy (*true score*), a w jakim jest efektem błędu losowego pomiaru. Narzędzie rzetelne to takie, które w powtarzalnych warunkach dostarcza spójnych i stabilnych rezultatów.
+
+-   **Relacja rzetelność – trafność:** Wysoka rzetelność nie gwarantuje wysokiej trafności. Można dokonywać pomiaru w sposób bardzo precyzyjny i powtarzalny, lecz całkowicie błędny merytorycznie (np. precyzyjnie mierzyć obwód głowy, twierdząc, że jest to wskaźnik inteligencji). Natomiast niska rzetelność (duży szum informacyjny) automatycznie wyklucza wysoką trafność.
+
+## Rodzaje szacowania rzetelności
+
+W zależności od źródła błędu pomiaru, wyróżniamy różne metody weryfikacji rzetelności:
+
+-   **Stabilność bezwzględna (metoda test-retest):** Polega na dwukrotnym przebadaniu tej samej grupy osób tym samym narzędziem w odstępie czasu. Wysoka korelacja między wynikami pierwszego i drugiego pomiaru świadczy o tym, że narzędzie jest odporne na wahania czasowe i zmienność sytuacji badawczej.
+    -   *Zastosowanie:* Badanie cech względnie stałych (np. inteligencja, cechy osobowości).
+-   **Spójność wewnętrzna (Internal Consistency):** Określa stopień, w jakim wszystkie pozycje testowe (np. pytania w kwestionariuszu) mierzą ten sam konstrukt teoretyczny. Najpopularniejszym wskaźnikiem jest tutaj $\alpha$ Cronbacha.
+    -   *Interpretacja:* Wysoka spójność oznacza, że osoba udzielająca odpowiedzi w określonym kierunku na jedno pytanie, z dużym prawdopodobieństwem odpowie podobnie na inne pytania w tej samej skali.
+-   **Rzetelność sędziów kompetentnych (Inter-rater Reliability):** Kluczowa w badaniach obserwacyjnych i jakościowych. Mierzy stopień zgodności ocen dokonywanych przez niezależnych obserwatorów oceniających to samo zachowanie.
+    -   *Przykład:* Dwóch badaczy niezależnie koduje poziom agresji u dzieci na placu zabaw. Jeśli ich oceny są zbieżne, pomiar jest rzetelny i nie zależy od subiektywizmu obserwatora.
+-   **Metoda wersji alternatywnych/równoległych (Parallel Forms):** Użycie dwóch różnych, ale psychometrycznie równoważnych wersji tego samego testu. Pozwala to wyeliminować efekt zapamiętywania pytań, który występuje w procedurze test-retest.
+
+## Zagrożenia dla rzetelności i metody jej zwiększania
+
+Nierzetelność pomiaru wynika z obecności błędu losowego, który może mieć źródło w narzędziu, procedurze lub osobie badanej.
+
+-   **Czynniki obniżające rzetelność:**
+    -   Niejednoznaczne, niezrozumiałe instrukcje lub pytania.
+    -   Zmienne warunki badania (hałas, różna pora dnia).
+    -   Subiektywizm badacza w interpretacji zachowań.
+    -   Fluktuacje stanu osoby badanej (zmęczenie, lęk, motywacja).
+-   **Procedury zwiększania rzetelności (Obowiązki badacza):** **Standaryzacja procedury:** Ujednolicenie warunków badania dla wszystkich uczestników (te same instrukcje, ten sam czas, identyczne bodźce).
+    -   **Trening personelu:** Szkolenie eksperymentatorów w celu wyeliminowania błędów w podawaniu instrukcji lub kodowaniu wyników.
+    -   **Badania pilotażowe:** Przeprowadzenie próbnych badań w celu wykrycia i usunięcia niejasności w narzędziach.
+    -   **Agregacja danych:** Zwiększenie liczby pozycji w teście lub liczby pomiarów (zgodnie z zasadą, że średnia z wielu pomiarów jest bardziej stabilna niż pojedynczy odczyt).
+
+# Procedury porównywania grup (test t-Studenta)
+
+W badaniach eksperymentalnych najczęściej dążymy do ustalenia, czy manipulacja eksperymentalna wywołała istotną statystycznie różnicę między warunkami. Podstawowym narzędziem do weryfikacji hipotez o różnicach między dwiema średnimi jest test t-Studenta.
+
+## Logika testu t-Studenta
+
+Test ten opiera się na analizie stosunku tzw. „sygnału” do „szumu”.
+
+-   **Sygnał (Licznik wzoru):** Różnica między średnimi w porównywanych grupach ($\bar{X}_1 - \bar{X}_2$). Im większa różnica, tym silniejszy efekt manipulacji.
+
+-   **Szum (Mianownik wzoru):** Błąd standardowy różnicy, wynikający ze zróżnicowania wewnątrz grup (wariancji). Im większe zróżnicowanie wyników poszczególnych osób wewnątrz grupy, tym trudniej wykryć systematyczny efekt działania czynnika eksperymentalnego.
+
+Wartość statystyki $t$ rośnie, gdy różnica między grupami jest duża, a wariancja wewnątrz grup mała.
+
+## Rodzaje testów t i ich zastosowanie
+
+Wybór odpowiedniego wariantu testu zależy od modelu badawczego (sposobu doboru próby):
+
+-   **Test t dla prób niezależnych (Independent Samples t-test):** Stosowany w planach międzygrupowych, gdzie osoby badane w grupie eksperymentalnej i kontrolnej to różne jednostki (np. losowy przydział do grupy otrzymującej lek lub placebo).
+    -   *Założenie homogeniczności wariancji:* Wymaga, aby wariancje w obu populacjach były zbliżone (weryfikowane testem Levene’a).
+-   **Test t dla prób zależnych (Paired Samples t-test):** Stosowany w planach wewnątrzgrupowych (z powtarzanym pomiarem), gdzie te same osoby są badane dwukrotnie (np. pomiar lęku przed i po interwencji terapeutycznej) lub gdy badani są dobierani w pary (matching).
+    -   *Zaleta:* Test ten ma zazwyczaj wyższą moc statystyczną, ponieważ eliminuje błąd związany z różnicami indywidualnymi między uczestnikami (każdy badany jest swoją własną kontrolą).
+
+## Istotność statystyczna a znaczenie praktyczne
+
+Uzyskanie wyniku istotnego statystycznie (zazwyczaj $p < 0,05$) jest warunkiem koniecznym, ale niewystarczającym do pełnej interpretacji wyników.
+
+-   **Wartość p (p-value):** Jest to prawdopodobieństwo warunkowe uzyskania obserwowanych wyników (lub bardziej skrajnych), przy założeniu, że hipoteza zerowa jest prawdziwa. **Nie jest to prawdopodobieństwo, że hipoteza badawcza jest prawdziwa.**
+
+    -   Niska wartość $p$ świadczy jedynie o tym, że zaobserwowana różnica jest mało prawdopodobna do wystąpienia w wyniku czystego przypadku.
+
+-   **Wielkość efektu (Effect Size, np.** $d$ Cohena): Ponieważ wartość $p$ zależy od liczebności próby (w bardzo dużych próbach nawet trywialne różnice stają się istotne statystycznie), niezbędne jest raportowanie wielkości efektu. Wskaźnik ten jest niezależny od liczebności grupy i informuje o sile zjawiska w ustandaryzowanych jednostkach odchylenia standardowego.
+
+    -   *Interpretacja:* $d = 0,2$ (mały efekt), $d = 0,5$ (średni efekt), $d = 0,8$ (duży efekt). Badanie może być istotne statystycznie, ale nieistotne praktycznie (np. nowa terapia jest skuteczniejsza o $d=0,1$, co nie uzasadnia jej kosztów).
+
+    -   Bezkrytycznego przyjmowania "średniego efektu Cohena" d = 0,5 w analizie mocy testu może prowadzić do poważnych konsekwencji. Jacob Cohen, wprowadzając swoje progi (0,2 - mały, 0,5 - średni, 0,8 - duży), zaznaczał, że są one arbitralne i powinny być używane tylko w ostateczności. 
+
+        *"The terms 'small,' 'medium,' and 'large' are relative, not only to each other, but to the area of behavioral science or even more particularly to the specific content and research method being employed in any given investigation... In the face of this relativity, there is a certain risk inherent in offering conventional operational definitions for these terms for use in power analysis in as diverse a field of inquiry as behavioral science. This risk is nevertheless accepted in the belief that more is to be gained than lost by supplying a common conventional frame of reference which is recommended for use only when no better basis for estimating the ES index is available." (Cohen, 1988, p. 25)*
+
+------------------------------------------------------------------------
+
+# Moc testu, wielkość efektu i replikowalność
+
+Współczesna metodologia badań psychologicznych odchodzi od bezkrytycznego polegania wyłącznie na wartości $p$ (*p-value*). Istotność statystyczna ($p < 0,05$) jest funkcją wielkości próby i nie informuje badacza o sile, ważności ani o prawdopodobieństwie replikacji odkrytego zjawiska. Pełna ocena wartości naukowej badania wymaga analizy trzech powiązanych parametrów: wielkości efektu, mocy statystycznej oraz precyzji estymacji.
+
+## Wielkość efektu (Effect Size):
+
+Wielkość efektu to ustandaryzowana miara, która kwantyfikuje siłę związku między zmiennymi lub wielkość różnicy między grupami, w sposób niezależny od liczebności próby ($N$).
+
+-   $d$ Cohena (Cohen's $d$): Jest to najpowszechniejszy wskaźnik stosowany w testach różnic (np. test t-Studenta). Wyraża on różnicę między średnimi w jednostkach odchylenia standardowego.
+    -   *Wzór koncepcyjny:* $d = \frac{\bar{X}_1 - \bar{X}_2}{SD_{pooled}}$
+    -   *Interpretacja (wg Cohena):*
+        -   $d = 0,2$ – mały efekt (trudno zauważalny "gołym okiem").
+        -   $d = 0,5$ – średni efekt.
+        -   $d = 0,8$ – duży efekt.
+-   **Istotność statystyczna vs istotność praktyczna:** W badaniach na bardzo dużych próbach, nawet trywialne różnice mogą osiągnąć poziom istotności statystycznej ($p < 0,05$), mimo że nie mają one żadnego znaczenia praktycznego.
+    -   *Przykład:* Wyobraźmy sobie badanie inteligencji na próbie $N = 100\,000$ mieszkańców Wrocławia i Warszawy. Analiza wykazuje różnicę 0,5 punktu IQ na korzyść jednego z miast przy $p < 0,001$.
+        -   **Wniosek statystyczny:** Różnica jest wysoce istotna (nie jest dziełem przypadku).
+        -   **Wniosek merytoryczny:** Różnica jest zaniedbywalna (wielkość efektu $d \approx 0,03$). Nie ma podstaw, by twierdzić, że mieszkańcy jednego miasta są "inteligentniejsi".
+
+## Moc testu statystycznego (Statistical Power)
+
+Moc testu ($1 - \beta$) definiuje się jako prawdopodobieństwo odrzucenia hipotezy zerowej ($H_0$), gdy jest ona w rzeczywistości fałszywa. Innymi słowy, jest to **zdolność testu do wykrycia efektu, który faktycznie istnieje w populacji**.
+
+-   **Determinanty mocy:** Moc testu zależy od trzech czynników:
+    -   **Wielkość efektu:** Silne zjawiska są łatwiejsze do wykrycia.
+    -   **Poziom istotności (**$\alpha$): Zazwyczaj ustalony na 0,05.
+    -   **Wielkość próby (**$N$): Jedyny czynnik, na który badacz ma bezpośredni wpływ. Zwiększenie liczebności próby zwiększa moc testu.
+-   **Problem niedoszacowania próby:** Badania na małych próbach (np. $N = 20$ na grupę) charakteryzują się niską mocą.
+    -   *Konsekwencje:* Wysokie ryzyko popełnienia **błędu II rodzaju** ($\beta$) – czyli sytuacji, w której badacz nie wykrywa istniejącego efektu (wynik fałszywie negatywny). Brak istotności w małej próbie nie dowodzi braku efektu, lecz może świadczyć o niewystarczającej czułości narzędzia badawczego.
+-   **Analiza mocy *a priori* (Power Analysis):** Standardem jest wyznaczenie liczebności próby **przed** rozpoczęciem zbierania danych.
+    -   *Procedura:* Badacz określa oczekiwaną wielkość efektu (np. na podstawie literatury) oraz pożądaną moc (standardowo 80% lub 90%), a następnie przy użyciu oprogramowania (np. G\*Power) oblicza wymagane $N$.
+    -   *Przykład:* "Aby wykryć średni efekt ($d = 0,5$) przy mocy 80% w teście t dla prób niezależnych, wymagana jest próba $N = 128$ (po 64 osoby na grupę)".
+
+## Kryzys replikacyjny i wiarygodność nauki
+
+W drugiej dekadzie XXI wieku psychologia zmierzyła się z tzw. **kryzysem replikacyjnym**. Okazało się, że wielu klasycznych i spektakularnych efektów (publikowanych w prestiżowych czasopismach) nie udaje się powtórzyć w niezależnych laboratoriach.
+
+-   **Przykłady nieudanych replikacji:**
+    -   *Ego Depletion (Wyczerpanie Ego):* Teoria Roya Baumeistera zakładająca, że samokontrola jest zasobem wyczerpywalnym (jak "mięsień"), nie znalazła potwierdzenia w dużych, wielolaboratoryjnych projektach replikacyjnych.
+    -   *Power Posing (Pozycje Mocy):* Badania Amy Cuddy sugerujące, że przyjmowanie dominującej postawy ciała zmienia poziom hormonów i skłonność do ryzyka, okazały się w dużej mierze artefaktem lub wynikiem błędów metodologicznych (p-hacking).
+-   **Badania replikacyjne:** Pojedyncze badanie, nawet z wynikiem $p < 0,05$, może być obarczone błędem losowym lub systematycznym. Dopiero powtarzalność wyniku w różnych warunkach pozwala uznać zjawisko za fakt naukowy.
+
+## Meta-analiza: synteza wiedzy
+
+Meta-analiza to zaawansowana procedura statystyczna, służąca do ilościowego podsumowania wyników wielu niezależnych badań dotyczących tego samego problemu.
+
+-   **Funkcja:** Zamiast liczyć, ile badań dało wynik "istotny", a ile "nieistotny", meta-analiza agreguje wielkości efektów ze wszystkich dostępnych badań, ważąc je wielkością próby.
+-   **Zalety:**
+    -   Pozwala oszacować **wielkość efektu** w populacji z większą precyzją niż jakiekolwiek pojedyncze badanie.
+    -   Umożliwia analizę moderatorów – sprawdzenie, w jakich warunkach efekt jest silniejszy, a w jakich słabszy.
+-   **Status:** W hierarchii dowodów naukowych (Evidence-Based Practice), poprawnie przeprowadzona meta-analiza znajduje się na samym szczycie, stanowiąc najbardziej wiarygodne źródło wiedzy.
+
+------------------------------------------------------------------------
+
+# Etyka badań psychologicznych: standardy i dylematy
+
+Prowadzenie badań z udziałem ludzi wiąże się z fundamentalną odpowiedzialnością osób prowadzących te badania. Historia psychologii dostarcza dowodów na to, że pogoń za wiedzą nie może odbywać się kosztem godności i zdrowia uczestników. Współczesne regulacje (np. Kodeks Etyczny APA, Deklaracja Helsińska) powstały w dużej mierze jako reakcja na kontrowersyjne eksperymenty z XX wieku. Każdy projekt badawczy powinien uzyskać akceptację niezależnej Komisji ds. Etyki Badań.
+
+## Zasada autonomii: dobrowolność i świadoma zgoda
+
+Fundamentem etycznym współczesnej psychologii jest podmiotowe traktowanie osoby badanej. Uczestnictwo w badaniu nie może być wynikiem przymusu, presji (np. ze strony wykładowcy wobec studenta) ani nieświadomości.
+
+-   **Świadoma zgoda (Informed Consent):** Jest to proces, a nie tylko formalność. Potencjalny uczestnik musi otrzymać zrozumiale sformułowane informacje dotyczące:
+    -   Celu i procedury badania.
+    -   Przewidywanego czasu trwania.
+    -   Potencjalnych ryzyk, dyskomfortu lub korzyści.
+    -   Zasad poufności danych.
+-   **Prawo do rezygnacji:** Uczestnik musi zostać poinformowany, że ma prawo wycofać się z badania w **dowolnym momencie**, bez podawania przyczyny i bez ponoszenia negatywnych konsekwencji (również w przypadku, gdy za udział przewidziane jest wynagrodzenie).
+
+## Zasada nieszkodzenia
+
+Badacz ma obowiązek chronić uczestników przed szkodami fizycznymi i psychicznymi. Ryzyko związane z udziałem w badaniu nie powinno przekraczać tzw. **minimalnego ryzyka**, czyli poziomu dyskomfortu napotykanego w codziennym życiu.
+
+-   **Analiza historyczna – granice etyki:** Współczesne standardy etyczne delegalizują procedury, które w przeszłości były dopuszczalne. Dwa kluczowe przykłady negatywne ("czarne karty" psychologii) to:
+    -   **Eksperyment więzienny Philipa Zimbardo (1971):**
+        -   *Procedura:* Symulacja życia więziennego, w której studenci losowo wcielili się w rolę strażników i więźniów.
+        -   *Naruszenie:* Uczestnicy doznali głębokiego załamania nerwowego, traumy i upokorzenia. Badacz, wchodząc w rolę "dyrektora więzienia", utracił obiektywizm i nie przerwał eksperymentu w momencie pojawienia się pierwszych symptomów cierpienia badanych.
+    -   **Eksperyment nad posłuszeństwem Stanleya Milgrama (1963):**
+        -   *Procedura:* Badani byli nakłaniani do rażenia prądem (rzekomo) innej osoby ("ucznia") za błędy w zadaniu.
+        -   *Naruszenie:* Mimo że wstrząsy były symulowane, stres doświadczany przez "nauczycieli" był autentyczny i ekstremalny (drgawki, niekontrolowany śmiech, ataki paniki). Badani byli zmuszani do kontynuowania procedury wbrew własnej woli ("proszę kontynuować, nie ma pan wyboru").
+
+## Procedura decepcji
+
+W niektórych obszarach badawczych (np. psychologia społeczna) ujawnienie prawdziwego celu badania uniemożliwiłoby uzyskanie rzetelnych wyników, powodując zmianę zachowania badanego (np. z powodu chęci wypadnięcia dobrze w oczach badacza).
+
+-   **Warunki dopuszczalności decepcji:** Wprowadzanie w błąd (kłamstwo, zatajenie celu, podstawieni aktorzy) jest dopuszczalne **wyłącznie** wtedy, gdy:
+
+    Problem badawczy ma istotne znaczenie naukowe. Nie istnieje alternatywna metoda (bez użycia kłamstwa), która pozwoliłaby zebrać te same dane. Decepcja nie wiąże się z ryzykiem fizycznego bólu lub silnego stresu emocjonalnego.
+
+    -   *Przykład uzasadniony:* Badania Solomona Ascha nad konformizmem. Gdyby badani wiedzieli, że pozostali członkowie grupy są aktorami celowo udzielającymi błędnych odpowiedzi, nie ulegliby presji grupy, a zjawisko konformizmu nie zostałoby zbadane.
+
+## Debriefing (procedura odkłamania)
+
+Jeśli w badaniu zastosowano decepcję, badacz ma bezwzględny obowiązek przeprowadzenia sesji wyjaśniającej (debriefingu) niezwłocznie po zakończeniu udziału uczestnika.
+
+-   **Cele debriefingu:**
+    -   Ujawnienie prawdziwego celu badania i natury manipulacji.
+    -   Wyjaśnienie powodów, dla których zastosowano wprowadzanie w błąd.
+    -   **Przywrócenie dobrostanu:** Uczestnik powinien opuścić laboratorium w stanie psychicznym nie gorszym niż przed badaniem. Należy usunąć wszelkie błędne przekonania o sobie, które mogły powstać w trakcie badania (np. "nie jestem osobą okrutną, to była tylko manipulacja sytuacyjna").
+
+## Ochrona danych osobowych: anonimowość a poufność
+
+Ochrona prywatności jest kluczowym elementem zaufania do nauki. Należy rozróżnić dwa pojęcia:
+
+-   **Anonimowość:** Sytuacja, w której **nawet badacz** nie jest w stanie powiązać zebranych danych (wyników ankiety, czasów reakcji) z konkretną osobą. Jest to najwyższy standard ochrony (np. ankiety online bez pobierania adresów IP/e-mail).
+-   **Poufność:** Sytuacja, w której badacz posiada dane identyfikujące uczestnika (np. listę nazwisk, numery indeksów), ale zobowiązuje się do nieujawniania ich osobom trzecim oraz do bezpiecznego przechowywania (np. kodowanie danych, gdzie nazwisko zastępowane jest numerem ID).

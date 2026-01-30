@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jakub Traczyk">
+
+<title>Metodologia badań psychologicznych i statystyka</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="konspekt_2026_files/libs/clipboard/clipboard.min.js"></script>
+<script src="konspekt_2026_files/libs/quarto-html/quarto.js"></script>
+<script src="konspekt_2026_files/libs/quarto-html/popper.min.js"></script>
+<script src="konspekt_2026_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="konspekt_2026_files/libs/quarto-html/anchor.min.js"></script>
+<link href="konspekt_2026_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="konspekt_2026_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="konspekt_2026_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="konspekt_2026_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="konspekt_2026_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script type="module" src="konspekt_2026_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="konspekt_2026_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Spis treści</h2>
+   
+  <ul>
+  <li><a href="#epistemologiczne-podstawy-psychologii-nauka-a-wiedza-potoczna" id="toc-epistemologiczne-podstawy-psychologii-nauka-a-wiedza-potoczna" class="nav-link active" data-scroll-target="#epistemologiczne-podstawy-psychologii-nauka-a-wiedza-potoczna">Epistemologiczne podstawy psychologii: nauka a wiedza potoczna</a>
+  <ul class="collapse">
+  <li><a href="#paradygmat-naukowy-vs-wiedza-potoczna" id="toc-paradygmat-naukowy-vs-wiedza-potoczna" class="nav-link" data-scroll-target="#paradygmat-naukowy-vs-wiedza-potoczna">Paradygmat naukowy vs wiedza potoczna</a></li>
+  <li><a href="#mechanizmy-zniekształcające-poznanie" id="toc-mechanizmy-zniekształcające-poznanie" class="nav-link" data-scroll-target="#mechanizmy-zniekształcające-poznanie">Mechanizmy zniekształcające poznanie</a></li>
+  <li><a href="#rola-teorii-w-nauce" id="toc-rola-teorii-w-nauce" class="nav-link" data-scroll-target="#rola-teorii-w-nauce">Rola teorii w nauce</a></li>
+  <li><a href="#weryfikacja-empiryczna-fakty-kontra-mity" id="toc-weryfikacja-empiryczna-fakty-kontra-mity" class="nav-link" data-scroll-target="#weryfikacja-empiryczna-fakty-kontra-mity">Weryfikacja empiryczna: fakty kontra mity</a>
+  <ul class="collapse">
+  <li><a href="#atrakcyjność-interpersonalna-podobieństwo-czy-komplementarność" id="toc-atrakcyjność-interpersonalna-podobieństwo-czy-komplementarność" class="nav-link" data-scroll-target="#atrakcyjność-interpersonalna-podobieństwo-czy-komplementarność">Atrakcyjność interpersonalna: podobieństwo czy komplementarność?</a></li>
+  <li><a href="#regulacja-emocji-hipoteza-katharsis" id="toc-regulacja-emocji-hipoteza-katharsis" class="nav-link" data-scroll-target="#regulacja-emocji-hipoteza-katharsis">Regulacja emocji: hipoteza <em>katharsis</em></a></li>
+  <li><a href="#funkcjonowanie-poznawcze-efekt-mozarta" id="toc-funkcjonowanie-poznawcze-efekt-mozarta" class="nav-link" data-scroll-target="#funkcjonowanie-poznawcze-efekt-mozarta">Funkcjonowanie poznawcze: “Efekt Mozarta”</a></li>
+  <li><a href="#efektywność-grupowa-burza-mózgów-brainstorming" id="toc-efektywność-grupowa-burza-mózgów-brainstorming" class="nav-link" data-scroll-target="#efektywność-grupowa-burza-mózgów-brainstorming">Efektywność grupowa: burza mózgów (Brainstorming)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#architektura-procesu-badawczego-od-teorii-do-empirycznej-weryfikacji" id="toc-architektura-procesu-badawczego-od-teorii-do-empirycznej-weryfikacji" class="nav-link" data-scroll-target="#architektura-procesu-badawczego-od-teorii-do-empirycznej-weryfikacji">Architektura procesu badawczego: Od teorii do empirycznej weryfikacji</a>
+  <ul class="collapse">
+  <li><a href="#logika-odkrycia-naukowego-indukcja-i-dedukcja" id="toc-logika-odkrycia-naukowego-indukcja-i-dedukcja" class="nav-link" data-scroll-target="#logika-odkrycia-naukowego-indukcja-i-dedukcja">Logika odkrycia naukowego: indukcja i dedukcja</a></li>
+  <li><a href="#struktura-wiedzy-teoria-model-i-konstrukt" id="toc-struktura-wiedzy-teoria-model-i-konstrukt" class="nav-link" data-scroll-target="#struktura-wiedzy-teoria-model-i-konstrukt">Struktura wiedzy: teoria, model i konstrukt</a></li>
+  <li><a href="#operacjonalizacja-zmiennych" id="toc-operacjonalizacja-zmiennych" class="nav-link" data-scroll-target="#operacjonalizacja-zmiennych">Operacjonalizacja zmiennych</a></li>
+  <li><a href="#formułowanie-hipotez-badawczych" id="toc-formułowanie-hipotez-badawczych" class="nav-link" data-scroll-target="#formułowanie-hipotez-badawczych">Formułowanie hipotez badawczych</a></li>
+  <li><a href="#studium-przypadku-model-rozproszenia-odpowiedzialności" id="toc-studium-przypadku-model-rozproszenia-odpowiedzialności" class="nav-link" data-scroll-target="#studium-przypadku-model-rozproszenia-odpowiedzialności">Studium przypadku: model rozproszenia odpowiedzialności</a></li>
+  </ul></li>
+  <li><a href="#operacjonalizacja-zmiennych-i-teoria-pomiaru" id="toc-operacjonalizacja-zmiennych-i-teoria-pomiaru" class="nav-link" data-scroll-target="#operacjonalizacja-zmiennych-i-teoria-pomiaru">Operacjonalizacja zmiennych i teoria pomiaru</a>
+  <ul class="collapse">
+  <li><a href="#status-metodologiczny-zmiennych-relacje-i-funkcje" id="toc-status-metodologiczny-zmiennych-relacje-i-funkcje" class="nav-link" data-scroll-target="#status-metodologiczny-zmiennych-relacje-i-funkcje">Status metodologiczny zmiennych: relacje i funkcje</a></li>
+  <li><a href="#taksonomia-skal-pomiarowych-s.s.-stevensa" id="toc-taksonomia-skal-pomiarowych-s.s.-stevensa" class="nav-link" data-scroll-target="#taksonomia-skal-pomiarowych-s.s.-stevensa">Taksonomia skal pomiarowych S.S. Stevensa</a>
+  <ul class="collapse">
+  <li><a href="#skala-nominalna" id="toc-skala-nominalna" class="nav-link" data-scroll-target="#skala-nominalna">Skala nominalna</a></li>
+  <li><a href="#skala-porządkowa" id="toc-skala-porządkowa" class="nav-link" data-scroll-target="#skala-porządkowa">Skala porządkowa</a></li>
+  <li><a href="#skala-interwałowa" id="toc-skala-interwałowa" class="nav-link" data-scroll-target="#skala-interwałowa">Skala interwałowa</a></li>
+  <li><a href="#skala-ilorazowa" id="toc-skala-ilorazowa" class="nav-link" data-scroll-target="#skala-ilorazowa">Skala ilorazowa</a></li>
+  </ul></li>
+  <li><a href="#implikacje-dla-analizy-danych" id="toc-implikacje-dla-analizy-danych" class="nav-link" data-scroll-target="#implikacje-dla-analizy-danych">Implikacje dla analizy danych</a></li>
+  <li><a href="#praktyczny-algorytm-decyzyjny" id="toc-praktyczny-algorytm-decyzyjny" class="nav-link" data-scroll-target="#praktyczny-algorytm-decyzyjny">Praktyczny algorytm decyzyjny:</a></li>
+  </ul></li>
+  <li><a href="#statystyka-opisowa-redukcja-danych-i-charakterystyka-rozkładu" id="toc-statystyka-opisowa-redukcja-danych-i-charakterystyka-rozkładu" class="nav-link" data-scroll-target="#statystyka-opisowa-redukcja-danych-i-charakterystyka-rozkładu">Statystyka opisowa: redukcja danych i charakterystyka rozkładu</a>
+  <ul class="collapse">
+  <li><a href="#miary-tendencji-centralnej" id="toc-miary-tendencji-centralnej" class="nav-link" data-scroll-target="#miary-tendencji-centralnej">Miary tendencji centralnej</a></li>
+  <li><a href="#miary-dyspersji" id="toc-miary-dyspersji" class="nav-link" data-scroll-target="#miary-dyspersji">Miary dyspersji</a></li>
+  <li><a href="#charakterystyka-kształtu-rozkładu" id="toc-charakterystyka-kształtu-rozkładu" class="nav-link" data-scroll-target="#charakterystyka-kształtu-rozkładu">Charakterystyka kształtu rozkładu</a></li>
+  <li><a href="#interaktywna-symulacja-rozkład-normalny" id="toc-interaktywna-symulacja-rozkład-normalny" class="nav-link" data-scroll-target="#interaktywna-symulacja-rozkład-normalny">Interaktywna symulacja: rozkład normalny</a></li>
+  <li><a href="#techniki-wizualizacji-danych" id="toc-techniki-wizualizacji-danych" class="nav-link" data-scroll-target="#techniki-wizualizacji-danych">Techniki wizualizacji danych</a></li>
+  <li><a href="#interaktywna-symulacja-kształt-rozkładu" id="toc-interaktywna-symulacja-kształt-rozkładu" class="nav-link" data-scroll-target="#interaktywna-symulacja-kształt-rozkładu">Interaktywna symulacja: Kształt rozkładu</a></li>
+  </ul></li>
+  <li><a href="#dwa-nurty-psychologii-naukowej-model-eksperymentalny-a-korelacyjny" id="toc-dwa-nurty-psychologii-naukowej-model-eksperymentalny-a-korelacyjny" class="nav-link" data-scroll-target="#dwa-nurty-psychologii-naukowej-model-eksperymentalny-a-korelacyjny">Dwa nurty psychologii naukowej: model eksperymentalny a korelacyjny</a>
+  <ul class="collapse">
+  <li><a href="#model-korelacyjny" id="toc-model-korelacyjny" class="nav-link" data-scroll-target="#model-korelacyjny">Model korelacyjny</a></li>
+  <li><a href="#model-eksperymentalny" id="toc-model-eksperymentalny" class="nav-link" data-scroll-target="#model-eksperymentalny">Model eksperymentalny</a></li>
+  <li><a href="#analiza-porównawcza-i-dylematy-wyboru" id="toc-analiza-porównawcza-i-dylematy-wyboru" class="nav-link" data-scroll-target="#analiza-porównawcza-i-dylematy-wyboru">Analiza porównawcza i dylematy wyboru</a></li>
+  <li><a href="#konwergencja-metodologiczna" id="toc-konwergencja-metodologiczna" class="nav-link" data-scroll-target="#konwergencja-metodologiczna">Konwergencja metodologiczna</a></li>
+  </ul></li>
+  <li><a href="#analiza-współzmienności-i-predykcja-korelacja-i-regresja" id="toc-analiza-współzmienności-i-predykcja-korelacja-i-regresja" class="nav-link" data-scroll-target="#analiza-współzmienności-i-predykcja-korelacja-i-regresja">Analiza współzmienności i predykcja: korelacja i regresja</a>
+  <ul class="collapse">
+  <li><a href="#współczynnik-korelacji-r-pearsona" id="toc-współczynnik-korelacji-r-pearsona" class="nav-link" data-scroll-target="#współczynnik-korelacji-r-pearsona">Współczynnik korelacji r-Pearsona</a></li>
+  <li><a href="#interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona" id="toc-interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona" class="nav-link" data-scroll-target="#interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona">Interaktywna symulacja: Siła związku i współczynnik r-Pearsona</a></li>
+  <li><a href="#analiza-regresji-liniowej" id="toc-analiza-regresji-liniowej" class="nav-link" data-scroll-target="#analiza-regresji-liniowej">Analiza regresji liniowej</a></li>
+  </ul></li>
+  <li><a href="#jakość-planu-badawczego-trafność-i-procedury-kontrolne" id="toc-jakość-planu-badawczego-trafność-i-procedury-kontrolne" class="nav-link" data-scroll-target="#jakość-planu-badawczego-trafność-i-procedury-kontrolne">Jakość planu badawczego: trafność i procedury kontrolne</a>
+  <ul class="collapse">
+  <li><a href="#randomizacja-mechanizm-kontroli-zmiennych-zakłócających" id="toc-randomizacja-mechanizm-kontroli-zmiennych-zakłócających" class="nav-link" data-scroll-target="#randomizacja-mechanizm-kontroli-zmiennych-zakłócających">Randomizacja: mechanizm kontroli zmiennych zakłócających</a></li>
+  <li><a href="#trafność-wewnętrzna-internal-validity" id="toc-trafność-wewnętrzna-internal-validity" class="nav-link" data-scroll-target="#trafność-wewnętrzna-internal-validity">Trafność wewnętrzna (Internal Validity)</a></li>
+  <li><a href="#trafność-zewnętrzna-external-validity" id="toc-trafność-zewnętrzna-external-validity" class="nav-link" data-scroll-target="#trafność-zewnętrzna-external-validity">Trafność zewnętrzna (External Validity)</a></li>
+  <li><a href="#techniki-zwiększania-trafności-eksperymentu" id="toc-techniki-zwiększania-trafności-eksperymentu" class="nav-link" data-scroll-target="#techniki-zwiększania-trafności-eksperymentu">Techniki zwiększania trafności eksperymentu</a></li>
+  </ul></li>
+  <li><a href="#jakość-pomiaru-psychologicznego-rzetelność" id="toc-jakość-pomiaru-psychologicznego-rzetelność" class="nav-link" data-scroll-target="#jakość-pomiaru-psychologicznego-rzetelność">Jakość pomiaru psychologicznego: rzetelność</a>
+  <ul class="collapse">
+  <li><a href="#definicja-i-istota-rzetelności" id="toc-definicja-i-istota-rzetelności" class="nav-link" data-scroll-target="#definicja-i-istota-rzetelności">Definicja i istota rzetelności</a></li>
+  <li><a href="#rodzaje-szacowania-rzetelności" id="toc-rodzaje-szacowania-rzetelności" class="nav-link" data-scroll-target="#rodzaje-szacowania-rzetelności">Rodzaje szacowania rzetelności</a></li>
+  <li><a href="#zagrożenia-dla-rzetelności-i-metody-jej-zwiększania" id="toc-zagrożenia-dla-rzetelności-i-metody-jej-zwiększania" class="nav-link" data-scroll-target="#zagrożenia-dla-rzetelności-i-metody-jej-zwiększania">Zagrożenia dla rzetelności i metody jej zwiększania</a></li>
+  </ul></li>
+  <li><a href="#procedury-porównywania-grup-test-t-studenta" id="toc-procedury-porównywania-grup-test-t-studenta" class="nav-link" data-scroll-target="#procedury-porównywania-grup-test-t-studenta">Procedury porównywania grup (test t-Studenta)</a>
+  <ul class="collapse">
+  <li><a href="#logika-testu-t-studenta" id="toc-logika-testu-t-studenta" class="nav-link" data-scroll-target="#logika-testu-t-studenta">Logika testu t-Studenta</a></li>
+  <li><a href="#rodzaje-testów-t-i-ich-zastosowanie" id="toc-rodzaje-testów-t-i-ich-zastosowanie" class="nav-link" data-scroll-target="#rodzaje-testów-t-i-ich-zastosowanie">Rodzaje testów t i ich zastosowanie</a></li>
+  <li><a href="#istotność-statystyczna-a-znaczenie-praktyczne" id="toc-istotność-statystyczna-a-znaczenie-praktyczne" class="nav-link" data-scroll-target="#istotność-statystyczna-a-znaczenie-praktyczne">Istotność statystyczna a znaczenie praktyczne</a></li>
+  </ul></li>
+  <li><a href="#moc-testu-wielkość-efektu-i-replikowalność" id="toc-moc-testu-wielkość-efektu-i-replikowalność" class="nav-link" data-scroll-target="#moc-testu-wielkość-efektu-i-replikowalność">Moc testu, wielkość efektu i replikowalność</a>
+  <ul class="collapse">
+  <li><a href="#wielkość-efektu-effect-size" id="toc-wielkość-efektu-effect-size" class="nav-link" data-scroll-target="#wielkość-efektu-effect-size">Wielkość efektu (Effect Size):</a></li>
+  <li><a href="#moc-testu-statystycznego-statistical-power" id="toc-moc-testu-statystycznego-statistical-power" class="nav-link" data-scroll-target="#moc-testu-statystycznego-statistical-power">Moc testu statystycznego (Statistical Power)</a></li>
+  <li><a href="#kryzys-replikacyjny-i-wiarygodność-nauki" id="toc-kryzys-replikacyjny-i-wiarygodność-nauki" class="nav-link" data-scroll-target="#kryzys-replikacyjny-i-wiarygodność-nauki">Kryzys replikacyjny i wiarygodność nauki</a></li>
+  <li><a href="#meta-analiza-synteza-wiedzy" id="toc-meta-analiza-synteza-wiedzy" class="nav-link" data-scroll-target="#meta-analiza-synteza-wiedzy">Meta-analiza: synteza wiedzy</a></li>
+  </ul></li>
+  <li><a href="#etyka-badań-psychologicznych-standardy-i-dylematy" id="toc-etyka-badań-psychologicznych-standardy-i-dylematy" class="nav-link" data-scroll-target="#etyka-badań-psychologicznych-standardy-i-dylematy">Etyka badań psychologicznych: standardy i dylematy</a>
+  <ul class="collapse">
+  <li><a href="#zasada-autonomii-dobrowolność-i-świadoma-zgoda" id="toc-zasada-autonomii-dobrowolność-i-świadoma-zgoda" class="nav-link" data-scroll-target="#zasada-autonomii-dobrowolność-i-świadoma-zgoda">Zasada autonomii: dobrowolność i świadoma zgoda</a></li>
+  <li><a href="#zasada-nieszkodzenia" id="toc-zasada-nieszkodzenia" class="nav-link" data-scroll-target="#zasada-nieszkodzenia">Zasada nieszkodzenia</a></li>
+  <li><a href="#procedura-decepcji" id="toc-procedura-decepcji" class="nav-link" data-scroll-target="#procedura-decepcji">Procedura decepcji</a></li>
+  <li><a href="#debriefing-procedura-odkłamania" id="toc-debriefing-procedura-odkłamania" class="nav-link" data-scroll-target="#debriefing-procedura-odkłamania">Debriefing (procedura odkłamania)</a></li>
+  <li><a href="#ochrona-danych-osobowych-anonimowość-a-poufność" id="toc-ochrona-danych-osobowych-anonimowość-a-poufność" class="nav-link" data-scroll-target="#ochrona-danych-osobowych-anonimowość-a-poufność">Ochrona danych osobowych: anonimowość a poufność</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Inne formaty</h2><ul><li><a href="konspekt_2026.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Metodologia badań psychologicznych i statystyka</h1>
+<p class="subtitle lead">Opracowanie z wykorzystaniem modelu AI Gemini na podstawie wykładów prowadzonych przez Jakuba Traczyka</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor</div>
+  <div class="quarto-title-meta-heading">Afiliacja</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jakub Traczyk </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Uniwersytet SWPS, Centrum Badań nad Wspieraniem Podejmowania Decyzji (<a href="http://www.cridm.edu.pl">www.cridm.edu.pl</a>)
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="epistemologiczne-podstawy-psychologii-nauka-a-wiedza-potoczna" class="level1">
+<h1>Epistemologiczne podstawy psychologii: nauka a wiedza potoczna</h1>
+<p>Psychologia, jako dyscyplina akademicka, konstytuuje się jako nauka empiryczna, której przedmiotem badań jest zachowanie jednostki oraz leżące u jego podłoża procesy psychiczne i fizjologiczne. W odróżnieniu od podejść intuicyjnych, psychologia naukowa opiera się na <strong>rygorze metodologicznym</strong>, dążąc do obiektywnego opisu (deskrypcji), wyjaśniania (eksplanacji), oraz przewidywania (predykcji).</p>
+<section id="paradygmat-naukowy-vs-wiedza-potoczna" class="level2">
+<h2 class="anchored" data-anchor-id="paradygmat-naukowy-vs-wiedza-potoczna">Paradygmat naukowy vs wiedza potoczna</h2>
+<p>Fundamentalnym zagadnieniem jest rozróżnienie między wiedzą naukową a wiedzą potoczną (tzw. “psychologią zdroworozsądkową”). Choć obie dążą do zrozumienia świata, różnią się w sposób zasadniczy pod względem genezy, struktury i metod weryfikacji.</p>
+<ul>
+<li><strong>Wiedza potoczna (Common Sense):</strong> Charakteryzuje się subiektywizmem i oparciem na incydentalnych obserwacjach lub autorytetach. Jest zbiorem przekonań, które często są:
+<ul>
+<li><strong>Niespójne i sprzeczne:</strong> Przysłowia i mądrości ludowe często postulują wykluczające się tezy (np. “co dwie głowy, to nie jedna” vs “gdzie kucharek sześć, tam nie ma co jeść”), co uniemożliwia budowę spójnego modelu teoretycznego.</li>
+<li><strong>Oparte na anegdotach:</strong> Generalizacja następuje na podstawie pojedynczych, często niereprezentatywnych przypadków (“dowód anegdotyczny”).</li>
+<li><strong>Podatne na błędy poznawcze:</strong> Ludzki aparat poznawczy naturalnie dąży do potwierdzania własnych przekonań, a nie ich weryfikacji.</li>
+</ul></li>
+<li><strong>Wiedza naukowa:</strong> Jest systemem twierdzeń opartych na <strong>systematycznej obserwacji</strong> i badaniach empirycznych. Jej cechami konstytutywnymi są:
+<ul>
+<li><strong>Empiryzm:</strong> Źródłem wiedzy są dane zebrane w kontrolowanych warunkach, a nie intuicja badacza.</li>
+<li><strong>Intersubiektywna komunikowalność:</strong> Procedury badawcze muszą być opisane tak precyzyjnie, aby każdy inny kompetentny badacz mógł je powtórzyć (replikacja) i zweryfikować wyniki.</li>
+<li><strong>Sceptycyzm i krytycyzm:</strong> Nauka nie uznaje dogmatów; każde twierdzenie jest tymczasowe i obowiązuje tylko do momentu jego ewentualnego obalenia przez nowe dowody.</li>
+</ul></li>
+</ul>
+</section>
+<section id="mechanizmy-zniekształcające-poznanie" class="level2">
+<h2 class="anchored" data-anchor-id="mechanizmy-zniekształcające-poznanie">Mechanizmy zniekształcające poznanie</h2>
+<p>Konieczność stosowania metody naukowej wynika z ograniczeń związanych z przetwarzaniem informacji przez ludzi. Dwa kluczowe błędy poznawcze to:</p>
+<ul>
+<li><p><strong>Efekt pewności wstecznej (Hindsight Bias):</strong> Tendencja do postrzegania zdarzeń przeszłych jako przewidywalnych i oczywistych (“Wiedziałem, że tak będzie”). Po zapoznaniu się z wynikiem eksperymentu oceniamy go jako logiczny i zgodny z intuicją, nawet jeśli przed badaniem wynik ten był nieoczywisty. Zjawisko to fałszywie utwierdza nas w przekonaniu o trafności naszej “psychologii potocznej”.</p></li>
+<li><p><strong>Efekt potwierdzenia (Confirmation Bias):</strong> Selektywne poszukiwanie, interpretowanie i zapamiętywanie informacji w taki sposób, aby potwierdzały one nasze wcześniejsze hipotezy lub przekonania, przy jednoczesnym ignorowaniu dowodów sprzecznych. Metodologia naukowa (np. ślepe próby, randomizacja) stanowi system zabezpieczeń przed tym błędem.</p></li>
+</ul>
+</section>
+<section id="rola-teorii-w-nauce" class="level2">
+<h2 class="anchored" data-anchor-id="rola-teorii-w-nauce">Rola teorii w nauce</h2>
+<p>Teoria jest jak mapa, która upraszcza złożoną rzeczywistość, eksponując kluczowe relacje korelacyjne i przyczynowo-skutkowe.</p>
+<ul>
+<li><strong>Kryterium demarkacji (falsyfikacja):</strong> Zgodnie z postulatem Karla Poppera, aby teoria mogła zostać uznana za naukową, musi być <strong>falsyfikowalna</strong>. Oznacza to, że musi istnieć teoretyczna możliwość przeprowadzenia takiego eksperymentu, którego wynik mógłby wykazać błąd teorii.
+<ul>
+<li>Teorie niefalsyfikowalne (np. stwierdzenia typu “wszystko dzieje się z jakiegoś powodu”) leżą poza obszarem nauki, ponieważ nie poddają się empirycznemu testowaniu.</li>
+</ul></li>
+</ul>
+</section>
+<section id="weryfikacja-empiryczna-fakty-kontra-mity" class="level2">
+<h2 class="anchored" data-anchor-id="weryfikacja-empiryczna-fakty-kontra-mity">Weryfikacja empiryczna: fakty kontra mity</h2>
+<p>Badania psychologiczne wielokrotnie wykazały, że powszechne przekonania są często nietrafne. Analiza tych przypadków ilustruje przewagę metody naukowej nad intuicją.</p>
+<section id="atrakcyjność-interpersonalna-podobieństwo-czy-komplementarność" class="level3">
+<h3 class="anchored" data-anchor-id="atrakcyjność-interpersonalna-podobieństwo-czy-komplementarność">Atrakcyjność interpersonalna: podobieństwo czy komplementarność?</h3>
+<ul>
+<li><em>Przekonanie potoczne:</em> “Przeciwieństwa się przyciągają” (hipoteza komplementarności).</li>
+<li><em>Weryfikacja naukowa:</em> Badania, m.in. <strong>Donna Byrne’a (1971)</strong>, wskazują na istnienie <strong>efektu podobieństwa</strong>. Zgodnie z paradygmatem <em>reinforcement-affect model</em>, podobieństwo postaw, wartości i cech demograficznych działa nagradzająco, redukując dysonans poznawczy i zwiększając atrakcyjność partnera. Hipoteza o przyciąganiu się przeciwieństw nie znajduje potwierdzenia w danych empirycznych.</li>
+</ul>
+</section>
+<section id="regulacja-emocji-hipoteza-katharsis" class="level3">
+<h3 class="anchored" data-anchor-id="regulacja-emocji-hipoteza-katharsis">Regulacja emocji: hipoteza <em>katharsis</em></h3>
+<ul>
+<li><em>Przekonanie potoczne:</em> Wyładowanie agresji (np. krzyk, uderzanie w poduszkę) prowadzi do redukcji napięcia i zmniejszenia późniejszej agresji (hydrauliczny model emocji).</li>
+<li><em>Weryfikacja naukowa:</em> Eksperymenty <strong>Brada Bushmana (2002)</strong> wykazały, że osoby, które po prowokacji angażowały się w agresywne zachowania zastępcze (np. uderzanie w worek treningowy), wykazywały następnie <strong>wyższy</strong> poziom agresji niż grupa kontrolna. Wyładowanie złości utrwala wzorce agresywne i podtrzymuje pobudzenie fizjologiczne, zamiast je gasić.</li>
+</ul>
+</section>
+<section id="funkcjonowanie-poznawcze-efekt-mozarta" class="level3">
+<h3 class="anchored" data-anchor-id="funkcjonowanie-poznawcze-efekt-mozarta">Funkcjonowanie poznawcze: “Efekt Mozarta”</h3>
+<ul>
+<li><em>Przekonanie potoczne:</em> Bierne słuchanie muzyki klasycznej trwale podnosi iloraz inteligencji.</li>
+<li><em>Weryfikacja naukowa:</em> Oryginalne badania <strong>Rauscher (1993)</strong> oraz późniejsze metaanalizy (<strong>Pietschnig, 2010</strong>) wykazały, że efekt ten jest krótkotrwały (ok. 10-15 minut), ograniczony wyłącznie do zadań wzrokowo-przestrzennych i wynika ze wzrostu poziomu pobudzenia (<em>arousal</em>) oraz poprawy nastroju, a nie ze specyficznych właściwości muzyki Mozarta.</li>
+</ul>
+</section>
+<section id="efektywność-grupowa-burza-mózgów-brainstorming" class="level3">
+<h3 class="anchored" data-anchor-id="efektywność-grupowa-burza-mózgów-brainstorming">Efektywność grupowa: burza mózgów (Brainstorming)</h3>
+<ul>
+<li><em>Przekonanie potoczne:</em> Praca grupowa generuje więcej i lepszych pomysłów niż praca indywidualna (“efekt synergii”).</li>
+<li><em>Weryfikacja naukowa:</em> Badania (m.in. <strong>Diehl &amp; Stroebe, 1987</strong>) zidentyfikowały zjawisko <strong>próżniactwa społecznego</strong> (<em>social loafing</em>) oraz lęku przed oceną (<em>evaluation apprehension</em>). W zadaniach wymagających kreatywności, jednostki pracujące samodzielnie generują łącznie więcej pomysłów wyższej jakości niż ta sama liczba osób pracujących w grupie interakcyjnej.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="architektura-procesu-badawczego-od-teorii-do-empirycznej-weryfikacji" class="level1">
+<h1>Architektura procesu badawczego: Od teorii do empirycznej weryfikacji</h1>
+<p>Proces naukowy w psychologii nie stanowi statycznego zbioru faktów, lecz dynamiczny cykl, w którym abstrakcyjne modele teoretyczne są nieustannie konfrontowane z danymi empirycznymi. Rozumienie tego procesu wymaga biegłości w poruszaniu się między poziomem konceptualnym (teoria) a poziomem operacyjnym (badanie).</p>
+<section id="logika-odkrycia-naukowego-indukcja-i-dedukcja" class="level2">
+<h2 class="anchored" data-anchor-id="logika-odkrycia-naukowego-indukcja-i-dedukcja">Logika odkrycia naukowego: indukcja i dedukcja</h2>
+<p>Metodologia naukowa opiera się na ciągłej interakcji dwóch komplementarnych strategii wnioskowania, tworzących tzw. “koło nauki” (<em>wheel of science</em>).</p>
+<ul>
+<li><strong>Wnioskowanie indukcyjne (Empiria</strong> <span class="math inline">\(\rightarrow\)</span> Teoria): Proces generalizacji, w którym na podstawie szczegółowych obserwacji (danych) formułowane są ogólne prawa lub teorie.
+<ul>
+<li><em>Mechanizm:</em> Badacz dostrzega powtarzalne wzorce w zebranych danych i na tej podstawie buduje model wyjaśniający.</li>
+<li><em>Ograniczenie:</em> Tzw. “problem indukcji” – skończona liczba obserwacji (np. 1000 białych łabędzi) nigdy nie gwarantuje logicznej pewności, co do prawdziwości twierdzenia ogólnego (że wszystkie łabędzie są białe).</li>
+</ul></li>
+<li><strong>Wnioskowanie dedukcyjne (Teoria</strong> <span class="math inline">\(\rightarrow\)</span> Hipoteza): Proces logicznego wyprowadzania szczegółowych wniosków (predykcji) z ogólnych przesłanek teoretycznych.
+<ul>
+<li><em>Mechanizm:</em> Posiadając teorię, badacz przewiduje, jaki wynik powinien zostać uzyskany w konkretnym eksperymencie, o ile teoria jest prawdziwa. Jest to podstawa testowania hipotez.</li>
+</ul></li>
+</ul>
+</section>
+<section id="struktura-wiedzy-teoria-model-i-konstrukt" class="level2">
+<h2 class="anchored" data-anchor-id="struktura-wiedzy-teoria-model-i-konstrukt">Struktura wiedzy: teoria, model i konstrukt</h2>
+<p>Precyzyjne rozróżnienie tych pojęć jest kluczowe dla poprawności metodologicznej.</p>
+<ul>
+<li><p><strong>Teoria naukowa:</strong> Spójny system twierdzeń i definicji, którego celem jest wyjaśnienie (eksplanacja) oraz przewidywanie (predykcja) zjawisk.</p>
+<ul>
+<li><strong>Kryterium falsyfikowalności (K. Popper):</strong> Aby teoria była uznana za naukową, musi być sformułowana w sposób umożliwiający jej empiryczne obalenie. Teoria, która wyjaśnia wszystko i nie wyklucza żadnego możliwego stanu rzeczy (np. klasyczna psychoanaliza w ujęciu Poppera), jest niefalsyfikowalna, a zatem nienaukowa.</li>
+</ul></li>
+<li><p><strong>Model teoretyczny:</strong> Uproszczona, często graficzna lub matematyczna reprezentacja fragmentu rzeczywistości, ukazująca mechanizmy i relacje między zmiennymi. Model odpowiada na pytanie “jak” przebiega proces (np. model przetwarzania informacji), abstrahując od zbędnych szczegółów.</p></li>
+<li><p><strong>Konstrukt teoretyczny:</strong> Hipotetyczna zmienna, która nie jest bezpośrednio obserwowalna, lecz której istnienie postuluje teoria w celu wyjaśnienia zachowania.</p>
+<ul>
+<li><em>Przykłady:</em> Inteligencja, lęk, pamięć robocza, osobowość, postawa. Badacz nie ma bezpośredniego dostępu do konstruktu – może go wnioskować jedynie na podstawie obserwowalnych wskaźników.</li>
+</ul></li>
+</ul>
+</section>
+<section id="operacjonalizacja-zmiennych" class="level2">
+<h2 class="anchored" data-anchor-id="operacjonalizacja-zmiennych">Operacjonalizacja zmiennych</h2>
+<p>Jest to procedura przekładania teoretycznych konstruktów i pojęć na język konkretnych operacji pomiarowych i wskaźników empirycznych. Operacjonalizacja stanowi “most” łączący sferę teorii ze sferą empirii.</p>
+<ul>
+<li><em>Przykład:</em> Konstrukt “agresja” może zostać zoperacjonalizowany jako:
+<ul>
+<li>Liczba uderzeń w lalkę (wskaźnik behawioralny).</li>
+<li>Wynik w Kwestionariuszu Agresji Bussa-Perry’ego (wskaźnik samoopisowy).</li>
+<li>Poziom kortyzolu we krwi (wskaźnik fizjologiczny).</li>
+</ul></li>
+</ul>
+</section>
+<section id="formułowanie-hipotez-badawczych" class="level2">
+<h2 class="anchored" data-anchor-id="formułowanie-hipotez-badawczych">Formułowanie hipotez badawczych</h2>
+<p>Hipoteza to propozycja twierdzenia naukowego, będąca tymczasową odpowiedzią na pytanie badawcze, podlegającą weryfikacji empirycznej. W nurcie testowania hipotezy zerowej (NHST) operujemy dwiema opozycyjnymi hipotezami:</p>
+<ul>
+<li><p><strong>Hipoteza zerowa (</strong><span class="math inline">\(H_0\)</span>): Postuluje brak efektu, brak różnic między grupami lub brak związku między zmiennymi w populacji. Jest to stan domyślny (“niewinność”), który badacz próbuje odrzucić.</p></li>
+<li><p><strong>Hipoteza alternatywna (</strong><span class="math inline">\(H_1\)</span>): Postuluje istnienie efektu, różnicy lub związku. Jest to hipoteza badawcza, którą przyjmujemy tylko w przypadku odrzucenia <span class="math inline">\(H_0\)</span>.</p>
+<ul>
+<li><strong>Hipoteza kierunkowa:</strong> Określa kierunek zależności (np. “Deprywacja snu <em>obniża</em> sprawność poznawczą”). Stosowana, gdy teoria lub wcześniejsze badania silnie sugerują określony wynik.</li>
+<li><strong>Hipoteza bezkierunkowa:</strong> Postuluje istnienie różnicy, bez precyzowania jej znaku (np. “Lek wpływa na nastrój” – może poprawiać lub pogarszać).</li>
+</ul></li>
+</ul>
+</section>
+<section id="studium-przypadku-model-rozproszenia-odpowiedzialności" class="level2">
+<h2 class="anchored" data-anchor-id="studium-przypadku-model-rozproszenia-odpowiedzialności">Studium przypadku: model rozproszenia odpowiedzialności</h2>
+<p>Zastosowanie cyklu badawczego w praktyce na przykładzie klasycznych badań <strong>Latané i Darleya (1968)</strong> nad efektem widza (<em>bystander effect</em>).</p>
+<p><strong>Obserwacja (empiria):</strong> Analiza przypadku morderstwa Kitty Genovese, w którym mimo obecności 38 świadków, nikt nie udzielił pomocy. <strong>Indukcja</strong> <span class="math inline">\(\rightarrow\)</span> Teoria: Sformułowanie teorii <strong>rozproszenia odpowiedzialności</strong> (<em>diffusion of responsibility</em>). W obecności innych osób, subiektywne poczucie odpowiedzialności jednostki ulega redukcji (“Ktoś inny na pewno zareaguje”). <strong>Dedukcja</strong> <span class="math inline">\(\rightarrow\)</span> Hipoteza (<span class="math inline">\(H_1\)</span>): Wzrost liczby świadków zdarzenia kryzysowego (IV) spowoduje wydłużenie czasu reakcji jednostki lub zmniejszenie prawdopodobieństwa udzielenia pomocy (DV). <strong>Eksperyment i operacjonalizacja:</strong> - <em>Manipulacja:</em> Osoba badana wierzy, że rozmawia przez interkom: a) tylko z ofiarą ataku padaczki, b) z ofiarą i 1 inną osobą, c) z ofiarą i 4 innymi osobami. - <em>Pomiar:</em> Czas (w sekundach) od początku ataku do momentu wyjścia z pokoju w celu wezwania pomocy. <strong>Weryfikacja:</strong> Wyniki potwierdziły hipotezę kierunkową – im większa grupa, tym mniejszy odsetek osób reagujących. <span class="math inline">\(H_0\)</span> została odrzucona. Teoria zyskała wsparcie empiryczne.</p>
+</section>
+</section>
+<section id="operacjonalizacja-zmiennych-i-teoria-pomiaru" class="level1">
+<h1>Operacjonalizacja zmiennych i teoria pomiaru</h1>
+<p>W metodologii badań psychologicznych precyzyjne zdefiniowanie statusu zmiennych oraz poziomu ich pomiaru nie jest jedynie kwestią techniczną, lecz fundamentalnym warunkiem trafności analizy statystycznej. Błędna identyfikacja skali pomiarowej prowadzi do zastosowania nieadekwatnych narzędzi matematycznych, co w konsekwencji skutkuje fałszywymi wnioskami (tzw. błędy artefaktowe).</p>
+<section id="status-metodologiczny-zmiennych-relacje-i-funkcje" class="level2">
+<h2 class="anchored" data-anchor-id="status-metodologiczny-zmiennych-relacje-i-funkcje">Status metodologiczny zmiennych: relacje i funkcje</h2>
+<p>W strukturze planu badawczego każda zmienna pełni określoną funkcję w relacji do pozostałych. Rozróżnienie to jest kluczowe dla ustalenia kierunku wnioskowania.</p>
+<ul>
+<li><strong>Zmienna niezależna (IV – Independent Variable):</strong> Jest to zmienna, która w modelu badawczym pełni rolę przyczyny.
+<ul>
+<li><strong>W planach eksperymentalnych:</strong> Jest to czynnik aktywnie manipulowany przez osoby prowadzące badanie. Jej wariancja jest systematycznie kontrolowana (np. dawka leku: 0 mg vs 50 mg).</li>
+<li><strong>W planach korelacyjnych:</strong> Nazywana jest <strong>predyktorem</strong>. Jest to cecha podmiotowa lub sytuacyjna, której badacz nie modyfikuje, lecz dokonuje jej pomiaru w celu przewidywania zmienności innej cechy (np. poziom inteligencji jako predyktor sukcesu zawodowego).</li>
+</ul></li>
+<li><strong>Zmienna zależna (DV – Dependent Variable):</strong> Jest to zmienna, która stanowi przedmiot pomiaru i pełni rolę skutku (eksplanandum). Jej wartości mają – zgodnie z hipotezą badawczą – ulegać zmianom pod wpływem działania zmiennej niezależnej.
+<ul>
+<li><em>Przykład:</em> W badaniu nad skutecznością psychoterapii zmienną zależną może być nasilenie objawów depresyjnych mierzone Skalą Depresji Becka.</li>
+</ul></li>
+<li><strong>Zmienne zakłócające (Confounding Variables):</strong> Są to zmienne uboczne, które są skorelowane ze zmienną niezależną i jednocześnie wpływają na zmienną zależną, stanowiąc alternatywne wyjaśnienie obserwowanych efektów.
+<ul>
+<li><em>Zagrożenie dla trafności wewnętrznej:</em> Jeśli w badaniu nad metodami nauczania grupa eksperymentalna składa się z osób o wyższym statusie socjoekonomicznym (SES) niż grupa kontrolna, to SES staje się zmienną zakłócającą. Nie wiemy wówczas, czy lepsze wyniki są efektem metody, czy lepszych warunków domowych. Celem randomizacji jest neutralizacja tych zmiennych.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="taksonomia-skal-pomiarowych-s.s.-stevensa" class="level2">
+<h2 class="anchored" data-anchor-id="taksonomia-skal-pomiarowych-s.s.-stevensa">Taksonomia skal pomiarowych S.S. Stevensa</h2>
+<section id="skala-nominalna" class="level3">
+<h3 class="anchored" data-anchor-id="skala-nominalna">Skala nominalna</h3>
+<p>Jest to najniższy poziom pomiaru, służący wyłącznie do <strong>klasyfikacji i kategoryzacji</strong>. Liczby pełnią tu funkcję etykiet i nie posiadają wartości ilościowej.</p>
+<ul>
+<li><strong>Właściwości matematyczne:</strong> Relacja równoważności (<span class="math inline">\(A = B\)</span> lub <span class="math inline">\(A \neq B\)</span>). Brak relacji porządkującej (nie można stwierdzić, że kategoria A jest “większa” od B).</li>
+<li><strong>Dozwolone operacje statystyczne:</strong> Zliczanie częstości (<span class="math inline">\(N\)</span>), wyznaczanie mody (dominanty), testy nieparametryczne (np. <span class="math inline">\(\chi^2\)</span>). Nie wolno obliczać średniej arytmetycznej.</li>
+<li><strong>Przykład psychologiczny:</strong> płeć biologiczna, kategoria diagnostyczna (np. ICD-11: zaburzenia lękowe vs zaburzenia nastroju). Kodowanie: 0 = Kobieta, 1 = Mężczyzna nie implikuje wartościowania.</li>
+</ul>
+</section>
+<section id="skala-porządkowa" class="level3">
+<h3 class="anchored" data-anchor-id="skala-porządkowa">Skala porządkowa</h3>
+<p>Pozwala na uszeregowanie obiektów ze względu na nasilenie badanej cechy (rangowanie).</p>
+<ul>
+<li><p><strong>Właściwości matematyczne:</strong> Relacja większości (<span class="math inline">\(A &gt; B\)</span>). Posiadamy informację o kolejności, ale <strong>nie znamy odległości</strong> między obiektami. Różnica między rangą 1 a 2 nie musi być równa różnicy między rangą 2 a 3.</p></li>
+<li><p><strong>Dozwolone operacje statystyczne:</strong> Mediana, centyle, korelacja rangowa Spearmana, testy oparte na rangach (np. U Manna-Whitneya).</p></li>
+<li><p><strong>Przykład psychologiczny:</strong> Wykształcenie (podstawowe &lt; średnie &lt; wyższe), stopień nasilenia objawów klinicznych (łagodny &lt; umiarkowany &lt; znaczny).</p>
+<ul>
+<li><em>Uwaga metodologiczna:</em> Skale typu Likerta (np. “Zdecydowanie się nie zgadzam” do “Zdecydowanie się zgadzam”) są formalnie porządkowe, choć w psychometrii często traktuje się je jako <em>quasi-interwałowe</em> przy spełnieniu określonych założeń.</li>
+</ul></li>
+</ul>
+</section>
+<section id="skala-interwałowa" class="level3">
+<h3 class="anchored" data-anchor-id="skala-interwałowa">Skala interwałowa</h3>
+<p>Cechuje się występowaniem stałej jednostki miary, co oznacza, że różnice między punktami skali są równe.</p>
+<ul>
+<li><p><strong>Kluczowa cecha:</strong> <strong>brak zera bezwzględnego</strong>. Punkt zero jest ustalony umownie i nie oznacza całkowitego braku mierzonej właściwości.</p></li>
+<li><p><strong>Konsekwencje:</strong> Możemy dodawać i odejmować wyniki, ale nie możemy ich dzielić (tworzyć ilorazów). Stwierdzenie, że “osoba A jest dwa razy bardziej inteligentna od osoby B” jest matematycznie niepoprawne na tej skali.</p></li>
+<li><p><strong>Dozwolone operacje statystyczne:</strong> Średnia arytmetyczna, odchylenie standardowe, testy parametryczne (t-Studenta, ANOVA), korelacja Pearsona.</p></li>
+<li><p><strong>Przykład psychologiczny:</strong> Wyniki standaryzowanych testów inteligencji (np. WAIS-R). IQ = 100 i IQ = 115 dzieli ta sama różnica co IQ = 115 i IQ = 130, ale IQ = 0 nie oznacza braku procesów poznawczych. Podobnie temperatura w stopniach Celsjusza.</p></li>
+</ul>
+</section>
+<section id="skala-ilorazowa" class="level3">
+<h3 class="anchored" data-anchor-id="skala-ilorazowa">Skala ilorazowa</h3>
+<p>Najwyższy poziom pomiaru, posiadający wszystkie cechy poprzednich skal oraz <strong>zero absolutne (bezwzględne)</strong>.</p>
+<ul>
+<li><p><strong>Właściwości matematyczne:</strong> Zero oznacza fizyczny brak mierzonej cechy. Umożliwia to stosowanie wszystkich operacji arytmetycznych, w tym dzielenia. Prawomocne są twierdzenia typu “czas reakcji A jest dwukrotnie dłuższy niż czas reakcji B”.</p></li>
+<li><p><strong>Dozwolone operacje statystyczne:</strong> Pełen zakres, włącznie ze średnią geometryczną i współczynnikiem zmienności.</p></li>
+<li><p><strong>Przykład psychologiczny:</strong> Czas reakcji (RT) mierzony w milisekundach, liczba popełnionych błędów w zadaniu pamięciowym, wskaźniki fizjologiczne (np. poziom kortyzolu, tętno), dochód.</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="implikacje-dla-analizy-danych" class="level2">
+<h2 class="anchored" data-anchor-id="implikacje-dla-analizy-danych">Implikacje dla analizy danych</h2>
+<p>Wybór testu statystycznego jest ściśle determinowany przez skalę pomiarową zmiennej zależnej (DV):</p>
+<p>Jeśli zmienna jest <strong>nominalna</strong> <span class="math inline">\(\rightarrow\)</span> stosujemy statystyki częstości (testy <span class="math inline">\(\chi^2\)</span>). Jeśli zmienna jest <strong>porządkowa</strong> <span class="math inline">\(\rightarrow\)</span> stosujemy statystyki nieparametryczne oparte na rangach (np. korelacja Spearmana, test Manna-Whitneya). Jeśli zmienna jest <strong>ilościowa (interwałowa/ilorazowa)</strong> ORAZ spełnia założenie o normalności rozkładu <span class="math inline">\(\rightarrow\)</span> stosujemy statystyki parametryczne (np. korelacja Pearsona, test t-Studenta, ANOVA). Jest to preferowany poziom w badaniach ze względu na największą moc testów.</p>
+<hr>
+</section>
+<section id="praktyczny-algorytm-decyzyjny" class="level2">
+<h2 class="anchored" data-anchor-id="praktyczny-algorytm-decyzyjny">Praktyczny algorytm decyzyjny:</h2>
+<p>Widzisz zmienną w pytaniu? Zadaj sobie te pytania po kolei:</p>
+<p><strong>Czy można to uporządkować (kto ma więcej/mniej)?</strong> - NIE <span class="math inline">\(\rightarrow\)</span> <strong>Nominalna</strong> (np. kolor oczu). - TAK <span class="math inline">\(\rightarrow\)</span> Idź dalej. <strong>Czy odległości między punktami są równe (czy różnica między 1 a 2 to tyle samo co między 4 a 5)?</strong> - NIE/NIE WIADOMO <span class="math inline">\(\rightarrow\)</span> <strong>Porządkowa</strong> (np. miejsce w zawodach). - TAK <span class="math inline">\(\rightarrow\)</span> Idź dalej. <strong>Czy istnieje „prawdziwe zero” (czy 0 oznacza brak cechy)?</strong> - NIE <span class="math inline">\(\rightarrow\)</span> <strong>Interwałowa</strong> (np. temperatura w Celsjuszach, IQ). - TAK <span class="math inline">\(\rightarrow\)</span> <strong>Ilorazowa</strong> (np. czas, waga, liczba poprawnych odpowiedzi).</p>
+</section>
+</section>
+<section id="statystyka-opisowa-redukcja-danych-i-charakterystyka-rozkładu" class="level1">
+<h1>Statystyka opisowa: redukcja danych i charakterystyka rozkładu</h1>
+<p>Statystyka opisowa stanowi pierwszy etap analizy ilościowej. Jej celem jest <strong>opis informacji</strong> zawartej w surowym zbiorze danych (<em>raw data</em>) do postaci syntetycznych wskaźników liczbowych, które charakteryzują badaną próbę. W odróżnieniu od wnioskowania, statystyka opisowa nie służy do generalizacji wyników na populację, lecz do precyzyjnego opisania struktury zgromadzonych danych.</p>
+<section id="miary-tendencji-centralnej" class="level2">
+<h2 class="anchored" data-anchor-id="miary-tendencji-centralnej">Miary tendencji centralnej</h2>
+<p>Celem miar tendencji centralnej jest wyznaczenie jednej wartości, która w najbardziej reprezentatywny sposób opisuje “typowe” nasilenie cechy w badanej grupie. Wybór odpowiedniego wskaźnika jest ściśle determinowany przez skalę pomiarową oraz kształt rozkładu.</p>
+<ul>
+<li><strong>Średnia arytmetyczna (</strong><span class="math inline">\(M, \bar{x}\)</span>): Suma wartości wszystkich obserwacji podzielona przez ich liczbę (<span class="math inline">\(N\)</span>).
+<ul>
+<li><em>Zastosowanie:</em> Skale interwałowe i ilorazowe przy założeniu symetrii rozkładu.</li>
+<li><em>Ograniczenie:</em> Średnia charakteryzuje się <strong>niską odpornością na wartości skrajne</strong> (outliers). Pojedynczy wynik drastycznie odbiegający od reszty może przesunąć średnią (“zafałszować” wynik), czyniąc ją nieadekwatną miarą tendencji centralnej.</li>
+<li><em>Przykład:</em> W badaniu czasu reakcji (RT), wynik osoby, która zasnęła podczas zadania (np. 5000 ms przy średniej grupy 400 ms), nieproporcjonalnie zawyży średnią arytmetyczną.</li>
+</ul></li>
+<li><strong>Mediana (</strong><span class="math inline">\(Me, Mdn\)</span>): Wartość środkowa, dzieląca uporządkowany zbiór danych na dwie równoliczne części (50. centyl).
+<ul>
+<li><em>Właściwości:</em> Jest to miara pozycyjna, <strong>odporna na wartości skrajne</strong> (robust). Wartość skrajna nie zmienia pozycji środkowego wyniku.</li>
+<li><em>Zastosowanie:</em> Preferowana w przypadku rozkładów skośnych (asymetrycznych) oraz dla zmiennych porządkowych.</li>
+<li><em>Przykład:</em> Analiza dochodów lub cen nieruchomości, gdzie nieliczne, bardzo wysokie wartości zawyżają średnią, ale nie wpływają na medianę.</li>
+</ul></li>
+<li><strong>Dominanta / Moda (</strong><span class="math inline">\(Mo\)</span>): Wartość występująca w zbiorze danych z największą częstością.
+<ul>
+<li><em>Zastosowanie:</em> Jest to jedyna miara tendencji centralnej, którą można wyznaczyć dla zmiennych na <strong>skali nominalnej</strong>.</li>
+<li><em>Polimodalność:</em> Rozkłady mogą posiadać więcej niż jedną dominantę (np. rozkład bimodalny), co często sugeruje istnienie dwóch odrębnych podgrup w badanej próbie.</li>
+</ul></li>
+</ul>
+</section>
+<section id="miary-dyspersji" class="level2">
+<h2 class="anchored" data-anchor-id="miary-dyspersji">Miary dyspersji</h2>
+<p>Miary te informują o stopniu zróżnicowania wyników wokół tendencji centralnej. Dwie grupy mogą posiadać identyczną średnią, lecz diametralnie różną strukturę (jednorodną vs niejednorodną).</p>
+<ul>
+<li><strong>Odchylenie standardowe (</strong><span class="math inline">\(SD, s\)</span>): Miarę tę interpretuje się jako przeciętną odległość wyników od średniej arytmetycznej. Jest to najczęściej stosowany wskaźnik zmienności w psychologii.
+<ul>
+<li><em>Interpretacja:</em> Niska wartość <span class="math inline">\(SD\)</span> wskazuje na homogeniczność grupy (wyniki skupione wokół średniej). Wysoka wartość <span class="math inline">\(SD\)</span> świadczy o dużej heterogeniczności (znacznym zróżnicowaniu indywidualnym).</li>
+<li><em>Kontekst:</em> W testach inteligencji (skala Wechslera) <span class="math inline">\(SD\)</span> wynosi 15. Wynik odległy o <span class="math inline">\(1 SD\)</span> od średniej jest typowy, natomiast wynik odległy o <span class="math inline">\(3 SD\)</span> jest statystyczną rzadkością.</li>
+</ul></li>
+<li><strong>Wariancja (</strong><span class="math inline">\(s^2\)</span>): Jest to średnia arytmetyczna kwadratów odchyleń od średniej (odchylenie standardowe podniesione do kwadratu).
+<ul>
+<li><em>Znaczenie:</em> Choć trudna w bezpośredniej interpretacji (wyrażona w jednostkach kwadratowych), stanowi matematyczny fundament zaawansowanych metod statystycznych, takich jak analiza wariancji (ANOVA) czy analiza regresji.</li>
+</ul></li>
+<li><strong>Współczynnik Zmienności (</strong><span class="math inline">\(CV\)</span>): Wskaźnik względny, wyrażony wzorem <span class="math inline">\(CV = (SD / M) \times 100\%\)</span>.
+<ul>
+<li><em>Zastosowanie:</em> Umożliwia porównanie stopnia zróżnicowania cech mierzonych w różnych jednostkach lub o różnych rzędach wielkości (np. porównanie zmienności czasu reakcji w milisekundach ze zmiennością wagi ciała w kilogramach).</li>
+</ul></li>
+<li><strong>Rozstęp Międzykwartylowy (</strong><span class="math inline">\(IQR\)</span>): Różnica między trzecim (<span class="math inline">\(Q3\)</span>, 75. centyl) a pierwszym kwartylem (<span class="math inline">\(Q1\)</span>, 25. centyl). Obejmuje środkowe 50% obserwacji.
+<ul>
+<li><em>Zastosowanie:</em> Stosowany łącznie z medianą w przypadku rozkładów skośnych, jako miara dyspersji odporna na outliery.</li>
+</ul></li>
+</ul>
+</section>
+<section id="charakterystyka-kształtu-rozkładu" class="level2">
+<h2 class="anchored" data-anchor-id="charakterystyka-kształtu-rozkładu">Charakterystyka kształtu rozkładu</h2>
+<p>Większość parametrycznych testów statystycznych (np. test t-Studenta, korelacja Pearsona) wymaga spełnienia założenia o normalności rozkładu zmiennej w populacji.</p>
+<ul>
+<li><strong>Rozkład normalny (krzywa Gaussa):</strong> Teoretyczny rozkład prawdopodobieństwa o kształcie dzwonu, który jest symetryczny i unimodalny.
+<ul>
+<li><strong>Kluczowa cecha:</strong> Średnia, mediana i dominanta pokrywają się w jednym punkcie (<span class="math inline">\(M = Me = Mo\)</span>).</li>
+<li><strong>Reguła trzech sigm:</strong> W przedziale <span class="math inline">\(M \pm 1 SD\)</span> mieści się ok. 68% obserwacji; w przedziale <span class="math inline">\(M \pm 2 SD\)</span> ok. 95%; w przedziale <span class="math inline">\(M \pm 3 SD\)</span> ok. 99,7%.</li>
+</ul></li>
+<li><strong>Skośność (asymetria):</strong> Miara asymetrii rozkładu wokół średniej.
+<ul>
+<li><strong>Skośność dodatnia (prawostronna):</strong> “Ogon” rozkładu wydłużony w stronę wartości wysokich. Większość wyników jest niska. W takim rozkładzie: <span class="math inline">\(M &gt; Me &gt; Mo\)</span>. (Przykład: czas reakcji, liczba błędów w trudnym zadaniu).</li>
+<li><strong>Skośność ujemna (lewostronna):</strong> “Ogon” rozkładu wydłużony w stronę wartości niskich. Większość wyników jest wysoka. W takim rozkładzie: <span class="math inline">\(M &lt; Me &lt; Mo\)</span>. (Przykład: wyniki bardzo łatwego testu).</li>
+</ul></li>
+<li><strong>Kurtoza (spłaszczenie):</strong> Miara koncentracji wyników wokół średniej oraz “grubości ogonów” rozkładu (prawdopodobieństwa wystąpienia wartości skrajnych).
+<ul>
+<li><strong>Rozkład leptokurtyczny (wysmukły):</strong> Wysoka koncentracja wyników wokół średniej, małe odchylenie standardowe, ale “ciężkie ogony” (większe ryzyko ekstremalnych outlierów).</li>
+<li><strong>Rozkład platykurtyczny (spłaszczony):</strong> Niska koncentracja wokół średniej, duże rozproszenie danych.</li>
+</ul></li>
+</ul>
+</section>
+<section id="interaktywna-symulacja-rozkład-normalny" class="level2">
+<h2 class="anchored" data-anchor-id="interaktywna-symulacja-rozkład-normalny">Interaktywna symulacja: rozkład normalny</h2>
+<p>Sprawdź, jak parametry wpływają na kształt Krzywej Gaussa:</p>
+<ol type="1">
+<li><p>Zmieniaj <strong>Średnią (<span class="math inline">\(M\)</span>)</strong>, aby przesuwać wykres w lewo lub w prawo.</p></li>
+<li><p>Zmieniaj <strong>Odchylenie (<span class="math inline">\(SD\)</span>)</strong>, aby zobaczyć, jak wykres staje się bardziej “spiczasty” (małe <span class="math inline">\(SD\)</span>) lub “płaski” (duże <span class="math inline">\(SD\)</span>).</p></li>
+</ol>
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="274" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 273;"><span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>viewof mu_norm <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">10</span><span class="op">,</span> <span class="dv">10</span>]<span class="op">,</span> {<span class="dt">step</span><span class="op">:</span> <span class="fl">0.5</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Średnia (M)"</span>})</span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>viewof sigma_norm <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="fl">0.5</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">,</span> {<span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Odchylenie (SD)"</span>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="panel-fill panel-grid g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="g-col-24">
+<div class="cell panel-fill">
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="280" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 279;"><span id="cb2-280"><a href="#cb2-280" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-281"><a href="#cb2-281" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span><span class="op">:</span> <span class="vs">`Rozkład Normalny (M=</span><span class="sc">${</span>mu_norm<span class="sc">}</span><span class="vs">, SD=</span><span class="sc">${</span>sigma_norm<span class="sc">}</span><span class="vs">)`</span><span class="op">,</span></span>
+<span id="cb2-282"><a href="#cb2-282" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">400</span><span class="op">,</span></span>
+<span id="cb2-283"><a href="#cb2-283" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb2-284"><a href="#cb2-284" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Zablokowanie osi jest kluczowe, aby widzieć przesunięcia!</span></span>
+<span id="cb2-285"><a href="#cb2-285" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">domain</span><span class="op">:</span> [<span class="op">-</span><span class="dv">20</span><span class="op">,</span> <span class="dv">20</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Wartość"</span> }<span class="op">,</span></span>
+<span id="cb2-286"><a href="#cb2-286" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="fl">0.5</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Gęstość prawdopodobieństwa"</span> }<span class="op">,</span></span>
+<span id="cb2-287"><a href="#cb2-287" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-288"><a href="#cb2-288" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Obszar pod krzywą</span></span>
+<span id="cb2-289"><a href="#cb2-289" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">areaY</span>(normalData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"green"</span><span class="op">,</span> <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.2</span>})<span class="op">,</span></span>
+<span id="cb2-290"><a href="#cb2-290" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Linia krzywej</span></span>
+<span id="cb2-291"><a href="#cb2-291" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">lineY</span>(normalData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"green"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb2-292"><a href="#cb2-292" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Linia wskazująca średnią</span></span>
+<span id="cb2-293"><a href="#cb2-293" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([mu_norm]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"black"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"4,4"</span><span class="op">,</span> <span class="dt">strokeOpacity</span><span class="op">:</span> <span class="fl">0.5</span>})<span class="op">,</span></span>
+<span id="cb2-294"><a href="#cb2-294" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Podpis średniej</span></span>
+<span id="cb2-295"><a href="#cb2-295" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>([mu_norm]<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="fl">0.02</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> mu_norm<span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="vs">`M = </span><span class="sc">${</span>mu_norm<span class="sc">}</span><span class="vs">`</span>]<span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">10</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span>})</span>
+<span id="cb2-296"><a href="#cb2-296" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb2-297"><a href="#cb2-297" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell hidden">
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="303" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 302;"><span id="cb3-303"><a href="#cb3-303" aria-hidden="true" tabindex="-1"></a><span class="co">// Generowanie danych matematycznych dla krzywej Gaussa</span></span>
+<span id="cb3-304"><a href="#cb3-304" aria-hidden="true" tabindex="-1"></a>normalData <span class="op">=</span> {</span>
+<span id="cb3-305"><a href="#cb3-305" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb3-306"><a href="#cb3-306" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> mu <span class="op">=</span> mu_norm<span class="op">;</span></span>
+<span id="cb3-307"><a href="#cb3-307" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sigma <span class="op">=</span> sigma_norm<span class="op">;</span></span>
+<span id="cb3-308"><a href="#cb3-308" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-309"><a href="#cb3-309" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Generujemy punkty od -20 do 20, aby wykres był płynny</span></span>
+<span id="cb3-310"><a href="#cb3-310" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Wzór na gęstość prawdopodobieństwa rozkładu normalnego (PDF)</span></span>
+<span id="cb3-311"><a href="#cb3-311" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> x <span class="op">=</span> <span class="op">-</span><span class="dv">20</span><span class="op">;</span> x <span class="op">&lt;=</span> <span class="dv">20</span><span class="op">;</span> x <span class="op">+=</span> <span class="fl">0.1</span>) {</span>
+<span id="cb3-312"><a href="#cb3-312" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> y <span class="op">=</span> (<span class="dv">1</span> <span class="op">/</span> (sigma <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span>))) <span class="op">*</span> </span>
+<span id="cb3-313"><a href="#cb3-313" aria-hidden="true" tabindex="-1"></a>              <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(<span class="op">-</span><span class="fl">0.5</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>((x <span class="op">-</span> mu) <span class="op">/</span> sigma<span class="op">,</span> <span class="dv">2</span>))<span class="op">;</span></span>
+<span id="cb3-314"><a href="#cb3-314" aria-hidden="true" tabindex="-1"></a>    data<span class="op">.</span><span class="fu">push</span>({x<span class="op">,</span> y})<span class="op">;</span></span>
+<span id="cb3-315"><a href="#cb3-315" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb3-316"><a href="#cb3-316" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> data<span class="op">;</span></span>
+<span id="cb3-317"><a href="#cb3-317" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display hidden">
+<div id="ojs-cell-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</section>
+<section id="techniki-wizualizacji-danych" class="level2">
+<h2 class="anchored" data-anchor-id="techniki-wizualizacji-danych">Techniki wizualizacji danych</h2>
+<p>Graficzna reprezentacja danych służy wstępnej eksploracji i diagnozie rozkładu.</p>
+<ul>
+<li><strong>Histogram:</strong> Wykres słupkowy prezentujący rozkład częstości zmiennej ilościowej. Pozwala na wizualną ocenę normalności rozkładu.</li>
+<li><strong>Wykres skrzynkowy (Boxplot):</strong> Wykres oparty na medianie i kwartylach.
+<ul>
+<li>“Pudełko” wyznacza rozstęp międzykwartylowy (<span class="math inline">\(IQR\)</span>).</li>
+<li>Linia wewnątrz pudełka to mediana.</li>
+<li>Punkty poza “wąsami” identyfikują <strong>wartości odstające (outliers)</strong>. Jest to kluczowe narzędzie diagnostyczne przed przystąpieniem do analizy wnioskującej.</li>
+</ul></li>
+</ul>
+</section>
+<section id="interaktywna-symulacja-kształt-rozkładu" class="level2">
+<h2 class="anchored" data-anchor-id="interaktywna-symulacja-kształt-rozkładu">Interaktywna symulacja: Kształt rozkładu</h2>
+<p>Poniżej znajdują się dwa oddzielne wykresy przedstawiające te same dane. Zmieniaj wartość parametru, aby zobaczyć:</p>
+<ol type="1">
+<li><p>Jak <strong>skośność</strong> zaburza symetrię na <strong>histogramie</strong>.</p></li>
+<li><p>Jak ta sama skośność powoduje pojawienie się kropek (wartości odstających) na <strong>wykresie skrzynkowym</strong>.</p></li>
+</ol>
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="344" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 343;"><span id="cb4-344"><a href="#cb4-344" aria-hidden="true" tabindex="-1"></a>viewof skew_sep <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Skośność (Asymetria)"</span>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="panel-fill g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">1. Histogram</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">2. Wykres skrzynkowy (Boxplot)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Histogram pokazuje kształt rozkładu i częstość występowania wyników.</p>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="354" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 353;"><span id="cb5-354"><a href="#cb5-354" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb5-355"><a href="#cb5-355" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">350</span><span class="op">,</span></span>
+<span id="cb5-356"><a href="#cb5-356" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb5-357"><a href="#cb5-357" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Wartość zmiennej"</span> }<span class="op">,</span></span>
+<span id="cb5-358"><a href="#cb5-358" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Liczebność"</span> }<span class="op">,</span></span>
+<span id="cb5-359"><a href="#cb5-359" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb5-360"><a href="#cb5-360" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">rectY</span>(sepData<span class="op">,</span> Plot<span class="op">.</span><span class="fu">binX</span>({<span class="dt">y</span><span class="op">:</span> <span class="st">"count"</span>}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#4C78A8"</span>}))<span class="op">,</span></span>
+<span id="cb5-361"><a href="#cb5-361" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>])</span>
+<span id="cb5-362"><a href="#cb5-362" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb5-363"><a href="#cb5-363" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Wykres skrzynkowy pokazuje medianę, kwartyle oraz wartości odstające (outliers).</p>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="372" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 371;"><span id="cb6-372"><a href="#cb6-372" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb6-373"><a href="#cb6-373" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">200</span><span class="op">,</span></span>
+<span id="cb6-374"><a href="#cb6-374" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb6-375"><a href="#cb6-375" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Wartość zmiennej"</span> }<span class="op">,</span></span>
+<span id="cb6-376"><a href="#cb6-376" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">axis</span><span class="op">:</span> <span class="kw">null</span> }<span class="op">,</span> </span>
+<span id="cb6-377"><a href="#cb6-377" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb6-378"><a href="#cb6-378" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">boxX</span>(sepData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#E45756"</span>})<span class="op">,</span></span>
+<span id="cb6-379"><a href="#cb6-379" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(sepData<span class="op">,</span> Plot<span class="op">.</span><span class="fu">selectMinX</span>({<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Min"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">20</span>}))<span class="op">,</span></span>
+<span id="cb6-380"><a href="#cb6-380" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(sepData<span class="op">,</span> Plot<span class="op">.</span><span class="fu">selectMaxX</span>({<span class="dt">x</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Max"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">20</span>}))</span>
+<span id="cb6-381"><a href="#cb6-381" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb6-382"><a href="#cb6-382" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-6" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell hidden">
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="389" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 388;"><span id="cb7-389"><a href="#cb7-389" aria-hidden="true" tabindex="-1"></a><span class="co">// Logika generowania danych</span></span>
+<span id="cb7-390"><a href="#cb7-390" aria-hidden="true" tabindex="-1"></a>sepData <span class="op">=</span> {</span>
+<span id="cb7-391"><a href="#cb7-391" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> points <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb7-392"><a href="#cb7-392" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> skew <span class="op">=</span> skew_sep<span class="op">;</span> </span>
+<span id="cb7-393"><a href="#cb7-393" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> n <span class="op">=</span> <span class="dv">300</span><span class="op">;</span> <span class="co">// Ustawiona stała liczba obserwacji</span></span>
+<span id="cb7-394"><a href="#cb7-394" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb7-395"><a href="#cb7-395" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb7-396"><a href="#cb7-396" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> u1 <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> u2 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb7-397"><a href="#cb7-397" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u1 <span class="op">===</span> <span class="dv">0</span>) u1 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb7-398"><a href="#cb7-398" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u2 <span class="op">===</span> <span class="dv">0</span>) u2 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb7-399"><a href="#cb7-399" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> z <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="op">-</span><span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(u1)) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">cos</span>(<span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span> <span class="op">*</span> u2)<span class="op">;</span></span>
+<span id="cb7-400"><a href="#cb7-400" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-401"><a href="#cb7-401" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> value <span class="op">=</span> z<span class="op">;</span></span>
+<span id="cb7-402"><a href="#cb7-402" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (skew <span class="op">!==</span> <span class="dv">0</span>) {</span>
+<span id="cb7-403"><a href="#cb7-403" aria-hidden="true" tabindex="-1"></a>       value <span class="op">=</span> z <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(skew <span class="op">*</span> z <span class="op">*</span> <span class="fl">0.4</span>)<span class="op">;</span> </span>
+<span id="cb7-404"><a href="#cb7-404" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb7-405"><a href="#cb7-405" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-406"><a href="#cb7-406" aria-hidden="true" tabindex="-1"></a>    points<span class="op">.</span><span class="fu">push</span>({<span class="dt">value</span><span class="op">:</span> value})<span class="op">;</span></span>
+<span id="cb7-407"><a href="#cb7-407" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb7-408"><a href="#cb7-408" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> points<span class="op">;</span></span>
+<span id="cb7-409"><a href="#cb7-409" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display hidden">
+<div id="ojs-cell-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="dwa-nurty-psychologii-naukowej-model-eksperymentalny-a-korelacyjny" class="level1">
+<h1>Dwa nurty psychologii naukowej: model eksperymentalny a korelacyjny</h1>
+<p>Współczesna metodologia badań psychologicznych opiera się na dwóch komplementarnych strategiach gromadzenia i analizy danych: modelu eksperymentalnym oraz modelu korelacyjnym (obserwacyjnym). Wybór między nimi nie jest arbitralny, lecz determinuje rodzaj pytań, na które badacz może uzyskać odpowiedź, oraz siłę wnioskowania, jaką może zastosować.</p>
+<section id="model-korelacyjny" class="level2">
+<h2 class="anchored" data-anchor-id="model-korelacyjny">Model korelacyjny</h2>
+<p>Nurt korelacyjny koncentruje się na badaniu współwystępowania zjawisk w ich naturalnym przebiegu. Badacz przyjmuje postawę biernego obserwatora, który nie ingeruje w rzeczywistość, lecz dokonuje pomiaru zastanego stanu rzeczy.</p>
+<ul>
+<li><strong>Charakterystyka:</strong>
+<ul>
+<li><strong>Brak manipulacji:</strong> Badacz nie wpływa na poziom zmiennych (np. nie wywołuje stresu, lecz mierzy jego naturalny poziom).</li>
+<li><strong>Analiza różnic indywidualnych:</strong> Zróżnicowanie wyników między ludźmi (wariancja) jest traktowane jako cenne źródło informacji, a nie jako błąd.</li>
+<li><strong>Status zmiennych:</strong> Mówimy o <strong>predyktorach</strong> (zmienne wyjaśniające) i <strong>zmiennych kryterialnych</strong> (zmienne wyjaśniane), a nie o przyczynach i skutkach.</li>
+</ul></li>
+<li><strong>Ograniczenia wnioskowania (korelacja</strong> <span class="math inline">\(\neq\)</span> przyczynowość): Zastosowanie modelu korelacyjnego wyklucza możliwość orzekania o relacjach przyczynowo-skutkowych z dwóch powodów: <strong>Problem kierunkowości:</strong> Nie wiemy, czy <span class="math inline">\(X\)</span> wpływa na <span class="math inline">\(Y\)</span>, czy <span class="math inline">\(Y\)</span> wpływa na <span class="math inline">\(X\)</span> (np. czy niska samoocena powoduje depresję, czy depresja obniża samoocenę). <strong>Problem trzeciej zmiennej (korelacja pozorna):</strong> Związek między <span class="math inline">\(X\)</span> i <span class="math inline">\(Y\)</span> może wynikać z działania niekontrolowanej zmiennej <span class="math inline">\(Z\)</span>. - <em>Przykład:</em> Korelacja między liczbą utonięć a sprzedażą lodów jest wysoka, ale pozorna – obie zmienne są funkcją temperatury otoczenia.</li>
+</ul>
+</section>
+<section id="model-eksperymentalny" class="level2">
+<h2 class="anchored" data-anchor-id="model-eksperymentalny">Model eksperymentalny</h2>
+<p>Nurt eksperymentalny dąży do wyjaśnienia mechanizmów zachowania poprzez aktywne modyfikowanie warunków badania. Jest to jedyna metoda pozwalająca na uprawomocnione wnioskowanie kauzalne (przyczynowe).</p>
+<ul>
+<li><p><strong>Triada eksperymentalna:</strong></p>
+<p><strong>Manipulacja:</strong> Badacz celowo zmienia wartości zmiennej niezależnej (IV), tworząc co najmniej dwa odmienne warunki (np. grupa eksperymentalna vs kontrolna). <strong>Randomizacja:</strong> Losowy przydział osób do warunków, który teoretycznie zrównuje grupy pod względem wszystkich cech przed rozpoczęciem badania. <strong>Kontrola:</strong> Utrzymywanie wszystkich pozostałych zmiennych na stałym poziomie (tzw. <em>ceteris paribus</em> – przy innych warunkach niezmienionych).</p></li>
+<li><p><strong>Kanon jednej różnicy (J.S. Mill):</strong> Jeżeli dwie sytuacje są identyczne pod każdym względem z wyjątkiem jednego czynnika (zmiennej niezależnej), i w sytuacjach tych wystąpi odmienny rezultat (zmienna zależna), to ów czynnik jest przyczyną różnicy.</p></li>
+<li><p><strong>Traktowanie wariancji:</strong> W eksperymencie różnice indywidualne między badanymi (np. w inteligencji czy osobowości) są traktowane jako <strong>wariancja błędu</strong> (szum), który należy zminimalizować poprzez ścisłą kontrolę i randomizację, aby wyodrębnić czysty efekt manipulacji.</p></li>
+</ul>
+</section>
+<section id="analiza-porównawcza-i-dylematy-wyboru" class="level2">
+<h2 class="anchored" data-anchor-id="analiza-porównawcza-i-dylematy-wyboru">Analiza porównawcza i dylematy wyboru</h2>
+<p>Wybór modelu badawczego wiąże się z koniecznością przyjęcia kompromisu między różnymi rodzajami trafności oraz możliwościami etycznymi.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Cecha</th>
+<th style="text-align: left;">Model Eksperymentalny</th>
+<th style="text-align: left;">Model Korelacyjny</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Cel poznawczy</strong></td>
+<td style="text-align: left;">Wyjaśnianie (Dlaczego? Co jest przyczyną?)</td>
+<td style="text-align: left;">Przewidywanie i Opis (Co się z czym wiąże?)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Ingerencja badacza</strong></td>
+<td style="text-align: left;">Aktywna (Manipulacja, Kontrola)</td>
+<td style="text-align: left;">Bierna (Pomiar zmiennych zastanych)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Trafność</strong></td>
+<td style="text-align: left;">Wysoka <strong>trafność wewnętrzna</strong> (pewność co do przyczyn).</td>
+<td style="text-align: left;">Często wyższa <strong>trafność ekologiczna</strong> (naturalne warunki).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Zmienne</strong></td>
+<td style="text-align: left;">Ograniczona liczba zmiennych (redukcjonizm).</td>
+<td style="text-align: left;">Możliwość badania wielu zmiennych jednocześnie.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Etyka i wykonalność</strong></td>
+<td style="text-align: left;">Ograniczone możliwości manipulacji (nie można wywołać traumy, przypisać płci).</td>
+<td style="text-align: left;">Umożliwia badanie zmiennych, których nie da się manipulować.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="konwergencja-metodologiczna" class="level2">
+<h2 class="anchored" data-anchor-id="konwergencja-metodologiczna">Konwergencja metodologiczna</h2>
+<p>Współczesna psychologia dąży do integracji obu podejść. Często proces badawczy przebiega dwuetapowo: Badania korelacyjne służą do identyfikacji potencjalnych związków w środowisku naturalnym. Następnie projektowane są eksperymenty laboratoryjne w celu weryfikacji przyczynowego charakteru tych związków.</p>
+<p><em>Przykład:</em> Badacz zauważa korelację między graniem w brutalne gry a agresją (badanie korelacyjne). Następnie zaprasza badanych do laboratorium, losowo przydziela ich do grania w grę brutalną lub łagodną i mierzy poziom agresji (badanie eksperymentalne), aby potwierdzić kierunek wpływu.</p>
+</section>
+</section>
+<section id="analiza-współzmienności-i-predykcja-korelacja-i-regresja" class="level1">
+<h1>Analiza współzmienności i predykcja: korelacja i regresja</h1>
+<p>W badaniach psychologicznych rzadko ograniczamy się do opisu pojedynczych zmiennych. Zazwyczaj celem jest zrozumienie, w jaki sposób jedna cecha (np. inteligencja) wiąże się z drugą (np. osiągnięciami akademickimi). Do tego celu służą analizy korelacyjne i regresyjne.</p>
+<section id="współczynnik-korelacji-r-pearsona" class="level2">
+<h2 class="anchored" data-anchor-id="współczynnik-korelacji-r-pearsona">Współczynnik korelacji r-Pearsona</h2>
+<p>Współczynnik korelacji Pearsona (<span class="math inline">\(r\)</span>) jest najczęściej stosowaną miarą parametryczną, służącą do kwantyfikacji siły oraz kierunku związku liniowego pomiędzy dwiema zmiennymi mierzonymi na skalach interwałowych lub ilorazowych.</p>
+<ul>
+<li><strong>Charakterystyka matematyczna:</strong> Wartość współczynnika mieści się w przedziale domkniętym <span class="math inline">\([-1, +1]\)</span>.
+<ul>
+<li><strong>Znak współczynnika:</strong> Determinuje kierunek relacji. Dodatnia korelacja oznacza, że wzrostowi wartości jednej zmiennej towarzyszy wzrost wartości drugiej (proporcjonalność prosta). Ujemna korelacja wskazuje na relację odwrotną – wzrost jednej zmiennej wiąże się ze spadkiem drugiej.</li>
+<li><strong>Wartość bezwzględna:</strong> Określa siłę związku. Im wartość jest bliższa jedności (niezależnie od znaku), tym silniejsza jest zależność liniowa. Wartość bliska zeru sugeruje brak korelacji liniowej.</li>
+</ul></li>
+<li><strong>Interpretacja współczynnika determinacji (</strong><span class="math inline">\(R^2\)</span>): Sama wartość <span class="math inline">\(r\)</span> bywa myląca. Bardziej rzetelną miarą jest współczynnik determinacji, obliczany jako kwadrat korelacji (<span class="math inline">\(r^2\)</span>). Wskaźnik ten informuje, jaki procent wariancji (zmienności) jednej zmiennej może zostać wyjaśniony poprzez wariancję drugiej zmiennej.
+<ul>
+<li><em>Przykład:</em> Jeśli korelacja między poziomem sumienności a średnią ocen wynosi <span class="math inline">\(r = 0,40\)</span>, to współczynnik determinacji wynosi <span class="math inline">\(R^2 = 0,16\)</span>. Oznacza to, że cecha osobowości, jaką jest sumienność, wyjaśnia jedynie 16% zmienności w wynikach w nauce. Pozostałe 84% zależy od innych czynników (np. inteligencji, motywacji, sytuacji życiowej).</li>
+</ul></li>
+<li><strong>Ograniczenia interpretacyjne:</strong> <strong>Nieliniowość:</strong> Korelacja Pearsona jest wrażliwa wyłącznie na związki liniowe. Zjawiska psychologiczne często przyjmują postać krzywoliniową. Klasycznym przykładem jest <strong>prawo Yerkesa-Dodsona</strong>, opisujące relację między pobudzeniem (stresem) a wykonaniem zadania. Wykonanie jest najlepsze przy średnim poziomie pobudzenia, a gorsze przy bardzo niskim lub bardzo wysokim. W takiej sytuacji korelacja Pearsona może wynieść <span class="math inline">\(r \approx 0\)</span>, mimo istnienia silnego, systematycznego związku. <strong>Brak implikacji przyczynowej:</strong> Wykazanie korelacji nie upoważnia do wnioskowania o przyczynowości. Korelacja może być wynikiem działania trzeciej, niekontrolowanej zmiennej (zmiennej zakłócającej).</li>
+</ul>
+</section>
+<section id="interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona" class="level2">
+<h2 class="anchored" data-anchor-id="interaktywna-symulacja-siła-związku-i-współczynnik-r-pearsona">Interaktywna symulacja: Siła związku i współczynnik r-Pearsona</h2>
+<p>Zmień <strong>liczbę obserwacji (N)</strong>, aby wylosować nową grupę badanych. Zmieniaj <strong>korelację (r)</strong>, aby zobaczyć, jak te same osoby “układają się” bliżej lub dalej linii regresji.</p>
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="481" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 480;"><span id="cb8-481"><a href="#cb8-481" aria-hidden="true" tabindex="-1"></a>viewof n_anim <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">50</span><span class="op">,</span> <span class="dv">500</span>]<span class="op">,</span> {</span>
+<span id="cb8-482"><a href="#cb8-482" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span> </span>
+<span id="cb8-483"><a href="#cb8-483" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> </span>
+<span id="cb8-484"><a href="#cb8-484" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Liczba obserwacji (N)"</span></span>
+<span id="cb8-485"><a href="#cb8-485" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb8-486"><a href="#cb8-486" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-487"><a href="#cb8-487" aria-hidden="true" tabindex="-1"></a>viewof r_anim <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {</span>
+<span id="cb8-488"><a href="#cb8-488" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> </span>
+<span id="cb8-489"><a href="#cb8-489" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="fl">0.00</span><span class="op">,</span> </span>
+<span id="cb8-490"><a href="#cb8-490" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Korelacja (r)"</span></span>
+<span id="cb8-491"><a href="#cb8-491" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-8-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-8-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="panel-fill panel-grid g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="g-col-24">
+<div class="cell panel-fill">
+<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="496" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 495;"><span id="cb9-496"><a href="#cb9-496" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb9-497"><a href="#cb9-497" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span><span class="op">:</span> <span class="vs">`r = </span><span class="sc">${</span>r_anim<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">  |  p = </span><span class="sc">${</span>pValueText<span class="sc">}</span><span class="vs">`</span><span class="op">,</span></span>
+<span id="cb9-498"><a href="#cb9-498" aria-hidden="true" tabindex="-1"></a>  <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb9-499"><a href="#cb9-499" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">domain</span><span class="op">:</span> [<span class="op">-</span><span class="dv">4</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Zmienna X"</span> }<span class="op">,</span></span>
+<span id="cb9-500"><a href="#cb9-500" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">domain</span><span class="op">:</span> [<span class="op">-</span><span class="dv">4</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Zmienna Y"</span> }<span class="op">,</span></span>
+<span id="cb9-501"><a href="#cb9-501" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb9-502"><a href="#cb9-502" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">strokeOpacity</span><span class="op">:</span> <span class="fl">0.2</span>})<span class="op">,</span></span>
+<span id="cb9-503"><a href="#cb9-503" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">strokeOpacity</span><span class="op">:</span> <span class="fl">0.2</span>})<span class="op">,</span></span>
+<span id="cb9-504"><a href="#cb9-504" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-505"><a href="#cb9-505" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Kropki są przekazywane bezpośrednio, bez warunków</span></span>
+<span id="cb9-506"><a href="#cb9-506" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(plotData<span class="op">,</span> {</span>
+<span id="cb9-507"><a href="#cb9-507" aria-hidden="true" tabindex="-1"></a>        <span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> </span>
+<span id="cb9-508"><a href="#cb9-508" aria-hidden="true" tabindex="-1"></a>        <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> </span>
+<span id="cb9-509"><a href="#cb9-509" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"steelblue"</span><span class="op">,</span> </span>
+<span id="cb9-510"><a href="#cb9-510" aria-hidden="true" tabindex="-1"></a>        <span class="dt">r</span><span class="op">:</span> <span class="dv">4</span><span class="op">,</span> </span>
+<span id="cb9-511"><a href="#cb9-511" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.7</span><span class="op">,</span></span>
+<span id="cb9-512"><a href="#cb9-512" aria-hidden="true" tabindex="-1"></a>        <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb9-513"><a href="#cb9-513" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb9-514"><a href="#cb9-514" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-515"><a href="#cb9-515" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Linia regresji również widoczna od razu</span></span>
+<span id="cb9-516"><a href="#cb9-516" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">linearRegressionY</span>(plotData<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span>})</span>
+<span id="cb9-517"><a href="#cb9-517" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb9-518"><a href="#cb9-518" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-9" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell hidden">
+<div class="sourceCode cell-code hidden" id="cb10" data-startfrom="528" data-source-offset="-63"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 527;"><span id="cb10-528"><a href="#cb10-528" aria-hidden="true" tabindex="-1"></a>pValueText <span class="op">=</span> {</span>
+<span id="cb10-529"><a href="#cb10-529" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> r <span class="op">=</span> r_anim<span class="op">;</span></span>
+<span id="cb10-530"><a href="#cb10-530" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> n <span class="op">=</span> n_anim<span class="op">;</span></span>
+<span id="cb10-531"><a href="#cb10-531" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-532"><a href="#cb10-532" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Zabezpieczenie dla korelacji idealnej (dzielenie przez zero)</span></span>
+<span id="cb10-533"><a href="#cb10-533" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(r) <span class="op">&gt;=</span> <span class="fl">0.99</span>) <span class="cf">return</span> <span class="st">"&lt; 0.001"</span><span class="op">;</span> </span>
+<span id="cb10-534"><a href="#cb10-534" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-535"><a href="#cb10-535" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Obliczenie statystyki t</span></span>
+<span id="cb10-536"><a href="#cb10-536" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Wzór: t = r * sqrt((N-2) / (1-r^2))</span></span>
+<span id="cb10-537"><a href="#cb10-537" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> tStat <span class="op">=</span> r <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>((n <span class="op">-</span> <span class="dv">2</span>) <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> r <span class="op">*</span> r))<span class="op">;</span></span>
+<span id="cb10-538"><a href="#cb10-538" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-539"><a href="#cb10-539" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Obliczenie p-value przy użyciu aproksymacji rozkładu normalnego (dla N &gt;= 50 jest to poprawne)</span></span>
+<span id="cb10-540"><a href="#cb10-540" aria-hidden="true" tabindex="-1"></a>  <span class="co">// p = 2 * (1 - CDF(|t|))</span></span>
+<span id="cb10-541"><a href="#cb10-541" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> p <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> <span class="fu">normalCDF</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(tStat)))<span class="op">;</span></span>
+<span id="cb10-542"><a href="#cb10-542" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-543"><a href="#cb10-543" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (p <span class="op">&lt;</span> <span class="fl">0.001</span>) <span class="cf">return</span> <span class="st">"&lt; 0.001"</span><span class="op">;</span></span>
+<span id="cb10-544"><a href="#cb10-544" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> p<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">3</span>)<span class="op">;</span></span>
+<span id="cb10-545"><a href="#cb10-545" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-546"><a href="#cb10-546" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-547"><a href="#cb10-547" aria-hidden="true" tabindex="-1"></a><span class="co">// Funkcja pomocnicza: Dystrybuanta rozkładu normalnego (nie wymaga zewnętrznych bibliotek)</span></span>
+<span id="cb10-548"><a href="#cb10-548" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">normalCDF</span>(x) {</span>
+<span id="cb10-549"><a href="#cb10-549" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> t <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> <span class="fl">0.2316419</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(x))<span class="op">;</span></span>
+<span id="cb10-550"><a href="#cb10-550" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> d <span class="op">=</span> <span class="fl">0.3989422804014337</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(<span class="op">-</span>x <span class="op">*</span> x <span class="op">/</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb10-551"><a href="#cb10-551" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> prob <span class="op">=</span> d <span class="op">*</span> t <span class="op">*</span> (<span class="fl">0.319381530</span> <span class="op">+</span> t <span class="op">*</span> (<span class="op">-</span><span class="fl">0.356563782</span> <span class="op">+</span> t <span class="op">*</span> (<span class="fl">1.781477937</span> <span class="op">+</span> t <span class="op">*</span> (<span class="op">-</span><span class="fl">1.821255978</span> <span class="op">+</span> t <span class="op">*</span> <span class="fl">1.330274429</span>))))<span class="op">;</span></span>
+<span id="cb10-552"><a href="#cb10-552" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">&gt;</span> <span class="dv">0</span> <span class="op">?</span> <span class="dv">1</span> <span class="op">-</span> prob <span class="op">:</span> prob<span class="op">;</span></span>
+<span id="cb10-553"><a href="#cb10-553" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-554"><a href="#cb10-554" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-555"><a href="#cb10-555" aria-hidden="true" tabindex="-1"></a><span class="co">// 2. Generowanie losowych "osób" (Zmienne ukryte Z1 i Z2)</span></span>
+<span id="cb10-556"><a href="#cb10-556" aria-hidden="true" tabindex="-1"></a><span class="co">// Reaguje TYLKO na zmianę N (n_anim).</span></span>
+<span id="cb10-557"><a href="#cb10-557" aria-hidden="true" tabindex="-1"></a>baseRandomness <span class="op">=</span> {</span>
+<span id="cb10-558"><a href="#cb10-558" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> seeds <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb10-559"><a href="#cb10-559" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n_anim<span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb10-560"><a href="#cb10-560" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Algorytm Boxa-Mullera</span></span>
+<span id="cb10-561"><a href="#cb10-561" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> u1 <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> u2 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb10-562"><a href="#cb10-562" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u1 <span class="op">===</span> <span class="dv">0</span>) u1 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb10-563"><a href="#cb10-563" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u2 <span class="op">===</span> <span class="dv">0</span>) u2 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb10-564"><a href="#cb10-564" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> z1 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="op">-</span><span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(u1)) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">cos</span>(<span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span> <span class="op">*</span> u2)<span class="op">;</span></span>
+<span id="cb10-565"><a href="#cb10-565" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-566"><a href="#cb10-566" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> u3 <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> u4 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb10-567"><a href="#cb10-567" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u3 <span class="op">===</span> <span class="dv">0</span>) u3 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb10-568"><a href="#cb10-568" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (u4 <span class="op">===</span> <span class="dv">0</span>) u4 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">;</span></span>
+<span id="cb10-569"><a href="#cb10-569" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> z2 <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="op">-</span><span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(u3)) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">cos</span>(<span class="fl">2.0</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span> <span class="op">*</span> u4)<span class="op">;</span></span>
+<span id="cb10-570"><a href="#cb10-570" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-571"><a href="#cb10-571" aria-hidden="true" tabindex="-1"></a>    seeds<span class="op">.</span><span class="fu">push</span>({z1<span class="op">,</span> z2})<span class="op">;</span></span>
+<span id="cb10-572"><a href="#cb10-572" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb10-573"><a href="#cb10-573" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> seeds<span class="op">;</span></span>
+<span id="cb10-574"><a href="#cb10-574" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-575"><a href="#cb10-575" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-576"><a href="#cb10-576" aria-hidden="true" tabindex="-1"></a><span class="co">// 3. Transformacja danych (Nakładanie korelacji)</span></span>
+<span id="cb10-577"><a href="#cb10-577" aria-hidden="true" tabindex="-1"></a><span class="co">// Bierze bazową losowość i przekształca ją w zależności od suwaka 'r'</span></span>
+<span id="cb10-578"><a href="#cb10-578" aria-hidden="true" tabindex="-1"></a>plotData <span class="op">=</span> {</span>
+<span id="cb10-579"><a href="#cb10-579" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> r <span class="op">=</span> r_anim<span class="op">;</span></span>
+<span id="cb10-580"><a href="#cb10-580" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> baseRandomness<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> {</span>
+<span id="cb10-581"><a href="#cb10-581" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> x <span class="op">=</span> d<span class="op">.</span><span class="at">z1</span><span class="op">;</span></span>
+<span id="cb10-582"><a href="#cb10-582" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Wzór na skorelowaną zmienną Y</span></span>
+<span id="cb10-583"><a href="#cb10-583" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> y <span class="op">=</span> (r <span class="op">*</span> d<span class="op">.</span><span class="at">z1</span>) <span class="op">+</span> (<span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="dv">1</span> <span class="op">-</span> r <span class="op">*</span> r) <span class="op">*</span> d<span class="op">.</span><span class="at">z2</span>)<span class="op">;</span></span>
+<span id="cb10-584"><a href="#cb10-584" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {x<span class="op">,</span> y}<span class="op">;</span></span>
+<span id="cb10-585"><a href="#cb10-585" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb10-586"><a href="#cb10-586" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-10-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-10-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-10-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-10-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="analiza-regresji-liniowej" class="level2">
+<h2 class="anchored" data-anchor-id="analiza-regresji-liniowej">Analiza regresji liniowej</h2>
+<p>O ile korelacja opisuje siłę związku, o tyle analiza regresji pozwala na <strong>predykcję</strong>, czyli przewidywanie wartości zmiennej zależnej (<span class="math inline">\(Y\)</span>) na podstawie znajomości wartości predyktora (<span class="math inline">\(X\)</span>). Regresja opiera się na modelu matematycznym, który minimalizuje błędy oszacowania.</p>
+<ul>
+<li><strong>Równanie regresji prostej:</strong> <span class="math display">\[Y = b_0 + b_1X + e\]</span>
+<ul>
+<li><span class="math inline">\(b_0\)</span> (Stała/Intercept): Punkt przecięcia linii regresji z osią Y. Oznacza przewidywaną wartość <span class="math inline">\(Y\)</span>, gdy <span class="math inline">\(X = 0\)</span>.</li>
+<li><span class="math inline">\(b_1\)</span> (Współczynnik kierunkowy/Slope): Kluczowy parametr interpretacyjny. Informuje, o ile jednostek zmieni się wartość zmiennej zależnej <span class="math inline">\(Y\)</span>, jeśli predyktor <span class="math inline">\(X\)</span> wzrośnie o jedną jednostkę.</li>
+<li><span class="math inline">\(e\)</span> (Błąd resztowy): Różnica między wartością przewidywaną przez model a wartością rzeczywistą.</li>
+</ul></li>
+<li><strong>Regresja wielokrotna (Multiple Regression):</strong> Regresja wielokrotna pozwala na wprowadzenie do modelu wielu predyktorów jednocześnie (np. przewidywanie satysfakcji z życia na podstawie dochodów, zdrowia i relacji społecznych). Umożliwia to ocenę <strong>unikalnego wkładu</strong> każdego predyktora, po statystycznym wyeliminowaniu (skontrolowaniu) wpływu pozostałych zmiennych.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="jakość-planu-badawczego-trafność-i-procedury-kontrolne" class="level1">
+<h1>Jakość planu badawczego: trafność i procedury kontrolne</h1>
+<p>Wartość naukowa badania eksperymentalnego zależy nie tylko od poprawności analiz statystycznych, ale przede wszystkim od rygoru metodologicznego zastosowanego na etapie planowania. Kluczowymi pojęciami są tu trafność (walidacja wniosków) oraz procedury kontrolne, ze szczególnym uwzględnieniem randomizacji, które mają na celu eliminację alternatywnych wyjaśnień obserwowanych efektów.</p>
+<section id="randomizacja-mechanizm-kontroli-zmiennych-zakłócających" class="level2">
+<h2 class="anchored" data-anchor-id="randomizacja-mechanizm-kontroli-zmiennych-zakłócających">Randomizacja: mechanizm kontroli zmiennych zakłócających</h2>
+<p>Randomizacja (losowy przydział do grup) stanowi “złoty standard” w badaniach eksperymentalnych. Jej fundamentalnym celem jest zapewnienie <strong>ekwiwalentności grup</strong> przed wprowadzeniem manipulacji eksperymentalnej. Dzięki losowości, wszelkie różnice indywidualne (np. wiek, inteligencja, poziom motywacji) rozkładają się równomiernie pomiędzy grupę eksperymentalną a kontrolną, przekształcając błąd systematyczny w błąd losowy.</p>
+<p>Wyróżniamy następujące procedury randomizacji:</p>
+<ul>
+<li><strong>Randomizacja prosta (Simple Randomization):</strong> Każda jednostka ma jednakowe prawdopodobieństwo trafienia do dowolnej grupy (np. rzut monetą, generator liczb losowych).
+<ul>
+<li><em>Ograniczenie:</em> W małych próbach może prowadzić do nierównolicznych grup (np. 70% badanych trafi do grupy A).</li>
+</ul></li>
+<li><strong>Randomizacja blokowa (Block Randomization):</strong> Losowanie odbywa się w obrębie małych bloków (np. 4-osobowych), co gwarantuje, że w każdym bloku (i w całym badaniu) liczebności grup będą równe.</li>
+<li><strong>Dobór wiązany (Matched-Pair Design):</strong> Procedura stosowana w małych próbach, gdy znana jest kluczowa zmienna zakłócająca (np. wiek w badaniach czasu reakcji). Badacz najpierw łączy uczestników w pary o zbliżonym nasileniu tej cechy (np. dwóch 20-latków, dwóch 45-latków), a następnie losowo przydziela jedną osobę z pary do grupy eksperymentalnej, a drugą do kontrolnej.</li>
+<li><strong>Randomizacja adaptacyjna (Adaptive Randomization):</strong> Prawdopodobieństwo przydziału do grupy zmienia się w trakcie badania w zależności od aktualnego rozkładu zmiennych współtowarzyszących, co pozwala na dynamiczne balansowanie grup.</li>
+</ul>
+</section>
+<section id="trafność-wewnętrzna-internal-validity" class="level2">
+<h2 class="anchored" data-anchor-id="trafność-wewnętrzna-internal-validity">Trafność wewnętrzna (Internal Validity)</h2>
+<p>Trafność wewnętrzna odnosi się do stopnia pewności, z jaką możemy stwierdzić, że zaobserwowana zmiana w zmiennej zależnej (DV) jest <strong>wyłącznym skutkiem</strong> manipulacji zmienną niezależną (IV), a nie rezultatem działania czynników ubocznych.</p>
+<ul>
+<li><strong>Zagrożenia dla trafności wewnętrznej:</strong>
+<ul>
+<li><strong>Zmienne zakłócające (Confounders):</strong> Niekontrolowane czynniki, które systematycznie różnicują grupy (np. badanie nowej metody nauczania, gdzie grupa eksperymentalna uczy się rano, a kontrolna po południu – pora dnia jest konfoundem).</li>
+<li><strong>Selekcja (Selection Bias):</strong> Nielosowy dobór osób do grup (np. ochotnicy vs osoby z łapanki), co powoduje, że grupy różnią się już na starcie.</li>
+<li><strong>Historia:</strong> Zdarzenia zewnętrzne zachodzące w czasie trwania badania, które mogą wpłynąć na wyniki (np. nagła zmiana pogody wpływająca na nastrój badanych).</li>
+<li><strong>Utrata osób badanych:</strong> Nierównomierne wykruszanie się uczestników z badania (np. z grupy eksperymentalnej rezygnują osoby słabsze, co sztucznie zawyża średni wynik końcowy).</li>
+<li><strong>Regresja do średniej:</strong> Zjawisko statystyczne, polegające na tym, że osoby uzyskujące w pierwszym pomiarze wyniki skrajne (bardzo niskie lub bardzo wysokie), w kolejnym pomiarze naturalnie uzyskują wyniki bliższe średniej, niezależnie od interwencji.</li>
+</ul></li>
+</ul>
+</section>
+<section id="trafność-zewnętrzna-external-validity" class="level2">
+<h2 class="anchored" data-anchor-id="trafność-zewnętrzna-external-validity">Trafność zewnętrzna (External Validity)</h2>
+<p>Trafność zewnętrzna dotyczy możliwości <strong>generalizacji</strong> (uogólniania) wyników badania poza specyficzne warunki, w których zostało ono przeprowadzone. Obejmuje generalizację na inne osoby (populacje), inne warunki (sytuacje) oraz inny czas.</p>
+<ul>
+<li><strong>Trafność ekologiczna:</strong> Stopień, w jakim warunki badania odpowiadają naturalnemu środowisku życia badanego. Badania laboratoryjne często mają wysoką trafność wewnętrzną (duża kontrola), ale niską trafność ekologiczną (sztuczność sytuacji).</li>
+<li><strong>Zagrożenia dla trafności zewnętrznej:</strong>
+<ul>
+<li><strong>Niereprezentatywność próby:</strong> Opieranie wiedzy psychologicznej głównie na studentach z krajów zachodnich (tzw. problem prób <strong>WEIRD</strong>: <em>Western, Educated, Industrialized, Rich, Democratic</em>), co ogranicza uniwersalność wniosków.</li>
+<li><strong>Efekt badacza i oczekiwania:</strong> Świadomość udziału w badaniu może zmieniać zachowanie uczestników (efekt Hawthorne), sprawiając, że wyniki nie przystają do zachowań naturalnych.</li>
+</ul></li>
+</ul>
+</section>
+<section id="techniki-zwiększania-trafności-eksperymentu" class="level2">
+<h2 class="anchored" data-anchor-id="techniki-zwiększania-trafności-eksperymentu">Techniki zwiększania trafności eksperymentu</h2>
+<p>Aby zminimalizować błędy i zwiększyć wiarygodność wnioskowania, stosuje się szereg procedur kontrolnych:</p>
+<ul>
+<li><strong>Zaślepienie (Blinding):</strong>
+<ul>
+<li><em>Pojedynczo ślepa próba:</em> Osoba badana nie wie, czy jest w grupie eksperymentalnej czy kontrolnej (np. czy otrzymuje lek czy placebo).</li>
+<li><em>Podwójnie ślepa próba:</em> Ani osoba badana, ani badacz przeprowadzający pomiar nie wiedzą, do której grupy należy uczestnik. Eliminuje to wpływ oczekiwań badacza na wyniki.</li>
+</ul></li>
+<li><strong>Placebo i aktywne grupy kontrolne:</strong> Stosowanie grupy kontrolnej, która otrzymuje neutralną interwencję (placebo) lub inną formę aktywności (aktywna kontrola), pozwala wyizolować specyficzny efekt badanej metody od niespecyficznych efektów bycia badanym (np. uwagi poświęconej przez badacza).</li>
+<li><strong>Standaryzacja:</strong> Ujednolicenie procedury, instrukcji i warunków badania dla wszystkich uczestników, co redukuje wariancję błędu.</li>
+</ul>
+</section>
+</section>
+<section id="jakość-pomiaru-psychologicznego-rzetelność" class="level1">
+<h1>Jakość pomiaru psychologicznego: rzetelność</h1>
+<p>W metodologii badań nauk behawioralnych jakość zgromadzonych danych zależy bezpośrednio od właściwości psychometrycznych zastosowanych narzędzi. O ile trafność (<em>validity</em>) odpowiada na pytanie, <em>czy</em> badamy to, co zamierzaliśmy, o tyle rzetelność (<em>reliability</em>) określa, <em>jak precyzyjnie</em> i <em>powtarzalnie</em> dokonujemy tego pomiaru. Rzetelność jest warunkiem koniecznym (choć niewystarczającym) dla trafności – pomiar obarczony dużym błędem losowym nie może być uznany za trafny.</p>
+<section id="definicja-i-istota-rzetelności" class="level2">
+<h2 class="anchored" data-anchor-id="definicja-i-istota-rzetelności">Definicja i istota rzetelności</h2>
+<p>Rzetelność rozumiana jest jako stopień, w jakim wynik uzyskany w badaniu odzwierciedla rzeczywistą wartość mierzonej cechy (<em>true score</em>), a w jakim jest efektem błędu losowego pomiaru. Narzędzie rzetelne to takie, które w powtarzalnych warunkach dostarcza spójnych i stabilnych rezultatów.</p>
+<ul>
+<li><strong>Relacja rzetelność – trafność:</strong> Wysoka rzetelność nie gwarantuje wysokiej trafności. Można dokonywać pomiaru w sposób bardzo precyzyjny i powtarzalny, lecz całkowicie błędny merytorycznie (np. precyzyjnie mierzyć obwód głowy, twierdząc, że jest to wskaźnik inteligencji). Natomiast niska rzetelność (duży szum informacyjny) automatycznie wyklucza wysoką trafność.</li>
+</ul>
+</section>
+<section id="rodzaje-szacowania-rzetelności" class="level2">
+<h2 class="anchored" data-anchor-id="rodzaje-szacowania-rzetelności">Rodzaje szacowania rzetelności</h2>
+<p>W zależności od źródła błędu pomiaru, wyróżniamy różne metody weryfikacji rzetelności:</p>
+<ul>
+<li><strong>Stabilność bezwzględna (metoda test-retest):</strong> Polega na dwukrotnym przebadaniu tej samej grupy osób tym samym narzędziem w odstępie czasu. Wysoka korelacja między wynikami pierwszego i drugiego pomiaru świadczy o tym, że narzędzie jest odporne na wahania czasowe i zmienność sytuacji badawczej.
+<ul>
+<li><em>Zastosowanie:</em> Badanie cech względnie stałych (np. inteligencja, cechy osobowości).</li>
+</ul></li>
+<li><strong>Spójność wewnętrzna (Internal Consistency):</strong> Określa stopień, w jakim wszystkie pozycje testowe (np. pytania w kwestionariuszu) mierzą ten sam konstrukt teoretyczny. Najpopularniejszym wskaźnikiem jest tutaj <span class="math inline">\(\alpha\)</span> Cronbacha.
+<ul>
+<li><em>Interpretacja:</em> Wysoka spójność oznacza, że osoba udzielająca odpowiedzi w określonym kierunku na jedno pytanie, z dużym prawdopodobieństwem odpowie podobnie na inne pytania w tej samej skali.</li>
+</ul></li>
+<li><strong>Rzetelność sędziów kompetentnych (Inter-rater Reliability):</strong> Kluczowa w badaniach obserwacyjnych i jakościowych. Mierzy stopień zgodności ocen dokonywanych przez niezależnych obserwatorów oceniających to samo zachowanie.
+<ul>
+<li><em>Przykład:</em> Dwóch badaczy niezależnie koduje poziom agresji u dzieci na placu zabaw. Jeśli ich oceny są zbieżne, pomiar jest rzetelny i nie zależy od subiektywizmu obserwatora.</li>
+</ul></li>
+<li><strong>Metoda wersji alternatywnych/równoległych (Parallel Forms):</strong> Użycie dwóch różnych, ale psychometrycznie równoważnych wersji tego samego testu. Pozwala to wyeliminować efekt zapamiętywania pytań, który występuje w procedurze test-retest.</li>
+</ul>
+</section>
+<section id="zagrożenia-dla-rzetelności-i-metody-jej-zwiększania" class="level2">
+<h2 class="anchored" data-anchor-id="zagrożenia-dla-rzetelności-i-metody-jej-zwiększania">Zagrożenia dla rzetelności i metody jej zwiększania</h2>
+<p>Nierzetelność pomiaru wynika z obecności błędu losowego, który może mieć źródło w narzędziu, procedurze lub osobie badanej.</p>
+<ul>
+<li><strong>Czynniki obniżające rzetelność:</strong>
+<ul>
+<li>Niejednoznaczne, niezrozumiałe instrukcje lub pytania.</li>
+<li>Zmienne warunki badania (hałas, różna pora dnia).</li>
+<li>Subiektywizm badacza w interpretacji zachowań.</li>
+<li>Fluktuacje stanu osoby badanej (zmęczenie, lęk, motywacja).</li>
+</ul></li>
+<li><strong>Procedury zwiększania rzetelności (Obowiązki badacza):</strong> <strong>Standaryzacja procedury:</strong> Ujednolicenie warunków badania dla wszystkich uczestników (te same instrukcje, ten sam czas, identyczne bodźce).
+<ul>
+<li><strong>Trening personelu:</strong> Szkolenie eksperymentatorów w celu wyeliminowania błędów w podawaniu instrukcji lub kodowaniu wyników.</li>
+<li><strong>Badania pilotażowe:</strong> Przeprowadzenie próbnych badań w celu wykrycia i usunięcia niejasności w narzędziach.</li>
+<li><strong>Agregacja danych:</strong> Zwiększenie liczby pozycji w teście lub liczby pomiarów (zgodnie z zasadą, że średnia z wielu pomiarów jest bardziej stabilna niż pojedynczy odczyt).</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="procedury-porównywania-grup-test-t-studenta" class="level1">
+<h1>Procedury porównywania grup (test t-Studenta)</h1>
+<p>W badaniach eksperymentalnych najczęściej dążymy do ustalenia, czy manipulacja eksperymentalna wywołała istotną statystycznie różnicę między warunkami. Podstawowym narzędziem do weryfikacji hipotez o różnicach między dwiema średnimi jest test t-Studenta.</p>
+<section id="logika-testu-t-studenta" class="level2">
+<h2 class="anchored" data-anchor-id="logika-testu-t-studenta">Logika testu t-Studenta</h2>
+<p>Test ten opiera się na analizie stosunku tzw. „sygnału” do „szumu”.</p>
+<ul>
+<li><p><strong>Sygnał (Licznik wzoru):</strong> Różnica między średnimi w porównywanych grupach (<span class="math inline">\(\bar{X}_1 - \bar{X}_2\)</span>). Im większa różnica, tym silniejszy efekt manipulacji.</p></li>
+<li><p><strong>Szum (Mianownik wzoru):</strong> Błąd standardowy różnicy, wynikający ze zróżnicowania wewnątrz grup (wariancji). Im większe zróżnicowanie wyników poszczególnych osób wewnątrz grupy, tym trudniej wykryć systematyczny efekt działania czynnika eksperymentalnego.</p></li>
+</ul>
+<p>Wartość statystyki <span class="math inline">\(t\)</span> rośnie, gdy różnica między grupami jest duża, a wariancja wewnątrz grup mała.</p>
+</section>
+<section id="rodzaje-testów-t-i-ich-zastosowanie" class="level2">
+<h2 class="anchored" data-anchor-id="rodzaje-testów-t-i-ich-zastosowanie">Rodzaje testów t i ich zastosowanie</h2>
+<p>Wybór odpowiedniego wariantu testu zależy od modelu badawczego (sposobu doboru próby):</p>
+<ul>
+<li><strong>Test t dla prób niezależnych (Independent Samples t-test):</strong> Stosowany w planach międzygrupowych, gdzie osoby badane w grupie eksperymentalnej i kontrolnej to różne jednostki (np. losowy przydział do grupy otrzymującej lek lub placebo).
+<ul>
+<li><em>Założenie homogeniczności wariancji:</em> Wymaga, aby wariancje w obu populacjach były zbliżone (weryfikowane testem Levene’a).</li>
+</ul></li>
+<li><strong>Test t dla prób zależnych (Paired Samples t-test):</strong> Stosowany w planach wewnątrzgrupowych (z powtarzanym pomiarem), gdzie te same osoby są badane dwukrotnie (np. pomiar lęku przed i po interwencji terapeutycznej) lub gdy badani są dobierani w pary (matching).
+<ul>
+<li><em>Zaleta:</em> Test ten ma zazwyczaj wyższą moc statystyczną, ponieważ eliminuje błąd związany z różnicami indywidualnymi między uczestnikami (każdy badany jest swoją własną kontrolą).</li>
+</ul></li>
+</ul>
+</section>
+<section id="istotność-statystyczna-a-znaczenie-praktyczne" class="level2">
+<h2 class="anchored" data-anchor-id="istotność-statystyczna-a-znaczenie-praktyczne">Istotność statystyczna a znaczenie praktyczne</h2>
+<p>Uzyskanie wyniku istotnego statystycznie (zazwyczaj <span class="math inline">\(p &lt; 0,05\)</span>) jest warunkiem koniecznym, ale niewystarczającym do pełnej interpretacji wyników.</p>
+<ul>
+<li><p><strong>Wartość p (p-value):</strong> Jest to prawdopodobieństwo warunkowe uzyskania obserwowanych wyników (lub bardziej skrajnych), przy założeniu, że hipoteza zerowa jest prawdziwa. <strong>Nie jest to prawdopodobieństwo, że hipoteza badawcza jest prawdziwa.</strong></p>
+<ul>
+<li>Niska wartość <span class="math inline">\(p\)</span> świadczy jedynie o tym, że zaobserwowana różnica jest mało prawdopodobna do wystąpienia w wyniku czystego przypadku.</li>
+</ul></li>
+<li><p><strong>Wielkość efektu (Effect Size, np.</strong> <span class="math inline">\(d\)</span> Cohena): Ponieważ wartość <span class="math inline">\(p\)</span> zależy od liczebności próby (w bardzo dużych próbach nawet trywialne różnice stają się istotne statystycznie), niezbędne jest raportowanie wielkości efektu. Wskaźnik ten jest niezależny od liczebności grupy i informuje o sile zjawiska w ustandaryzowanych jednostkach odchylenia standardowego.</p>
+<ul>
+<li><p><em>Interpretacja:</em> <span class="math inline">\(d = 0,2\)</span> (mały efekt), <span class="math inline">\(d = 0,5\)</span> (średni efekt), <span class="math inline">\(d = 0,8\)</span> (duży efekt). Badanie może być istotne statystycznie, ale nieistotne praktycznie (np. nowa terapia jest skuteczniejsza o <span class="math inline">\(d=0,1\)</span>, co nie uzasadnia jej kosztów).</p></li>
+<li><p>Bezkrytycznego przyjmowania “średniego efektu Cohena” d = 0,5 w analizie mocy testu może prowadzić do poważnych konsekwencji. Jacob Cohen, wprowadzając swoje progi (0,2 - mały, 0,5 - średni, 0,8 - duży), zaznaczał, że są one arbitralne i powinny być używane tylko w ostateczności.&nbsp;</p>
+<p><em>“The terms ‘small,’ ‘medium,’ and ‘large’ are relative, not only to each other, but to the area of behavioral science or even more particularly to the specific content and research method being employed in any given investigation… In the face of this relativity, there is a certain risk inherent in offering conventional operational definitions for these terms for use in power analysis in as diverse a field of inquiry as behavioral science. This risk is nevertheless accepted in the belief that more is to be gained than lost by supplying a common conventional frame of reference which is recommended for use only when no better basis for estimating the ES index is available.” (Cohen, 1988, p.&nbsp;25)</em></p></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="moc-testu-wielkość-efektu-i-replikowalność" class="level1">
+<h1>Moc testu, wielkość efektu i replikowalność</h1>
+<p>Współczesna metodologia badań psychologicznych odchodzi od bezkrytycznego polegania wyłącznie na wartości <span class="math inline">\(p\)</span> (<em>p-value</em>). Istotność statystyczna (<span class="math inline">\(p &lt; 0,05\)</span>) jest funkcją wielkości próby i nie informuje badacza o sile, ważności ani o prawdopodobieństwie replikacji odkrytego zjawiska. Pełna ocena wartości naukowej badania wymaga analizy trzech powiązanych parametrów: wielkości efektu, mocy statystycznej oraz precyzji estymacji.</p>
+<section id="wielkość-efektu-effect-size" class="level2">
+<h2 class="anchored" data-anchor-id="wielkość-efektu-effect-size">Wielkość efektu (Effect Size):</h2>
+<p>Wielkość efektu to ustandaryzowana miara, która kwantyfikuje siłę związku między zmiennymi lub wielkość różnicy między grupami, w sposób niezależny od liczebności próby (<span class="math inline">\(N\)</span>).</p>
+<ul>
+<li><span class="math inline">\(d\)</span> Cohena (Cohen’s <span class="math inline">\(d\)</span>): Jest to najpowszechniejszy wskaźnik stosowany w testach różnic (np. test t-Studenta). Wyraża on różnicę między średnimi w jednostkach odchylenia standardowego.
+<ul>
+<li><em>Wzór koncepcyjny:</em> <span class="math inline">\(d = \frac{\bar{X}_1 - \bar{X}_2}{SD_{pooled}}\)</span></li>
+<li><em>Interpretacja (wg Cohena):</em>
+<ul>
+<li><span class="math inline">\(d = 0,2\)</span> – mały efekt (trudno zauważalny “gołym okiem”).</li>
+<li><span class="math inline">\(d = 0,5\)</span> – średni efekt.</li>
+<li><span class="math inline">\(d = 0,8\)</span> – duży efekt.</li>
+</ul></li>
+</ul></li>
+<li><strong>Istotność statystyczna vs istotność praktyczna:</strong> W badaniach na bardzo dużych próbach, nawet trywialne różnice mogą osiągnąć poziom istotności statystycznej (<span class="math inline">\(p &lt; 0,05\)</span>), mimo że nie mają one żadnego znaczenia praktycznego.
+<ul>
+<li><em>Przykład:</em> Wyobraźmy sobie badanie inteligencji na próbie <span class="math inline">\(N = 100\,000\)</span> mieszkańców Wrocławia i Warszawy. Analiza wykazuje różnicę 0,5 punktu IQ na korzyść jednego z miast przy <span class="math inline">\(p &lt; 0,001\)</span>.
+<ul>
+<li><strong>Wniosek statystyczny:</strong> Różnica jest wysoce istotna (nie jest dziełem przypadku).</li>
+<li><strong>Wniosek merytoryczny:</strong> Różnica jest zaniedbywalna (wielkość efektu <span class="math inline">\(d \approx 0,03\)</span>). Nie ma podstaw, by twierdzić, że mieszkańcy jednego miasta są “inteligentniejsi”.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="moc-testu-statystycznego-statistical-power" class="level2">
+<h2 class="anchored" data-anchor-id="moc-testu-statystycznego-statistical-power">Moc testu statystycznego (Statistical Power)</h2>
+<p>Moc testu (<span class="math inline">\(1 - \beta\)</span>) definiuje się jako prawdopodobieństwo odrzucenia hipotezy zerowej (<span class="math inline">\(H_0\)</span>), gdy jest ona w rzeczywistości fałszywa. Innymi słowy, jest to <strong>zdolność testu do wykrycia efektu, który faktycznie istnieje w populacji</strong>.</p>
+<ul>
+<li><strong>Determinanty mocy:</strong> Moc testu zależy od trzech czynników:
+<ul>
+<li><strong>Wielkość efektu:</strong> Silne zjawiska są łatwiejsze do wykrycia.</li>
+<li><strong>Poziom istotności (</strong><span class="math inline">\(\alpha\)</span>): Zazwyczaj ustalony na 0,05.</li>
+<li><strong>Wielkość próby (</strong><span class="math inline">\(N\)</span>): Jedyny czynnik, na który badacz ma bezpośredni wpływ. Zwiększenie liczebności próby zwiększa moc testu.</li>
+</ul></li>
+<li><strong>Problem niedoszacowania próby:</strong> Badania na małych próbach (np. <span class="math inline">\(N = 20\)</span> na grupę) charakteryzują się niską mocą.
+<ul>
+<li><em>Konsekwencje:</em> Wysokie ryzyko popełnienia <strong>błędu II rodzaju</strong> (<span class="math inline">\(\beta\)</span>) – czyli sytuacji, w której badacz nie wykrywa istniejącego efektu (wynik fałszywie negatywny). Brak istotności w małej próbie nie dowodzi braku efektu, lecz może świadczyć o niewystarczającej czułości narzędzia badawczego.</li>
+</ul></li>
+<li><strong>Analiza mocy <em>a priori</em> (Power Analysis):</strong> Standardem jest wyznaczenie liczebności próby <strong>przed</strong> rozpoczęciem zbierania danych.
+<ul>
+<li><em>Procedura:</em> Badacz określa oczekiwaną wielkość efektu (np. na podstawie literatury) oraz pożądaną moc (standardowo 80% lub 90%), a następnie przy użyciu oprogramowania (np. G*Power) oblicza wymagane <span class="math inline">\(N\)</span>.</li>
+<li><em>Przykład:</em> “Aby wykryć średni efekt (<span class="math inline">\(d = 0,5\)</span>) przy mocy 80% w teście t dla prób niezależnych, wymagana jest próba <span class="math inline">\(N = 128\)</span> (po 64 osoby na grupę)”.</li>
+</ul></li>
+</ul>
+</section>
+<section id="kryzys-replikacyjny-i-wiarygodność-nauki" class="level2">
+<h2 class="anchored" data-anchor-id="kryzys-replikacyjny-i-wiarygodność-nauki">Kryzys replikacyjny i wiarygodność nauki</h2>
+<p>W drugiej dekadzie XXI wieku psychologia zmierzyła się z tzw. <strong>kryzysem replikacyjnym</strong>. Okazało się, że wielu klasycznych i spektakularnych efektów (publikowanych w prestiżowych czasopismach) nie udaje się powtórzyć w niezależnych laboratoriach.</p>
+<ul>
+<li><strong>Przykłady nieudanych replikacji:</strong>
+<ul>
+<li><em>Ego Depletion (Wyczerpanie Ego):</em> Teoria Roya Baumeistera zakładająca, że samokontrola jest zasobem wyczerpywalnym (jak “mięsień”), nie znalazła potwierdzenia w dużych, wielolaboratoryjnych projektach replikacyjnych.</li>
+<li><em>Power Posing (Pozycje Mocy):</em> Badania Amy Cuddy sugerujące, że przyjmowanie dominującej postawy ciała zmienia poziom hormonów i skłonność do ryzyka, okazały się w dużej mierze artefaktem lub wynikiem błędów metodologicznych (p-hacking).</li>
+</ul></li>
+<li><strong>Badania replikacyjne:</strong> Pojedyncze badanie, nawet z wynikiem <span class="math inline">\(p &lt; 0,05\)</span>, może być obarczone błędem losowym lub systematycznym. Dopiero powtarzalność wyniku w różnych warunkach pozwala uznać zjawisko za fakt naukowy.</li>
+</ul>
+</section>
+<section id="meta-analiza-synteza-wiedzy" class="level2">
+<h2 class="anchored" data-anchor-id="meta-analiza-synteza-wiedzy">Meta-analiza: synteza wiedzy</h2>
+<p>Meta-analiza to zaawansowana procedura statystyczna, służąca do ilościowego podsumowania wyników wielu niezależnych badań dotyczących tego samego problemu.</p>
+<ul>
+<li><strong>Funkcja:</strong> Zamiast liczyć, ile badań dało wynik “istotny”, a ile “nieistotny”, meta-analiza agreguje wielkości efektów ze wszystkich dostępnych badań, ważąc je wielkością próby.</li>
+<li><strong>Zalety:</strong>
+<ul>
+<li>Pozwala oszacować <strong>wielkość efektu</strong> w populacji z większą precyzją niż jakiekolwiek pojedyncze badanie.</li>
+<li>Umożliwia analizę moderatorów – sprawdzenie, w jakich warunkach efekt jest silniejszy, a w jakich słabszy.</li>
+</ul></li>
+<li><strong>Status:</strong> W hierarchii dowodów naukowych (Evidence-Based Practice), poprawnie przeprowadzona meta-analiza znajduje się na samym szczycie, stanowiąc najbardziej wiarygodne źródło wiedzy.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="etyka-badań-psychologicznych-standardy-i-dylematy" class="level1">
+<h1>Etyka badań psychologicznych: standardy i dylematy</h1>
+<p>Prowadzenie badań z udziałem ludzi wiąże się z fundamentalną odpowiedzialnością osób prowadzących te badania. Historia psychologii dostarcza dowodów na to, że pogoń za wiedzą nie może odbywać się kosztem godności i zdrowia uczestników. Współczesne regulacje (np. Kodeks Etyczny APA, Deklaracja Helsińska) powstały w dużej mierze jako reakcja na kontrowersyjne eksperymenty z XX wieku. Każdy projekt badawczy powinien uzyskać akceptację niezależnej Komisji ds. Etyki Badań.</p>
+<section id="zasada-autonomii-dobrowolność-i-świadoma-zgoda" class="level2">
+<h2 class="anchored" data-anchor-id="zasada-autonomii-dobrowolność-i-świadoma-zgoda">Zasada autonomii: dobrowolność i świadoma zgoda</h2>
+<p>Fundamentem etycznym współczesnej psychologii jest podmiotowe traktowanie osoby badanej. Uczestnictwo w badaniu nie może być wynikiem przymusu, presji (np. ze strony wykładowcy wobec studenta) ani nieświadomości.</p>
+<ul>
+<li><strong>Świadoma zgoda (Informed Consent):</strong> Jest to proces, a nie tylko formalność. Potencjalny uczestnik musi otrzymać zrozumiale sformułowane informacje dotyczące:
+<ul>
+<li>Celu i procedury badania.</li>
+<li>Przewidywanego czasu trwania.</li>
+<li>Potencjalnych ryzyk, dyskomfortu lub korzyści.</li>
+<li>Zasad poufności danych.</li>
+</ul></li>
+<li><strong>Prawo do rezygnacji:</strong> Uczestnik musi zostać poinformowany, że ma prawo wycofać się z badania w <strong>dowolnym momencie</strong>, bez podawania przyczyny i bez ponoszenia negatywnych konsekwencji (również w przypadku, gdy za udział przewidziane jest wynagrodzenie).</li>
+</ul>
+</section>
+<section id="zasada-nieszkodzenia" class="level2">
+<h2 class="anchored" data-anchor-id="zasada-nieszkodzenia">Zasada nieszkodzenia</h2>
+<p>Badacz ma obowiązek chronić uczestników przed szkodami fizycznymi i psychicznymi. Ryzyko związane z udziałem w badaniu nie powinno przekraczać tzw. <strong>minimalnego ryzyka</strong>, czyli poziomu dyskomfortu napotykanego w codziennym życiu.</p>
+<ul>
+<li><strong>Analiza historyczna – granice etyki:</strong> Współczesne standardy etyczne delegalizują procedury, które w przeszłości były dopuszczalne. Dwa kluczowe przykłady negatywne (“czarne karty” psychologii) to:
+<ul>
+<li><strong>Eksperyment więzienny Philipa Zimbardo (1971):</strong>
+<ul>
+<li><em>Procedura:</em> Symulacja życia więziennego, w której studenci losowo wcielili się w rolę strażników i więźniów.</li>
+<li><em>Naruszenie:</em> Uczestnicy doznali głębokiego załamania nerwowego, traumy i upokorzenia. Badacz, wchodząc w rolę “dyrektora więzienia”, utracił obiektywizm i nie przerwał eksperymentu w momencie pojawienia się pierwszych symptomów cierpienia badanych.</li>
+</ul></li>
+<li><strong>Eksperyment nad posłuszeństwem Stanleya Milgrama (1963):</strong>
+<ul>
+<li><em>Procedura:</em> Badani byli nakłaniani do rażenia prądem (rzekomo) innej osoby (“ucznia”) za błędy w zadaniu.</li>
+<li><em>Naruszenie:</em> Mimo że wstrząsy były symulowane, stres doświadczany przez “nauczycieli” był autentyczny i ekstremalny (drgawki, niekontrolowany śmiech, ataki paniki). Badani byli zmuszani do kontynuowania procedury wbrew własnej woli (“proszę kontynuować, nie ma pan wyboru”).</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="procedura-decepcji" class="level2">
+<h2 class="anchored" data-anchor-id="procedura-decepcji">Procedura decepcji</h2>
+<p>W niektórych obszarach badawczych (np. psychologia społeczna) ujawnienie prawdziwego celu badania uniemożliwiłoby uzyskanie rzetelnych wyników, powodując zmianę zachowania badanego (np. z powodu chęci wypadnięcia dobrze w oczach badacza).</p>
+<ul>
+<li><p><strong>Warunki dopuszczalności decepcji:</strong> Wprowadzanie w błąd (kłamstwo, zatajenie celu, podstawieni aktorzy) jest dopuszczalne <strong>wyłącznie</strong> wtedy, gdy:</p>
+<p>Problem badawczy ma istotne znaczenie naukowe. Nie istnieje alternatywna metoda (bez użycia kłamstwa), która pozwoliłaby zebrać te same dane. Decepcja nie wiąże się z ryzykiem fizycznego bólu lub silnego stresu emocjonalnego.</p>
+<ul>
+<li><em>Przykład uzasadniony:</em> Badania Solomona Ascha nad konformizmem. Gdyby badani wiedzieli, że pozostali członkowie grupy są aktorami celowo udzielającymi błędnych odpowiedzi, nie ulegliby presji grupy, a zjawisko konformizmu nie zostałoby zbadane.</li>
+</ul></li>
+</ul>
+</section>
+<section id="debriefing-procedura-odkłamania" class="level2">
+<h2 class="anchored" data-anchor-id="debriefing-procedura-odkłamania">Debriefing (procedura odkłamania)</h2>
+<p>Jeśli w badaniu zastosowano decepcję, badacz ma bezwzględny obowiązek przeprowadzenia sesji wyjaśniającej (debriefingu) niezwłocznie po zakończeniu udziału uczestnika.</p>
+<ul>
+<li><strong>Cele debriefingu:</strong>
+<ul>
+<li>Ujawnienie prawdziwego celu badania i natury manipulacji.</li>
+<li>Wyjaśnienie powodów, dla których zastosowano wprowadzanie w błąd.</li>
+<li><strong>Przywrócenie dobrostanu:</strong> Uczestnik powinien opuścić laboratorium w stanie psychicznym nie gorszym niż przed badaniem. Należy usunąć wszelkie błędne przekonania o sobie, które mogły powstać w trakcie badania (np. “nie jestem osobą okrutną, to była tylko manipulacja sytuacyjna”).</li>
+</ul></li>
+</ul>
+</section>
+<section id="ochrona-danych-osobowych-anonimowość-a-poufność" class="level2">
+<h2 class="anchored" data-anchor-id="ochrona-danych-osobowych-anonimowość-a-poufność">Ochrona danych osobowych: anonimowość a poufność</h2>
+<p>Ochrona prywatności jest kluczowym elementem zaufania do nauki. Należy rozróżnić dwa pojęcia:</p>
+<ul>
+<li><strong>Anonimowość:</strong> Sytuacja, w której <strong>nawet badacz</strong> nie jest w stanie powiązać zebranych danych (wyników ankiety, czasów reakcji) z konkretną osobą. Jest to najwyższy standard ochrony (np. ankiety online bez pobierania adresów IP/e-mail).</li>
+<li><strong>Poufność:</strong> Sytuacja, w której badacz posiada dane identyfikujące uczestnika (np. listę nazwisk, numery indeksów), ale zobowiązuje się do nieujawniania ich osobom trzecim oraz do bezpiecznego przechowywania (np. kodowanie danych, gdzie nazwisko zastępowane jest numerem ID).</li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBtdV9ub3JtID0gSW5wdXRzLnJhbmdlKFstMTAsIDEwXSwge3N0ZXA6IDAuNSwgdmFsdWU6IDAsIGxhYmVsOiBcIsWacmVkbmlhIChNKVwifSlcbnZpZXdvZiBzaWdtYV9ub3JtID0gSW5wdXRzLnJhbmdlKFswLjUsIDVdLCB7c3RlcDogMC4xLCB2YWx1ZTogMSwgbGFiZWw6IFwiT2RjaHlsZW5pZSAoU0QpXCJ9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiUGxvdC5wbG90KHtcbiAgdGl0bGU6IGBSb3prxYJhZCBOb3JtYWxueSAoTT0ke211X25vcm19LCBTRD0ke3NpZ21hX25vcm19KWAsXG4gIGhlaWdodDogNDAwLFxuICBncmlkOiB0cnVlLFxuICAvLyBaYWJsb2tvd2FuaWUgb3NpIGplc3Qga2x1Y3pvd2UsIGFieSB3aWR6aWXEhyBwcnplc3VuacSZY2lhIVxuICB4OiB7IGRvbWFpbjogWy0yMCwgMjBdLCBsYWJlbDogXCJXYXJ0b8WbxIdcIiB9LFxuICB5OiB7IGRvbWFpbjogWzAsIDAuNV0sIGxhYmVsOiBcIkfEmXN0b8WbxIcgcHJhd2RvcG9kb2JpZcWEc3R3YVwiIH0sXG4gIG1hcmtzOiBbXG4gICAgLy8gT2JzemFyIHBvZCBrcnp5d8SFXG4gICAgUGxvdC5hcmVhWShub3JtYWxEYXRhLCB7eDogXCJ4XCIsIHk6IFwieVwiLCBmaWxsOiBcImdyZWVuXCIsIGZpbGxPcGFjaXR5OiAwLjJ9KSxcbiAgICAvLyBMaW5pYSBrcnp5d2VqXG4gICAgUGxvdC5saW5lWShub3JtYWxEYXRhLCB7eDogXCJ4XCIsIHk6IFwieVwiLCBzdHJva2U6IFwiZ3JlZW5cIiwgc3Ryb2tlV2lkdGg6IDN9KSxcbiAgICAvLyBMaW5pYSB3c2thenVqxIVjYSDFm3JlZG5pxIVcbiAgICBQbG90LnJ1bGVYKFttdV9ub3JtXSwge3N0cm9rZTogXCJibGFja1wiLCBzdHJva2VEYXNoYXJyYXk6IFwiNCw0XCIsIHN0cm9rZU9wYWNpdHk6IDAuNX0pLFxuICAgIC8vIFBvZHBpcyDFm3JlZG5pZWpcbiAgICBQbG90LnRleHQoW211X25vcm1dLCB7eTogMC4wMiwgeDogbXVfbm9ybSwgdGV4dDogW2BNID0gJHttdV9ub3JtfWBdLCBkeTogLTEwLCBmb250V2VpZ2h0OiBcImJvbGRcIn0pXG4gIF1cbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcbi8vIEdlbmVyb3dhbmllIGRhbnljaCBtYXRlbWF0eWN6bnljaCBkbGEga3J6eXdlaiBHYXVzc2Fcbm5vcm1hbERhdGEgPSB7XG4gIGNvbnN0IGRhdGEgPSBbXTtcbiAgY29uc3QgbXUgPSBtdV9ub3JtO1xuICBjb25zdCBzaWdtYSA9IHNpZ21hX25vcm07XG4gIFxuICAvLyBHZW5lcnVqZW15IHB1bmt0eSBvZCAtMjAgZG8gMjAsIGFieSB3eWtyZXMgYnnFgiBwxYJ5bm55XG4gIC8vIFd6w7NyIG5hIGfEmXN0b8WbxIcgcHJhd2RvcG9kb2JpZcWEc3R3YSByb3prxYJhZHUgbm9ybWFsbmVnbyAoUERGKVxuICBmb3IgKGxldCB4ID0gLTIwOyB4IDw9IDIwOyB4ICs9IDAuMSkge1xuICAgIGNvbnN0IHkgPSAoMSAvIChzaWdtYSAqIE1hdGguc3FydCgyICogTWF0aC5QSSkpKSAqIFxuICAgICAgICAgICAgICBNYXRoLmV4cCgtMC41ICogTWF0aC5wb3coKHggLSBtdSkgLyBzaWdtYSwgMikpO1xuICAgIGRhdGEucHVzaCh7eCwgeX0pO1xuICB9XG4gIHJldHVybiBkYXRhO1xufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHNrZXdfc2VwID0gSW5wdXRzLnJhbmdlKFstMSwgMV0sIHtzdGVwOiAwLjEsIHZhbHVlOiAwLCBsYWJlbDogXCJTa2/Fm25vxZvEhyAoQXN5bWV0cmlhKVwifSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlBsb3QucGxvdCh7XG4gIGhlaWdodDogMzUwLFxuICBncmlkOiB0cnVlLFxuICB4OiB7IGxhYmVsOiBcIldhcnRvxZvEhyB6bWllbm5lalwiIH0sXG4gIHk6IHsgbGFiZWw6IFwiTGljemVibm/Fm8SHXCIgfSxcbiAgbWFya3M6IFtcbiAgICBQbG90LnJlY3RZKHNlcERhdGEsIFBsb3QuYmluWCh7eTogXCJjb3VudFwifSwge3g6IFwidmFsdWVcIiwgZmlsbDogXCIjNEM3OEE4XCJ9KSksXG4gICAgUGxvdC5ydWxlWShbMF0pXG4gIF1cbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTYiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJQbG90LnBsb3Qoe1xuICBoZWlnaHQ6IDIwMCxcbiAgZ3JpZDogdHJ1ZSxcbiAgeDogeyBsYWJlbDogXCJXYXJ0b8WbxIcgem1pZW5uZWpcIiB9LFxuICB5OiB7IGF4aXM6IG51bGwgfSwgXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5ib3hYKHNlcERhdGEsIHt4OiBcInZhbHVlXCIsIGZpbGw6IFwiI0U0NTc1NlwifSksXG4gICAgUGxvdC50ZXh0KHNlcERhdGEsIFBsb3Quc2VsZWN0TWluWCh7eDogXCJ2YWx1ZVwiLCB0ZXh0OiBkID0+IFwiTWluXCIsIGR5OiAtMjB9KSksXG4gICAgUGxvdC50ZXh0KHNlcERhdGEsIFBsb3Quc2VsZWN0TWF4WCh7eDogXCJ2YWx1ZVwiLCB0ZXh0OiBkID0+IFwiTWF4XCIsIGR5OiAtMjB9KSlcbiAgXVxufSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gTG9naWthIGdlbmVyb3dhbmlhIGRhbnljaFxuc2VwRGF0YSA9IHtcbiAgY29uc3QgcG9pbnRzID0gW107XG4gIGNvbnN0IHNrZXcgPSBza2V3X3NlcDsgXG4gIGNvbnN0IG4gPSAzMDA7IC8vIFVzdGF3aW9uYSBzdGHFgmEgbGljemJhIG9ic2Vyd2FjamlcbiAgXG4gIGZvciAobGV0IGkgPSAwOyBpIDwgbjsgaSsrKSB7XG4gICAgbGV0IHUxID0gMCwgdTIgPSAwO1xuICAgIHdoaWxlICh1MSA9PT0gMCkgdTEgPSBNYXRoLnJhbmRvbSgpO1xuICAgIHdoaWxlICh1MiA9PT0gMCkgdTIgPSBNYXRoLnJhbmRvbSgpO1xuICAgIGNvbnN0IHogPSBNYXRoLnNxcnQoLTIuMCAqIE1hdGgubG9nKHUxKSkgKiBNYXRoLmNvcygyLjAgKiBNYXRoLlBJICogdTIpO1xuICAgIFxuICAgIGxldCB2YWx1ZSA9IHo7XG4gICAgaWYgKHNrZXcgIT09IDApIHtcbiAgICAgICB2YWx1ZSA9IHogKiBNYXRoLmV4cChza2V3ICogeiAqIDAuNCk7IFxuICAgIH1cblxuICAgIHBvaW50cy5wdXNoKHt2YWx1ZTogdmFsdWV9KTtcbiAgfVxuICByZXR1cm4gcG9pbnRzO1xufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC04IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG52aWV3b2Ygbl9hbmltID0gSW5wdXRzLnJhbmdlKFs1MCwgNTAwXSwge1xuICBzdGVwOiAxMCwgXG4gIHZhbHVlOiAxMDAsIFxuICBsYWJlbDogXCJMaWN6YmEgb2JzZXJ3YWNqaSAoTilcIlxufSlcblxudmlld29mIHJfYW5pbSA9IElucHV0cy5yYW5nZShbLTEsIDFdLCB7XG4gIHN0ZXA6IDAuMDEsIFxuICB2YWx1ZTogMC4wMCwgXG4gIGxhYmVsOiBcIktvcmVsYWNqYSAocilcIlxufSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtOSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuUGxvdC5wbG90KHtcbiAgdGl0bGU6IGByID0gJHtyX2FuaW0udG9GaXhlZCgyKX0gIHwgIHAgPSAke3BWYWx1ZVRleHR9YCxcbiAgZ3JpZDogdHJ1ZSxcbiAgeDogeyBkb21haW46IFstNCwgNF0sIGxhYmVsOiBcIlptaWVubmEgWFwiIH0sXG4gIHk6IHsgZG9tYWluOiBbLTQsIDRdLCBsYWJlbDogXCJabWllbm5hIFlcIiB9LFxuICBtYXJrczogW1xuICAgIFBsb3QucnVsZVkoWzBdLCB7c3Ryb2tlT3BhY2l0eTogMC4yfSksXG4gICAgUGxvdC5ydWxlWChbMF0sIHtzdHJva2VPcGFjaXR5OiAwLjJ9KSxcbiAgICBcbiAgICAvLyBLcm9wa2kgc8SFIHByemVrYXp5d2FuZSBiZXpwb8WbcmVkbmlvLCBiZXogd2FydW5rw7N3XG4gICAgUGxvdC5kb3QocGxvdERhdGEsIHtcbiAgICAgICAgeDogXCJ4XCIsIFxuICAgICAgICB5OiBcInlcIiwgXG4gICAgICAgIGZpbGw6IFwic3RlZWxibHVlXCIsIFxuICAgICAgICByOiA0LCBcbiAgICAgICAgZmlsbE9wYWNpdHk6IDAuNyxcbiAgICAgICAgdGlwOiB0cnVlXG4gICAgfSksXG4gICAgXG4gICAgLy8gTGluaWEgcmVncmVzamkgcsOzd25pZcW8IHdpZG9jem5hIG9kIHJhenVcbiAgICBQbG90LmxpbmVhclJlZ3Jlc3Npb25ZKHBsb3REYXRhLCB7eDogXCJ4XCIsIHk6IFwieVwiLCBzdHJva2U6IFwicmVkXCIsIHN0cm9rZVdpZHRoOiAzfSlcbiAgXVxufSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMTAiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcbi8vIDEuIE9ibGljemFuaWUgcC12YWx1ZSAoVGVzdCBpc3RvdG5vxZtjaSBrb3JlbGFjamkgUGVhcnNvbmEpXG5wVmFsdWVUZXh0ID0ge1xuICBjb25zdCByID0gcl9hbmltO1xuICBjb25zdCBuID0gbl9hbmltO1xuICBcbiAgLy8gWmFiZXpwaWVjemVuaWUgZGxhIGtvcmVsYWNqaSBpZGVhbG5laiAoZHppZWxlbmllIHByemV6IHplcm8pXG4gIGlmIChNYXRoLmFicyhyKSA+PSAwLjk5KSByZXR1cm4gXCI8IDAuMDAxXCI7IFxuXG4gIC8vIE9ibGljemVuaWUgc3RhdHlzdHlraSB0XG4gIC8vIFd6w7NyOiB0ID0gciAqIHNxcnQoKE4tMikgLyAoMS1yXjIpKVxuICBjb25zdCB0U3RhdCA9IHIgKiBNYXRoLnNxcnQoKG4gLSAyKSAvICgxIC0gciAqIHIpKTtcbiAgXG4gIC8vIE9ibGljemVuaWUgcC12YWx1ZSBwcnp5IHXFvHljaXUgYXByb2tzeW1hY2ppIHJvemvFgmFkdSBub3JtYWxuZWdvIChkbGEgTiA+PSA1MCBqZXN0IHRvIHBvcHJhd25lKVxuICAvLyBwID0gMiAqICgxIC0gQ0RGKHx0fCkpXG4gIGNvbnN0IHAgPSAyICogKDEgLSBub3JtYWxDREYoTWF0aC5hYnModFN0YXQpKSk7XG4gIFxuICBpZiAocCA8IDAuMDAxKSByZXR1cm4gXCI8IDAuMDAxXCI7XG4gIHJldHVybiBwLnRvRml4ZWQoMyk7XG59XG5cbi8vIEZ1bmtjamEgcG9tb2NuaWN6YTogRHlzdHJ5YnVhbnRhIHJvemvFgmFkdSBub3JtYWxuZWdvIChuaWUgd3ltYWdhIHpld27EmXRyem55Y2ggYmlibGlvdGVrKVxuZnVuY3Rpb24gbm9ybWFsQ0RGKHgpIHtcbiAgICBjb25zdCB0ID0gMSAvICgxICsgMC4yMzE2NDE5ICogTWF0aC5hYnMoeCkpO1xuICAgIGNvbnN0IGQgPSAwLjM5ODk0MjI4MDQwMTQzMzcgKiBNYXRoLmV4cCgteCAqIHggLyAyKTtcbiAgICBjb25zdCBwcm9iID0gZCAqIHQgKiAoMC4zMTkzODE1MzAgKyB0ICogKC0wLjM1NjU2Mzc4MiArIHQgKiAoMS43ODE0Nzc5MzcgKyB0ICogKC0xLjgyMTI1NTk3OCArIHQgKiAxLjMzMDI3NDQyOSkpKSk7XG4gICAgcmV0dXJuIHggPiAwID8gMSAtIHByb2IgOiBwcm9iO1xufVxuXG4vLyAyLiBHZW5lcm93YW5pZSBsb3Nvd3ljaCBcIm9zw7NiXCIgKFptaWVubmUgdWtyeXRlIFoxIGkgWjIpXG4vLyBSZWFndWplIFRZTEtPIG5hIHptaWFuxJkgTiAobl9hbmltKS5cbmJhc2VSYW5kb21uZXNzID0ge1xuICBjb25zdCBzZWVkcyA9IFtdO1xuICBmb3IgKGxldCBpID0gMDsgaSA8IG5fYW5pbTsgaSsrKSB7XG4gICAgLy8gQWxnb3J5dG0gQm94YS1NdWxsZXJhXG4gICAgbGV0IHUxID0gMCwgdTIgPSAwO1xuICAgIHdoaWxlICh1MSA9PT0gMCkgdTEgPSBNYXRoLnJhbmRvbSgpO1xuICAgIHdoaWxlICh1MiA9PT0gMCkgdTIgPSBNYXRoLnJhbmRvbSgpO1xuICAgIGNvbnN0IHoxID0gTWF0aC5zcXJ0KC0yLjAgKiBNYXRoLmxvZyh1MSkpICogTWF0aC5jb3MoMi4wICogTWF0aC5QSSAqIHUyKTtcbiAgICBcbiAgICBsZXQgdTMgPSAwLCB1NCA9IDA7XG4gICAgd2hpbGUgKHUzID09PSAwKSB1MyA9IE1hdGgucmFuZG9tKCk7XG4gICAgd2hpbGUgKHU0ID09PSAwKSB1NCA9IE1hdGgucmFuZG9tKCk7XG4gICAgY29uc3QgejIgPSBNYXRoLnNxcnQoLTIuMCAqIE1hdGgubG9nKHUzKSkgKiBNYXRoLmNvcygyLjAgKiBNYXRoLlBJICogdTQpO1xuICAgIFxuICAgIHNlZWRzLnB1c2goe3oxLCB6Mn0pO1xuICB9XG4gIHJldHVybiBzZWVkcztcbn1cblxuLy8gMy4gVHJhbnNmb3JtYWNqYSBkYW55Y2ggKE5ha8WCYWRhbmllIGtvcmVsYWNqaSlcbi8vIEJpZXJ6ZSBiYXpvd8SFIGxvc293b8WbxIcgaSBwcnpla3N6dGHFgmNhIGrEhSB3IHphbGXFvG5vxZtjaSBvZCBzdXdha2EgJ3InXG5wbG90RGF0YSA9IHtcbiAgY29uc3QgciA9IHJfYW5pbTtcbiAgcmV0dXJuIGJhc2VSYW5kb21uZXNzLm1hcChkID0+IHtcbiAgICBjb25zdCB4ID0gZC56MTtcbiAgICAvLyBXesOzciBuYSBza29yZWxvd2FuxIUgem1pZW5uxIUgWVxuICAgIGNvbnN0IHkgPSAociAqIGQuejEpICsgKE1hdGguc3FydCgxIC0gciAqIHIpICogZC56Mik7XG4gICAgcmV0dXJuIHt4LCB5fTtcbiAgfSk7XG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ211X25vcm0nKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2lnbWFfbm9ybScpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdza2V3X3NlcCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCduX2FuaW0nKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncl9hbmltJykifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../..";
+window._ojs.paths.runtimeToRoot = "../../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Skopiowano!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Skopiowano!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

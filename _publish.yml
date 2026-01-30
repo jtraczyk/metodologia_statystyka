@@ -1,0 +1,6 @@
+- source: konspekt_2026.qmd
+  quarto-pub:
+    - id: 65857551-a367-4345-af7f-4c9a2c097e72
+      url: 'https://jtraczyk.quarto.pub/metodologia'
+    - id: 20cb3c7f-aa37-48c7-af27-118b23041314
+      url: 'https://jtraczyk.quarto.pub/metodologia-badań-psychologicznych-i-statystyka-6523'
